@@ -1408,19 +1408,19 @@ if (sform) {
     if (btn) { btn.disabled = true; btn.textContent = 'Enviando…'; }
     var data = new FormData(sform);
     data.append('_subject', 'Nuevo sujeto de estudio FAE');
-    fetch('https://formspree.io/f/xpwzgkgd', { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
+    fetch('https://formspree.io/dani@danisuanchez.es', { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
       .then(function(r) {
         if (r.ok) {
           document.getElementById('subject-success').style.display = 'block';
           sform.style.display = 'none';
         } else {
           if (btn) { btn.disabled = false; btn.textContent = 'Apuntarme →'; }
-          alert('Hubo un error. Escríbenos a hola@fundacionaltoemprendimiento.org');
+          alert('Hubo un error. Inténtalo de nuevo.');
         }
       })
       .catch(function() {
         if (btn) { btn.disabled = false; btn.textContent = 'Apuntarme →'; }
-        alert('Error de red.');
+        alert('Error de red. Inténtalo de nuevo.');
       });
   });
 }
@@ -1432,19 +1432,19 @@ if (mform) {
     var btn = mform.querySelector('button[type=submit]');
     if (btn) { btn.disabled = true; btn.textContent = 'Enviando…'; }
     var data = new FormData(mform);
-    fetch('https://formspree.io/f/xpwzgkgd', { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
+    fetch('https://formspree.io/dani@danisuanchez.es', { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
       .then(function(r) {
         if (r.ok) {
           document.getElementById('modal-success').style.display = 'block';
           mform.style.display = 'none';
         } else {
           if (btn) { btn.disabled = false; btn.textContent = 'Enviar solicitud →'; }
-          alert('Hubo un error. Escríbenos a hola@fundacionaltoemprendimiento.org');
+          alert('Hubo un error. Inténtalo de nuevo.');
         }
       })
       .catch(function() {
         if (btn) { btn.disabled = false; btn.textContent = 'Enviar solicitud →'; }
-        alert('Error de red. Escríbenos a hola@fundacionaltoemprendimiento.org');
+        alert('Error de red. Inténtalo de nuevo.');
       });
   });
 }
