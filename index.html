@@ -414,7 +414,8 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
     <li><button id="nav-viaje" onclick="go('viaje')">Nuestro viaje</button></li>
     <li><button id="nav-nosotros" onclick="go('nosotros')">Quiénes somos</button></li>
     <li><button id="nav-investigacion" onclick="go('investigacion')">Investigación</button></li>
-    <li><button class="btn-nav" onclick="go('aplica-reto-2026')">Aplica al Reto 2026</button></li>
+    <li><button class="btn-nav" onclick="go('aplica-reto-2026')" data-i18n="nav.apply">Aplica al Reto 2026</button></li>
+    <li><button id="lang-btn" onclick="toggleLang()" style="background:none;border:1px solid rgba(255,255,255,0.15);color:#8A95A8;font-size:11px;font-weight:700;letter-spacing:0.08em;padding:5px 10px;border-radius:6px;cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='#00DDB8';this.style.color='#00DDB8'" onmouseout="this.style.borderColor='rgba(255,255,255,0.15)';this.style.color='#8A95A8'">EN</button></li>
   </ul>
   <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -431,7 +432,8 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
   <button onclick="go('viaje');closeMobileMenu()">Nuestro viaje</button>
   <button onclick="go('nosotros');closeMobileMenu()">Quiénes somos</button>
   <button onclick="go('investigacion');closeMobileMenu()">Investigación</button>
-  <button class="btn-apply" onclick="go('aplica-reto-2026');closeMobileMenu()">Aplica al Reto 2026</button>
+  <button class="btn-apply" onclick="go('aplica-reto-2026');closeMobileMenu()" data-i18n="nav.apply">Aplica al Reto 2026</button>
+  <button onclick="toggleLang();closeMobileMenu()" style="margin-top:8px;background:none;border:1px solid rgba(255,255,255,0.15);color:#8A95A8;font-size:12px;font-weight:700;letter-spacing:0.08em;padding:8px 16px;border-radius:8px;cursor:pointer" id="lang-btn-mobile">EN — Switch to English</button>
 </div>
 
 <!-- ═══════════════════════════════════════════ HOME ═══ -->
@@ -1656,6 +1658,421 @@ window.addEventListener('popstate', function() {
   var h = (location.hash || '#home').replace('#', '');
   go(PAGES.indexOf(h) !== -1 ? h : 'home');
 });
+
+/* ── i18n TRANSLATIONS ── */
+var LANG = 'es';
+var T = {
+  es: {
+    /* NAV */
+    'nav.emprendedores': 'Emprendedores',
+    'nav.corporaciones': 'Corporaciones',
+    'nav.inversores': 'Inversores',
+    'nav.viaje': 'Nuestro viaje',
+    'nav.nosotros': 'Quiénes somos',
+    'nav.investigacion': 'Investigación',
+    'nav.apply': 'Aplica al Reto 2026',
+    /* HOME */
+    'home.pill': 'Reto 2026 · 4 plazas · Abierto',
+    'home.h1': 'Emprender es un<br>deporte de<br><em>alto rendimiento.</em>',
+    'home.lead1': 'Detectamos a los mejores emprendedores y los acompañamos de forma integral — <strong style="color:#F2F4F9">biológica, cognitiva y emocionalmente</strong> — para que lleguen lejos sin romperse.',
+    'home.lead2': 'Primer centro de alto emprendimiento en España. Fundado en Asturias, 2024.',
+    'home.btn.apply': 'Aplica al Reto 2026 →',
+    'home.btn.carta': 'Leer la carta fundacional',
+    'home.honest': '<strong>Lo estamos construyendo en tiempo real.</strong> En 2025 acompañamos a los cuatro primeros. En 2026 abrimos la siguiente cohorte. Si te apuntas ahora, formas parte del origen.',
+    'home.aud.emp.lbl': 'Soy un',
+    'home.aud.emp.ttl': 'Emprendedor',
+    'home.aud.corp.lbl': 'Soy una',
+    'home.aud.corp.ttl': 'Corporación',
+    'home.aud.inv.lbl': 'Soy un',
+    'home.aud.inv.ttl': 'Fondo de inversión',
+    'home.aud.viaje.lbl': 'Quiero ver',
+    'home.aud.viaje.ttl': 'Nuestro viaje',
+    'home.aud.nos.lbl': 'Quiero saber',
+    'home.aud.nos.ttl': 'Quiénes somos',
+    'home.stat1': 'Primeros emprendedores acompañados en 2025',
+    'home.stat2': 'Biología · Cognición · Contexto',
+    'home.stat3': 'Plazas disponibles — Reto 2026',
+    'home.stat4': 'Fundación de alto emprendimiento en España',
+    'home.mission.eyebrow': 'Nuestra misión',
+    'home.mission.h2': 'Entrenamiento integral para emprendedores.<br><em>Porque lo que se rompe no es la empresa — eres tú.</em>',
+    'home.mission.lead1': 'Detectar a los mejores emprendedores y acompañarlos de forma integral — cognitiva, emocional y biológicamente — para que lleguen lejos sin romperse.',
+    'home.mission.lead2': 'El plan financiero ya lo hacen todos. Nosotros trabajamos algo más importante: <strong style="color:#F2F4F9">cómo funciona tu sistema nervioso bajo presión, cómo ejecutas cuando estás al límite.</strong>',
+    'home.mission.btn': 'Leer la carta fundacional →',
+    'home.strip.emp.who': 'Eres emprendedor o intraemprendedor',
+    'home.strip.emp.h': '¿Sabes realmente de qué estás hecho?',
+    'home.strip.emp.body': 'Analízate. Conoce tus límites reales. Solo cuatro plazas en el Reto 2026.',
+    'home.strip.corp.who': 'Eres una corporación',
+    'home.strip.corp.h': '¿Cómo le das estabilidad real a tu equipo de innovación?',
+    'home.strip.corp.body': 'Detectamos el talento intraemprendedor que ya tienes dentro.',
+    'home.strip.inv.who': 'Eres un fondo de inversión',
+    'home.strip.inv.h': 'El mayor riesgo no es el mercado. Es el equipo.',
+    'home.strip.inv.body': 'Evaluamos y acompañamos equipos fundadores antes de que se rompan.',
+    'home.strip.btn': 'Descubre más <span>→</span>',
+    'home.cta.eyebrow': 'Reto 2026 · Solo 4 plazas',
+    'home.cta.h2': 'Si resuena contigo,<br>probablemente eres<br><em>de los nuestros.</em>',
+    'home.cta.sub': 'Sin pitch. Sin presión. Solo honestidad y datos.',
+    'home.cta.btn': 'Aplica →',
+    'home.cta.fine': 'Sin compromiso · Proceso confidencial',
+    /* EMPRENDEDORES */
+    'emp.eyebrow': 'Para emprendedores e intraemprendedores',
+    'emp.h1': '¿Sabes realmente<br>de qué estás<br><em>hecho?</em>',
+    'emp.lead': 'No te pedimos un pitch. No nos importa tu deck. Queremos entender tu biología, tu mente y tu historia. Porque <strong style="color:#F2F4F9">tú eres el proyecto.</strong>',
+    'emp.analysis.eyebrow': 'Cómo te analizamos',
+    'emp.analysis.h2': 'Seleccionamos<br>como la <em>NASA.</em>',
+    'emp.analysis.lead': 'La NASA no busca personas con ideas brillantes. Busca personas capaces de sostener misiones exigentes durante años. Nosotros hacemos lo mismo — con análisis psicométrico, perfilado de personalidad y evaluación integral.',
+    'emp.card1.lbl': '01 · Hardware',
+    'emp.card1.title': 'Biológico',
+    'emp.card1.body': 'Análisis genómico, epigenético y bioquímico. Tu base biológica, tus límites reales y cómo responde tu cuerpo bajo presión sostenida durante años.',
+    'emp.card2.lbl': '02 · Software',
+    'emp.card2.title': 'Cognitivo y psicométrico',
+    'emp.card2.body': 'Mapa cognitivo, emocional y análisis de personalidad. Cómo decides bajo presión, cómo funciona tu equipo, cómo lideras cuando todo falla.',
+    'emp.card3.lbl': '03 · Trayectoria',
+    'emp.card3.title': 'Contexto e historia',
+    'emp.card3.body': 'Historia, propósito, golpes acumulados, circunstancias reales. No solo lo que has hecho — sino con qué lo has hecho y cómo te ha afectado.',
+    'emp.age.eyebrow': 'Lo que nadie te cuenta sobre la edad',
+    'emp.age.20': 'Crees que lo comes todo',
+    'emp.age.30': 'Hostia, empieza a notar',
+    'emp.age.40': '¿Ya te has roto alguna vez?',
+    'emp.age.50': 'Si has tenido suerte, vuelves a emprender con toda la experiencia. Si no… opositando.',
+    'emp.age.note': 'Sin preparación, el sistema te consume antes de que puedas dar lo mejor de ti. Y lo peor: piensas que el problema eres tú.',
+    'emp.reality.eyebrow': 'La realidad',
+    'emp.reality.h2': 'Trabajas más.<br>No mejor.<br>Y eso te <em>destroza.</em>',
+    'emp.reality.lead1': 'Un atleta de élite entrena 2–4 horas al día. El resto es <strong style="color:#F2F4F9">recuperación, análisis, estrategia, datos, descanso, mente.</strong> Todo medido.',
+    'emp.reality.lead2': 'Un emprendedor cree que trabajar 12 horas es correcto. Y cuando no lo hace, se siente culpable.',
+    'emp.reality.lead3': '<strong style="color:#F2F4F9">No es valentía. Es mala preparación.</strong> Nosotros cambiamos eso con datos, estructura y el entorno adecuado.',
+    'emp.cohort.eyebrow': 'Cohorte 2025',
+    'emp.cohort.h2': 'Los primeros<br><em>seis.</em>',
+    'emp.cohort.lead': 'En 2025 acompañamos a los seis primeros emprendedores de FAE. Los encontramos donde estaban — en eventos, a través de recomendaciones, porque alguien habló de ellos. Así los encontraremos siempre.',
+    'emp.stat.success': 'Tasa de éxito — felices y ganándose la vida con su proyecto',
+    'emp.stat.inv': 'Inversión total levantada por la cohorte 2025',
+    'emp.stat.raised': 'Han levantado entre 200K y 500K€ de inversión externa',
+    'emp.reto.eyebrow': 'Convocatoria abierta',
+    'emp.reto.h2': 'Reto 2026.<br>Solo <em>cuatro plazas.</em>',
+    'emp.reto.inner.eyebrow': 'Programa de acompañamiento 2026',
+    'emp.reto.inner.h3': 'Acompañamiento integral.<br><em>Mixto. Profundo. Real.</em>',
+    'emp.reto.inner.lead': 'Un programa de mínimo seis meses con acompañamiento online semanal y sesiones presenciales intensivas. Trabajaremos tu biología, tu cognición y tu contexto — no tu deck. Kickoff presencial en Asturias.',
+    'emp.reto.plazas': 'plazas<br>disponibles',
+    'emp.reto.btn': 'Aplica ahora — quedan 4 plazas →',
+    'emp.reto.cohorte.h3': 'Cohorte 2026 — en selección',
+    'emp.reto.cohorte.lead': 'La cohorte está abierta. Los encontramos en cualquier sitio — en un evento, porque alguien habló de ti. O puedes escribirnos tú.',
+    'emp.plaza.notice': 'Queda <strong style="color:#F2F4F9">1 plaza</strong> disponible. Te podemos encontrar en una fiesta, en un evento o porque alguien habló de ti. O puedes escribirnos directamente.',
+    /* CORPORACIONES */
+    'corp.eyebrow': 'Para corporaciones y grandes empresas',
+    'corp.h1': '¿Tienes al lado<br>a la persona adecuada<br>para <em>innovar?</em>',
+    'corp.lead': '¿Sería capaz de innovar sin un salario fijo todos los meses? ¿O innova tranquilo porque a fin de mes cobra igual?',
+    'corp.talent.eyebrow': 'El reto que no resuelve nadie',
+    'corp.talent.h2': 'El talento intraemprendedor<br>existe.<br><em>Pero no lo ves.</em>',
+    'corp.talent.lead1': 'Está dentro de tu organización. Ha llegado hasta donde está empujando con uñas y dientes. Pero nadie lo ha analizado bien. Nadie sabe si puede sostener lo que se le va a pedir.',
+    'corp.talent.lead2': '<strong style="color:#F2F4F9">Nosotros te ayudamos a saberlo — y a darle el entorno que necesita para rendir de verdad.</strong>',
+    'corp.cta.eyebrow': 'Para corporaciones',
+    'corp.cta.h2': '¿Cómo le das<br>estabilidad real a tu<br><em>equipo de innovación?</em>',
+    'corp.cta.sub': 'Cuéntanos tu caso. Sin presentaciones. Sin intermediarios.',
+    /* INVERSORES */
+    'inv.eyebrow': 'Para fondos de inversión',
+    'inv.h1': 'El mayor riesgo<br>no es el mercado.<br><em>Es el equipo.</em>',
+    'inv.lead': 'Su resistencia real. Si van a aguantar tres años de presión extrema, incertidumbre y fracasos encadenados — o si se van a romper justo cuando más los necesitas.',
+    'inv.dd.eyebrow': 'Lo que ofrecemos a inversores',
+    'inv.dd.h2': 'Due diligence<br><em>humana.</em>',
+    'inv.cta.eyebrow': 'Para fondos de inversión',
+    'inv.cta.h2': 'El riesgo humano<br>es el más costoso.<br><em>Y el más ignorado.</em>',
+    'inv.cta.sub': 'Cuéntanos en qué equipos estás invirtiendo. Sin presentaciones. Sin intermediarios.',
+    /* VIAJE */
+    'viaje.eyebrow': 'Nuestro viaje',
+    'viaje.h1': 'Lo estamos<br>construyendo en<br><em>tiempo real.</em>',
+    'viaje.lead': 'No vendemos ninguna película. Esto es lo que hay, lo que está pasando, lo que viene y lo que soñamos. Con honestidad total.',
+    'viaje.roadmap.eyebrow': 'Hoja de ruta',
+    'viaje.roadmap.h2': 'De 2024<br>al <em>primer centro<br>del mundo.</em>',
+    'viaje.perlora.eyebrow': 'El sueño de 2030',
+    'viaje.perlora.h2': 'Perlora.<br>La ciudad<br><em>emprendedora.</em>',
+    'viaje.research.eyebrow': 'Investigación y publicaciones',
+    'viaje.research.h2': 'El sustrato<br><em>intelectual.</em>',
+    /* NOSOTROS */
+    'nos.eyebrow': 'Quiénes somos',
+    'nos.h1': 'Dos emprendedores<br>y una psicóloga.<br><em>Sin adornos.</em>',
+    'nos.lead': 'Sin figuras decorativas. Sin advisors de perfil de LinkedIn. Las personas que están detrás de FAE son las que hacen el trabajo.',
+    'nos.patronato.eyebrow': 'Patronato',
+    'nos.patronato.h2': 'Las personas<br>que hacen<br><em>el trabajo.</em>',
+    'nos.mentores.eyebrow': 'Red de mentores',
+    'nos.mentores.h2': 'Los que han<br><em>estado ahí.</em>',
+    'nos.mentores.lead': 'Los emprendedores de FAE acceden a una red de mentores de primera línea. <strong style="color:#F2F4F9">Mentores reales. Personas que lo han hecho y que lo están haciendo.</strong> Que hablan desde la práctica y la experiencia, no desde la teoría.',
+    'nos.partners.eyebrow': 'Partners tecnológicos y científicos',
+    'nos.partners.h2': 'Construyendo<br>las alianzas<br><em>adecuadas.</em>',
+    'nos.carta.eyebrow': 'Carta fundacional',
+    'nos.carta.h2': 'Por qué<br><em>existe FAE.</em>',
+    'nos.carta.p1': 'Llevamos años viendo lo mismo. Personas extraordinarias que se rompen. No por falta de talento, ni de esfuerzo, ni de ideas. Se rompen porque nadie les enseñó a sostener lo que estaban construyendo.',
+    'nos.carta.p2': 'Las aceleradoras trabajan el modelo de negocio. Los inversores trabajan las métricas. Los MBA trabajan la estrategia. Pero nadie trabaja al emprendedor. Nadie pregunta cómo funciona su sistema nervioso bajo presión crónica. Nadie analiza si su biología le permite aguantar décadas. Nadie mide cómo decide cuando está agotado.',
+    'nos.carta.p3': 'FAE nace de esa convicción: que el mayor activo de cualquier proyecto no es el producto, ni el mercado, ni la financiación. Es la persona que lo sostiene todo. Y esa persona necesita preparación científica, integral y honesta.',
+    'nos.carta.p4': 'No somos una aceleradora. No somos una escuela de negocios. Somos la primera fundación que trata al emprendedor como lo que es: un ser humano completo que opera en condiciones extremas durante años — y que merece el mismo rigor y el mismo cuidado que un atleta de élite.',
+    'nos.carta.p5': 'Detectamos a los mejores. Los acompañamos de forma integral — cognitiva, emocional y biológicamente. Y trabajamos para que lleguen lejos sin romperse.',
+    'nos.carta.p6': 'Porque lo que se rompe no es la empresa. Eres tú.',
+    /* INVESTIGACIÓN */
+    'inv2.pill': 'Investigación activa · FAE 2025–2026',
+    'inv2.h1': 'Ciencia para<br>entender al<br><em>emprendedor.</em>',
+    'inv2.lead1': 'Desde la Fundación Alto Emprendimiento llevamos a cabo investigaciones sobre la biología, la cognición y el contexto del emprendedor. <strong style="color:#F2F4F9">Buscamos patrones reales, no teorías.</strong>',
+    'inv2.lead2': 'Si quieres participar como sujeto de estudio en alguno de nuestros experimentos, apúntate aquí.',
+    'inv2.btn': 'Quiero participar como sujeto de estudio →',
+    'inv2.papers.eyebrow': 'Working Papers',
+    'inv2.papers.h2': 'Investigaciones<br><em>en curso.</em>',
+    'inv2.papers.lead': 'Publicamos nuestros trabajos en abierto. Son documentos vivos — versiones preliminares que evolucionan con los datos.',
+    /* FORMS */
+    'form.apply.eyebrow': 'Reto 2026 · Solo 4 plazas',
+    'form.apply.h1': 'Aplica al<br><em style="color:#00DDB8;font-style:italic">Reto 2026.</em>',
+    'form.apply.lead': 'Sin pitch. Sin presión. Solo honestidad y datos. Cuéntanos quién eres y en qué estás trabajando. El proceso es confidencial y te respondemos en 48h.',
+    'form.apply.success.h': '¡Solicitud recibida!',
+    'form.apply.success.p': 'Nos pondremos en contacto contigo en los próximos días. El proceso es confidencial.',
+    'form.apply.btn': 'Enviar solicitud →',
+    'form.apply.fine': 'Proceso confidencial · Sin compromiso · Te respondemos en 48h',
+    'form.subject.eyebrow': 'Investigación FAE · Sujetos de estudio',
+    'form.subject.h1': 'Participa en<br><em style="color:#00DDB8;font-style:italic">nuestros estudios.</em>',
+    'form.subject.lead': 'Buscamos emprendedores y directivos que quieran participar en nuestros experimentos sobre biología, cognición y contexto del emprendedor. Totalmente voluntario y confidencial.',
+    'form.subject.success.h': '¡Apuntado!',
+    'form.subject.success.p': 'Te contactaremos cuando lancemos el próximo experimento en el que encajes.',
+    'form.subject.btn': 'Apuntarme →',
+    'form.subject.fine': 'Voluntario · Confidencial · Sin compromiso',
+    /* FOOTER */
+    'footer.copy': '© 2026 Fundación Alto Emprendimiento',
+    'footer.privacy': 'Privacidad',
+    'footer.cookies': 'Cookies',
+    'footer.legal': 'Aviso Legal'
+  },
+  en: {
+    /* NAV */
+    'nav.emprendedores': 'Entrepreneurs',
+    'nav.corporaciones': 'Corporations',
+    'nav.inversores': 'Investors',
+    'nav.viaje': 'Our journey',
+    'nav.nosotros': 'Who we are',
+    'nav.investigacion': 'Research',
+    'nav.apply': 'Apply to Challenge 2026',
+    /* HOME */
+    'home.pill': 'Challenge 2026 · 4 spots · Open',
+    'home.h1': 'Entrepreneurship is<br>a high-performance<br><em>sport.</em>',
+    'home.lead1': 'We find the best entrepreneurs and support them holistically — <strong style="color:#F2F4F9">biologically, cognitively and emotionally</strong> — so they go far without breaking.',
+    'home.lead2': 'First high-performance entrepreneurship centre in Spain. Founded in Asturias, 2024.',
+    'home.btn.apply': 'Apply to Challenge 2026 →',
+    'home.btn.carta': 'Read the founding letter',
+    'home.honest': '<strong>We are building this in real time.</strong> In 2025 we supported the first four. In 2026 we open the next cohort. If you join now, you are part of the origin.',
+    'home.aud.emp.lbl': 'I am an',
+    'home.aud.emp.ttl': 'Entrepreneur',
+    'home.aud.corp.lbl': 'I am a',
+    'home.aud.corp.ttl': 'Corporation',
+    'home.aud.inv.lbl': 'I am a',
+    'home.aud.inv.ttl': 'Investment fund',
+    'home.aud.viaje.lbl': 'I want to see',
+    'home.aud.viaje.ttl': 'Our journey',
+    'home.aud.nos.lbl': 'I want to know',
+    'home.aud.nos.ttl': 'Who we are',
+    'home.stat1': 'First entrepreneurs supported in 2025',
+    'home.stat2': 'Biology · Cognition · Context',
+    'home.stat3': 'Available spots — Challenge 2026',
+    'home.stat4': 'First high-performance entrepreneurship foundation in Spain',
+    'home.mission.eyebrow': 'Our mission',
+    'home.mission.h2': 'Holistic training for entrepreneurs.<br><em>Because what breaks is not the company — it’s you.</em>',
+    'home.mission.lead1': 'Find the best entrepreneurs and support them holistically — cognitively, emotionally and biologically — so they go far without breaking.',
+    'home.mission.lead2': 'Everyone does the financial plan. We work on something more important: <strong style="color:#F2F4F9">how your nervous system works under pressure, how you execute when you’re at the limit.</strong>',
+    'home.mission.btn': 'Read the founding letter →',
+    'home.strip.emp.who': 'You are an entrepreneur or intrapreneur',
+    'home.strip.emp.h': 'Do you really know what you are made of?',
+    'home.strip.emp.body': 'Analyse yourself. Know your real limits. Only four spots in Challenge 2026.',
+    'home.strip.corp.who': 'You are a corporation',
+    'home.strip.corp.h': 'How do you give real stability to your innovation team?',
+    'home.strip.corp.body': 'We detect the intrapreneurial talent you already have inside.',
+    'home.strip.inv.who': 'You are an investment fund',
+    'home.strip.inv.h': 'The biggest risk is not the market. It is the team.',
+    'home.strip.inv.body': 'We evaluate and support founding teams before they break.',
+    'home.strip.btn': 'Learn more <span>→</span>',
+    'home.cta.eyebrow': 'Challenge 2026 · Only 4 spots',
+    'home.cta.h2': 'If this resonates,<br>you are probably<br><em>one of us.</em>',
+    'home.cta.sub': 'No pitch. No pressure. Just honesty and data.',
+    'home.cta.btn': 'Apply →',
+    'home.cta.fine': 'No commitment · Confidential process',
+    /* EMPRENDEDORES */
+    'emp.eyebrow': 'For entrepreneurs and intrapreneurs',
+    'emp.h1': 'Do you really know<br>what you are<br><em>made of?</em>',
+    'emp.lead': 'We don’t ask for a pitch. We don’t care about your deck. We want to understand your biology, your mind and your story. Because <strong style="color:#F2F4F9">you are the project.</strong>',
+    'emp.analysis.eyebrow': 'How we analyse you',
+    'emp.analysis.h2': 'We select<br>like <em>NASA.</em>',
+    'emp.analysis.lead': 'NASA doesn’t look for people with brilliant ideas. It looks for people capable of sustaining demanding missions for years. We do the same — with psychometric analysis, personality profiling and holistic evaluation.',
+    'emp.card1.lbl': '01 · Hardware',
+    'emp.card1.title': 'Biological',
+    'emp.card1.body': 'Genomic, epigenetic and biochemical analysis. Your biological foundation, your real limits and how your body responds under sustained pressure for years.',
+    'emp.card2.lbl': '02 · Software',
+    'emp.card2.title': 'Cognitive & psychometric',
+    'emp.card2.body': 'Cognitive and emotional map plus personality analysis. How you decide under pressure, how your team works, how you lead when everything fails.',
+    'emp.card3.lbl': '03 · Track record',
+    'emp.card3.title': 'Context & history',
+    'emp.card3.body': 'History, purpose, accumulated setbacks, real circumstances. Not just what you have done — but with what you did it and how it affected you.',
+    'emp.age.eyebrow': 'What nobody tells you about age',
+    'emp.age.20': 'You think you can take on the world',
+    'emp.age.30': 'Reality starts to hit',
+    'emp.age.40': 'Have you already broken once?',
+    'emp.age.50': 'If you’ve been lucky, you start again with all your experience. If not… looking for a safe job.',
+    'emp.age.note': 'Without preparation, the system consumes you before you can give your best. And the worst part: you think the problem is you.',
+    'emp.reality.eyebrow': 'The reality',
+    'emp.reality.h2': 'You work more.<br>Not better.<br>And that <em>destroys you.</em>',
+    'emp.reality.lead1': 'An elite athlete trains 2–4 hours a day. The rest is <strong style="color:#F2F4F9">recovery, analysis, strategy, data, rest, mind.</strong> All measured.',
+    'emp.reality.lead2': 'An entrepreneur thinks working 12 hours is right. And when they don’t, they feel guilty.',
+    'emp.reality.lead3': '<strong style="color:#F2F4F9">It’s not bravery. It’s poor preparation.</strong> We change that with data, structure and the right environment.',
+    'emp.cohort.eyebrow': 'Cohort 2025',
+    'emp.cohort.h2': 'The first<br><em>six.</em>',
+    'emp.cohort.lead': 'In 2025 we supported the first six FAE entrepreneurs. We found them where they were — at events, through recommendations, because someone mentioned them. That is how we will always find them.',
+    'emp.stat.success': 'Success rate — happy and earning a living from their project',
+    'emp.stat.inv': 'Total investment raised by cohort 2025',
+    'emp.stat.raised': 'Have raised between €200K and €500K in external investment',
+    'emp.reto.eyebrow': 'Open call',
+    'emp.reto.h2': 'Challenge 2026.<br>Only <em>four spots.</em>',
+    'emp.reto.inner.eyebrow': 'Support programme 2026',
+    'emp.reto.inner.h3': 'Holistic support.<br><em>Blended. Deep. Real.</em>',
+    'emp.reto.inner.lead': 'A programme of at least six months with weekly online support and intensive in-person sessions. We will work on your biology, your cognition and your context — not your deck. In-person kickoff in Asturias.',
+    'emp.reto.plazas': 'spots<br>available',
+    'emp.reto.btn': 'Apply now — 4 spots left →',
+    'emp.reto.cohorte.h3': 'Cohort 2026 — in selection',
+    'emp.reto.cohorte.lead': 'The cohort is open. We find them anywhere — at an event, because someone mentioned you. Or you can write to us directly.',
+    'emp.plaza.notice': '<strong style="color:#F2F4F9">1 spot</strong> remaining. We might find you at a party, an event or because someone mentioned you. Or you can write to us directly.',
+    /* CORPORACIONES */
+    'corp.eyebrow': 'For corporations and large companies',
+    'corp.h1': 'Do you have the right<br>person next to you<br>to <em>innovate?</em>',
+    'corp.lead': 'Could they innovate without a fixed salary every month? Or do they innovate comfortably because they get paid regardless?',
+    'corp.talent.eyebrow': 'The challenge nobody solves',
+    'corp.talent.h2': 'Intrapreneurial talent<br>exists.<br><em>But you don’t see it.</em>',
+    'corp.talent.lead1': 'It’s inside your organisation. It got there by pushing hard. But nobody has analysed it properly. Nobody knows if it can sustain what is going to be asked of it.',
+    'corp.talent.lead2': '<strong style="color:#F2F4F9">We help you find out — and give it the environment it needs to truly perform.</strong>',
+    'corp.cta.eyebrow': 'For corporations',
+    'corp.cta.h2': 'How do you give<br>real stability to your<br><em>innovation team?</em>',
+    'corp.cta.sub': 'Tell us your case. No presentations. No intermediaries.',
+    /* INVERSORES */
+    'inv.eyebrow': 'For investment funds',
+    'inv.h1': 'The biggest risk<br>is not the market.<br><em>It is the team.</em>',
+    'inv.lead': 'Their real resilience. Whether they will hold up for three years of extreme pressure, uncertainty and setbacks — or break just when you need them most.',
+    'inv.dd.eyebrow': 'What we offer investors',
+    'inv.dd.h2': 'Human<br><em>due diligence.</em>',
+    'inv.cta.eyebrow': 'For investment funds',
+    'inv.cta.h2': 'Human risk<br>is the most costly.<br><em>And the most ignored.</em>',
+    'inv.cta.sub': 'Tell us which teams you are investing in. No presentations. No intermediaries.',
+    /* VIAJE */
+    'viaje.eyebrow': 'Our journey',
+    'viaje.h1': 'We are building<br>this in<br><em>real time.</em>',
+    'viaje.lead': 'We don’t sell a story. This is what exists, what is happening, what is coming and what we dream of. With total honesty.',
+    'viaje.roadmap.eyebrow': 'Roadmap',
+    'viaje.roadmap.h2': 'From 2024<br>to the <em>world’s first<br>centre.</em>',
+    'viaje.perlora.eyebrow': 'The 2030 dream',
+    'viaje.perlora.h2': 'Perlora.<br>The entrepreneurial<br><em>city.</em>',
+    'viaje.research.eyebrow': 'Research & publications',
+    'viaje.research.h2': 'The intellectual<br><em>foundation.</em>',
+    /* NOSOTROS */
+    'nos.eyebrow': 'Who we are',
+    'nos.h1': 'Two entrepreneurs<br>and a psychologist.<br><em>No frills.</em>',
+    'nos.lead': 'No decorative figures. No LinkedIn-profile advisors. The people behind FAE are the ones doing the work.',
+    'nos.patronato.eyebrow': 'Board of trustees',
+    'nos.patronato.h2': 'The people<br>who do<br><em>the work.</em>',
+    'nos.mentores.eyebrow': 'Mentor network',
+    'nos.mentores.h2': 'Those who have<br><em>been there.</em>',
+    'nos.mentores.lead': 'FAE entrepreneurs access a first-class mentor network. <strong style="color:#F2F4F9">Real mentors. People who have done it and are doing it.</strong> Speaking from practice and experience, not theory.',
+    'nos.partners.eyebrow': 'Technology & science partners',
+    'nos.partners.h2': 'Building<br>the right<br><em>alliances.</em>',
+    'nos.carta.eyebrow': 'Founding letter',
+    'nos.carta.h2': 'Why<br><em>FAE exists.</em>',
+    'nos.carta.p1': 'We have been watching the same thing for years. Extraordinary people who break. Not for lack of talent, effort or ideas. They break because nobody taught them to sustain what they were building.',
+    'nos.carta.p2': 'Accelerators work the business model. Investors work the metrics. MBAs work the strategy. But nobody works the entrepreneur. Nobody asks how their nervous system functions under chronic pressure. Nobody analyses whether their biology allows them to hold up for decades. Nobody measures how they decide when exhausted.',
+    'nos.carta.p3': 'FAE was born from that conviction: that the greatest asset of any project is not the product, nor the market, nor the funding. It is the person who holds everything together. And that person needs scientific, holistic and honest preparation.',
+    'nos.carta.p4': 'We are not an accelerator. We are not a business school. We are the first foundation that treats the entrepreneur as what they are: a complete human being operating under extreme conditions for years — who deserves the same rigour and care as an elite athlete.',
+    'nos.carta.p5': 'We find the best. We support them holistically — cognitively, emotionally and biologically. And we work so they go far without breaking.',
+    'nos.carta.p6': 'Because what breaks is not the company. It is you.',
+    /* INVESTIGACIÓN */
+    'inv2.pill': 'Active research · FAE 2025–2026',
+    'inv2.h1': 'Science to<br>understand the<br><em>entrepreneur.</em>',
+    'inv2.lead1': 'At the Alto Emprendimiento Foundation we conduct research on the biology, cognition and context of the entrepreneur. <strong style="color:#F2F4F9">We look for real patterns, not theories.</strong>',
+    'inv2.lead2': 'If you want to participate as a study subject in any of our experiments, sign up here.',
+    'inv2.btn': 'I want to participate as a study subject →',
+    'inv2.papers.eyebrow': 'Working Papers',
+    'inv2.papers.h2': 'Ongoing<br><em>research.</em>',
+    'inv2.papers.lead': 'We publish our work openly. These are living documents — preliminary versions that evolve with the data.',
+    /* FORMS */
+    'form.apply.eyebrow': 'Challenge 2026 · Only 4 spots',
+    'form.apply.h1': 'Apply to<br><em style="color:#00DDB8;font-style:italic">Challenge 2026.</em>',
+    'form.apply.lead': 'No pitch. No pressure. Just honesty and data. Tell us who you are and what you are working on. The process is confidential and we reply within 48h.',
+    'form.apply.success.h': 'Application received!',
+    'form.apply.success.p': 'We will get in touch with you in the coming days. The process is confidential.',
+    'form.apply.btn': 'Submit application →',
+    'form.apply.fine': 'Confidential process · No commitment · We reply within 48h',
+    'form.subject.eyebrow': 'FAE Research · Study subjects',
+    'form.subject.h1': 'Participate in<br><em style="color:#00DDB8;font-style:italic">our studies.</em>',
+    'form.subject.lead': 'We are looking for entrepreneurs and executives who want to participate in our experiments on biology, cognition and entrepreneurial context. Fully voluntary and confidential.',
+    'form.subject.success.h': 'You’re in!',
+    'form.subject.success.p': 'We will contact you when we launch the next experiment you fit.',
+    'form.subject.btn': 'Sign me up →',
+    'form.subject.fine': 'Voluntary · Confidential · No commitment',
+    /* FOOTER */
+    'footer.copy': '© 2026 Alto Emprendimiento Foundation',
+    'footer.privacy': 'Privacy',
+    'footer.cookies': 'Cookies',
+    'footer.legal': 'Legal Notice'
+  }
+};
+
+function t(key) { return (T[LANG] && T[LANG][key]) || (T.es && T.es[key]) || key; }
+
+function applyLang() {
+  /* Nav links */
+  var navBtns = {
+    'nav-emprendedores': 'nav.emprendedores',
+    'nav-corporaciones': 'nav.corporaciones',
+    'nav-inversores': 'nav.inversores',
+    'nav-viaje': 'nav.viaje',
+    'nav-nosotros': 'nav.nosotros',
+    'nav-investigacion': 'nav.investigacion'
+  };
+  Object.keys(navBtns).forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) el.textContent = t(navBtns[id]);
+  });
+  /* data-i18n elements */
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    el.innerHTML = t(key);
+  });
+  /* Mobile menu nav buttons */
+  var mobileLabels = ['nav.emprendedores','nav.corporaciones','nav.inversores','nav.viaje','nav.nosotros','nav.investigacion'];
+  var mobileBtns = document.querySelectorAll('.mobile-menu button:not(.close-btn):not(.logo):not(.btn-apply):not([id])');
+  mobileBtns.forEach(function(btn, i) { if (mobileLabels[i]) btn.textContent = t(mobileLabels[i]); });
+  /* Lang button */
+  var lb = document.getElementById('lang-btn');
+  if (lb) lb.textContent = LANG === 'es' ? 'EN' : 'ES';
+  var lbm = document.getElementById('lang-btn-mobile');
+  if (lbm) lbm.textContent = LANG === 'es' ? 'EN — Switch to English' : 'ES — Cambiar a Español';
+  /* html lang attr */
+  document.documentElement.lang = LANG === 'es' ? 'es' : 'en';
+  /* Page titles */
+  var pageTitlesEN = {
+    home: 'FAE — Alto Emprendimiento Foundation | Holistic support for entrepreneurs',
+    emprendedores: 'For Entrepreneurs — Challenge 2026 | FAE Alto Emprendimiento Foundation',
+    corporaciones: 'For Corporations — Intrapreneurial talent | FAE Alto Emprendimiento Foundation',
+    inversores: 'For Investors — Human due diligence | FAE Alto Emprendimiento Foundation',
+    viaje: 'Our Journey 2024-2030 — Perlora Vision | FAE Alto Emprendimiento Foundation',
+    nosotros: 'Who We Are — Board & Founding Letter | FAE Alto Emprendimiento Foundation',
+    investigacion: 'Research — Working Papers | FAE Alto Emprendimiento Foundation',
+    'paper-regulacion': 'Integral Regulation of the Entrepreneur — Working Paper v0.2 | FAE',
+    'paper-triangulo': 'The Entrepreneur’s Regulation Triangle — Conceptual Model | FAE Foundation',
+    'aplica-reto-2026': 'Apply to Challenge 2026 — Only 4 spots | FAE Alto Emprendimiento Foundation',
+    'participa-investigacion': 'Participate as Study Subject — FAE Research | Alto Emprendimiento Foundation'
+  };
+  if (LANG === 'en') {
+    var curPage = (location.hash || '#home').replace('#','');
+    document.title = pageTitlesEN[curPage] || pageTitlesEN.home;
+  }
+}
+
+function toggleLang() {
+  LANG = LANG === 'es' ? 'en' : 'es';
+  localStorage.setItem('fae-lang', LANG);
+  applyLang();
+}
+
+/* Restore saved language */
+(function() {
+  var saved = localStorage.getItem('fae-lang');
+  if (saved && saved !== 'es') { LANG = saved; applyLang(); }
+})();
 
 /* ── BAR CHART ── */
 function animateBars() {
