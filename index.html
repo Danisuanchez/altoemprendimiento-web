@@ -21,6 +21,14 @@
 <meta name="twitter:creator" content="@danisuanchez">
 <meta name="twitter:title" content="FAE — Emprender es un deporte de alto rendimiento">
 <meta name="twitter:description" content="Primer centro de alto emprendimiento en España. Análisis integral: biología, cognición y contexto. Reto 2026: 4 plazas.">
+<meta property="og:image" content="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/og-image_ac529e44.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FAE — Fundación Alto Emprendimiento">
+<meta name="twitter:image" content="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/og-image_ac529e44.png">
+<link rel="icon" type="image/x-icon" href="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/favicon_4eefd366.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/favicon-32_b79d0b52.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/apple-touch-icon_8bc12c9b.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -406,7 +414,7 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
     <li><button id="nav-viaje" onclick="go('viaje')">Nuestro viaje</button></li>
     <li><button id="nav-nosotros" onclick="go('nosotros')">Quiénes somos</button></li>
     <li><button id="nav-investigacion" onclick="go('investigacion')">Investigación</button></li>
-    <li><button class="btn-nav" onclick="go('emprendedores')">Aplica al Reto 2026</button></li>
+    <li><button class="btn-nav" onclick="go('aplica-reto-2026')">Aplica al Reto 2026</button></li>
   </ul>
   <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -423,7 +431,7 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
   <button onclick="go('viaje');closeMobileMenu()">Nuestro viaje</button>
   <button onclick="go('nosotros');closeMobileMenu()">Quiénes somos</button>
   <button onclick="go('investigacion');closeMobileMenu()">Investigación</button>
-  <button class="btn-apply" onclick="go('emprendedores');closeMobileMenu()">Aplica al Reto 2026</button>
+  <button class="btn-apply" onclick="go('aplica-reto-2026');closeMobileMenu()">Aplica al Reto 2026</button>
 </div>
 
 <!-- ═══════════════════════════════════════════ HOME ═══ -->
@@ -436,7 +444,7 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
       <p class="lead">Detectamos a los mejores emprendedores y los acompañamos de forma integral — <strong style="color:#F2F4F9">biológica, cognitiva y emocionalmente</strong> — para que lleguen lejos sin romperse.</p>
       <p class="lead" style="font-size:15px">Primer centro de alto emprendimiento en España. Fundado en Asturias, 2024.</p>
       <div class="hero-actions">
-        <button class="btn-hero" onclick="go('emprendedores')">Aplica al Reto 2026 →</button>
+        <button class="btn-hero" onclick="go('aplica-reto-2026')">Aplica al Reto 2026 →</button>
         <button class="btn-outline" onclick="go('nosotros')">Leer la carta fundacional</button>
       </div>
     </div>
@@ -528,7 +536,7 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
       <p class="cta-sub">Sin pitch. Sin presión. Solo honestidad y datos.</p>
       <div class="cta-row">
         <input type="email" class="cta-email" placeholder="tu@email.com" id="home-email">
-        <button class="cta-go" onclick="handleApply('home-email')">Aplica →</button>
+        <button class="cta-go" onclick="go('aplica-reto-2026')">Aplica →</button>
       </div>
       <p class="cta-fine">Sin compromiso · Proceso confidencial</p>
     </div>
@@ -545,7 +553,7 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
       <h1>¿Sabes realmente<br>de qué estás<br><em>hecho?</em></h1>
       <p class="lead">No te pedimos un pitch. No nos importa tu deck. Queremos entender tu biología, tu mente y tu historia. Porque <strong style="color:#F2F4F9">tú eres el proyecto.</strong></p>
       <div class="hero-actions">
-        <button class="btn-hero" onclick="document.getElementById('reto-anchor').scrollIntoView({behavior:'smooth'})">Aplica al Reto 2026 →</button>
+        <button class="btn-hero" onclick="go('aplica-reto-2026')">Aplica al Reto 2026 →</button>
         <button class="btn-outline" onclick="go('nosotros')">Quiénes somos</button>
       </div>
     </div>
@@ -994,7 +1002,7 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
       <p class="lead">Desde la Fundación Alto Emprendimiento llevamos a cabo investigaciones sobre la biología, la cognición y el contexto del emprendedor. <strong style="color:#F2F4F9">Buscamos patrones reales, no teorías.</strong></p>
       <p class="lead" style="font-size:15px">Si quieres participar como sujeto de estudio en alguno de nuestros experimentos, apuntate aquí.</p>
       <div class="hero-actions">
-        <button class="btn-hero" onclick="openSubjectModal()">Quiero participar como sujeto de estudio →</button>
+        <button class="btn-hero" onclick="go('participa-investigacion')">Quiero participar como sujeto de estudio →</button>
       </div>
     </div>
   </section>
@@ -1016,6 +1024,22 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
             <span style="font-size:10px;background:rgba(0,221,184,0.1);color:#00DDB8;padding:3px 8px;border-radius:999px;font-weight:600">Neurociencia</span>
             <span style="font-size:10px;background:rgba(255,255,255,0.06);color:#8A95A8;padding:3px 8px;border-radius:999px">Estrés</span>
             <span style="font-size:10px;background:rgba(255,255,255,0.06);color:#8A95A8;padding:3px 8px;border-radius:999px">HRV</span>
+          </div>
+          <span style="color:#00DDB8;font-size:13px;font-weight:600">Leer →</span>
+        </div>
+      </div>
+
+      <div class="cohort-card" style="cursor:pointer" onclick="go('paper-triangulo')">
+        <div style="padding:20px 20px 0">
+          <span style="font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#00DDB8">Modelo Conceptual v1.0</span>
+          <div style="margin-top:8px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px;color:#F2F4F9;line-height:1.3">El Triángulo de Regulación del Emprendedor</div>
+          <p style="font-size:13px;color:#8A95A8;margin-top:8px;line-height:1.6">Fisiología, cognición y contexto social: el modelo tridimensional para sostener proyectos exigentes sin romperse.</p>
+        </div>
+        <div style="padding:16px 20px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);margin-top:16px">
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <span style="font-size:10px;background:rgba(0,221,184,0.1);color:#00DDB8;padding:3px 8px;border-radius:999px;font-weight:600">Fisiología</span>
+            <span style="font-size:10px;background:rgba(255,255,255,0.06);color:#8A95A8;padding:3px 8px;border-radius:999px">Cognición</span>
+            <span style="font-size:10px;background:rgba(255,255,255,0.06);color:#8A95A8;padding:3px 8px;border-radius:999px">Social</span>
           </div>
           <span style="color:#00DDB8;font-size:13px;font-weight:600">Leer →</span>
         </div>
@@ -1164,7 +1188,271 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
 
     <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:16px;padding:28px;text-align:center">
       <p style="font-size:15px;color:#C8D0DC;line-height:1.7;margin-bottom:16px">¿Quieres participar en alguno de estos experimentos como sujeto de estudio?</p>
-      <button class="btn-hero" onclick="openSubjectModal()">Apuntarme como sujeto de estudio →</button>
+      <button class="btn-hero" onclick="go('participa-investigacion')">Apuntarme como sujeto de estudio →</button>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════ APLICA RETO 2026 ═══ -->
+<div class="page" id="page-aplica-reto-2026" style="display:none">
+  <div style="min-height:100vh;padding:120px 20px 80px;display:flex;align-items:flex-start;justify-content:center;background:#07090E">
+    <div style="max-width:580px;width:100%">
+      <button onclick="go('emprendedores')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:32px;display:flex;align-items:center;gap:6px">← Volver a Emprendedores</button>
+      <span style="font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#00DDB8;display:block;margin-bottom:12px">Reto 2026 · Solo 4 plazas</span>
+      <h1 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(2rem,5vw,3.2rem);color:#F2F4F9;line-height:1.05;margin-bottom:12px">Aplica al<br><em style="color:#00DDB8;font-style:italic">Reto 2026.</em></h1>
+      <p style="font-size:16px;color:#8A95A8;margin-bottom:36px;line-height:1.7">Sin pitch. Sin presión. Solo honestidad y datos. Cuéntanos quién eres y en qué estás trabajando. El proceso es confidencial y te respondemos en 48h.</p>
+      <div id="apply-page-success" style="display:none;text-align:center;padding:48px 0">
+        <div style="font-size:56px;margin-bottom:20px">✅</div>
+        <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:26px;color:#F2F4F9;margin-bottom:10px">¡Solicitud recibida!</h2>
+        <p style="font-size:15px;color:#8A95A8">Nos pondremos en contacto contigo en los próximos días. El proceso es confidencial.</p>
+      </div>
+      <form id="apply-page-form" style="background:#0F1117;border:1px solid rgba(0,221,184,0.18);border-radius:20px;padding:36px">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
+          <div>
+            <label style="font-size:11px;font-weight:600;color:#8A95A8;letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px">Nombre *</label>
+            <input type="text" name="nombre" required placeholder="Tu nombre" style="width:100%;background:#0A0C12;border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 14px;color:#F2F4F9;font-size:14px;outline:none;font-family:'Inter',sans-serif;box-sizing:border-box" onfocus="this.style.borderColor='rgba(0,221,184,0.4)'" onblur="this.style.borderColor='rgba(255,255,255,0.1)'">
+          </div>
+          <div>
+            <label style="font-size:11px;font-weight:600;color:#8A95A8;letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px">Email *</label>
+            <input type="email" name="email" required placeholder="tu@email.com" style="width:100%;background:#0A0C12;border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 14px;color:#F2F4F9;font-size:14px;outline:none;font-family:'Inter',sans-serif;box-sizing:border-box" onfocus="this.style.borderColor='rgba(0,221,184,0.4)'" onblur="this.style.borderColor='rgba(255,255,255,0.1)'">
+          </div>
+        </div>
+        <div style="margin-bottom:14px">
+          <label style="font-size:11px;font-weight:600;color:#8A95A8;letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px">Teléfono</label>
+          <input type="tel" name="telefono" placeholder="+34 600 000 000" style="width:100%;background:#0A0C12;border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 14px;color:#F2F4F9;font-size:14px;outline:none;font-family:'Inter',sans-serif;box-sizing:border-box" onfocus="this.style.borderColor='rgba(0,221,184,0.4)'" onblur="this.style.borderColor='rgba(255,255,255,0.1)'">
+        </div>
+        <div style="margin-bottom:14px">
+          <label style="font-size:11px;font-weight:600;color:#8A95A8;letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px">Proyecto *</label>
+          <input type="text" name="proyecto" required placeholder="¿En qué estás trabajando?" style="width:100%;background:#0A0C12;border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 14px;color:#F2F4F9;font-size:14px;outline:none;font-family:'Inter',sans-serif;box-sizing:border-box" onfocus="this.style.borderColor='rgba(0,221,184,0.4)'" onblur="this.style.borderColor='rgba(255,255,255,0.1)'">
+        </div>
+        <div style="margin-bottom:24px">
+          <label style="font-size:11px;font-weight:600;color:#8A95A8;letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px">Cuéntanos algo</label>
+          <textarea name="mensaje" rows="4" placeholder="¿Por qué crees que eres de los nuestros? Sin filtros." style="width:100%;background:#0A0C12;border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 14px;color:#F2F4F9;font-size:14px;outline:none;font-family:'Inter',sans-serif;resize:vertical;box-sizing:border-box" onfocus="this.style.borderColor='rgba(0,221,184,0.4)'" onblur="this.style.borderColor='rgba(255,255,255,0.1)'"></textarea>
+        </div>
+        <input type="hidden" name="access_key" value="31bc0d10-a9a7-4cf5-b718-b8f588bc2ba4">
+        <input type="hidden" name="subject" value="Nueva solicitud Reto 2026 — FAE">
+        <input type="hidden" name="from_name" value="FAE Fundación Alto Emprendimiento">
+        <button type="submit" style="width:100%;background:#00DDB8;color:#000;font-weight:700;font-size:15px;padding:16px;border-radius:999px;border:none;cursor:pointer;font-family:'Inter',sans-serif;transition:box-shadow 0.2s" onmouseover="this.style.boxShadow='0 0 28px rgba(0,221,184,0.4)'" onmouseout="this.style.boxShadow='none'">Enviar solicitud →</button>
+        <p style="font-size:11px;color:#5C6880;text-align:center;margin-top:12px">Proceso confidencial · Sin compromiso · Te respondemos en 48h</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ PARTICIPA INVESTIGACIÓN ═══ -->
+<div class="page" id="page-participa-investigacion" style="display:none">
+  <div style="min-height:100vh;padding:120px 20px 80px;display:flex;align-items:flex-start;justify-content:center;background:#07090E">
+    <div style="max-width:580px;width:100%">
+      <button onclick="go('investigacion')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:32px;display:flex;align-items:center;gap:6px">← Volver a Investigación</button>
+      <span style="font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#00DDB8;display:block;margin-bottom:12px">Investigación FAE · Sujetos de estudio</span>
+      <h1 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(2rem,5vw,3.2rem);color:#F2F4F9;line-height:1.05;margin-bottom:12px">Participa en<br><em style="color:#00DDB8;font-style:italic">nuestros estudios.</em></h1>
+      <p style="font-size:16px;color:#8A95A8;margin-bottom:36px;line-height:1.7">Buscamos emprendedores y directivos que quieran participar en nuestros experimentos sobre biología, cognición y contexto del emprendedor. Totalmente voluntario y confidencial.</p>
+      <div id="subject-page-success" style="display:none;text-align:center;padding:48px 0">
+        <div style="font-size:56px;margin-bottom:20px">✅</div>
+        <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:26px;color:#F2F4F9;margin-bottom:10px">¡Apuntado!</h2>
+        <p style="font-size:15px;color:#8A95A8">Te contactaremos cuando lancemos el próximo experimento en el que encajes.</p>
+      </div>
+      <form id="subject-page-form" style="background:#0F1117;border:1px solid rgba(0,221,184,0.18);border-radius:20px;padding:36px">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
+          <div>
+            <label style="font-size:11px;font-weight:600;color:#8A95A8;letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px">Nombre *</label>
+            <input type="text" name="nombre" required placeholder="Tu nombre" style="width:100%;background:#0A0C12;border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 14px;color:#F2F4F9;font-size:14px;outline:none;font-family:'Inter',sans-serif;box-sizing:border-box" onfocus="this.style.borderColor='rgba(0,221,184,0.4)'" onblur="this.style.borderColor='rgba(255,255,255,0.1)'">
+          </div>
+          <div>
+            <label style="font-size:11px;font-weight:600;color:#8A95A8;letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px">Email *</label>
+            <input type="email" name="email" required placeholder="tu@email.com" style="width:100%;background:#0A0C12;border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 14px;color:#F2F4F9;font-size:14px;outline:none;font-family:'Inter',sans-serif;box-sizing:border-box" onfocus="this.style.borderColor='rgba(0,221,184,0.4)'" onblur="this.style.borderColor='rgba(255,255,255,0.1)'">
+          </div>
+        </div>
+        <div style="margin-bottom:14px">
+          <label style="font-size:11px;font-weight:600;color:#8A95A8;letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px">Perfil *</label>
+          <select name="perfil" required style="width:100%;background:#0A0C12;border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 14px;color:#F2F4F9;font-size:14px;outline:none;font-family:'Inter',sans-serif;box-sizing:border-box">
+            <option value="" disabled selected>Selecciona tu perfil</option>
+            <option value="emprendedor">Emprendedor / Fundador</option>
+            <option value="directivo">Directivo corporativo</option>
+            <option value="intraemprendedor">Intraemprendedor</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div style="margin-bottom:24px">
+          <label style="font-size:11px;font-weight:600;color:#8A95A8;letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px">Algo más que quieras contarnos</label>
+          <textarea name="mensaje" rows="3" placeholder="Opcional" style="width:100%;background:#0A0C12;border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 14px;color:#F2F4F9;font-size:14px;outline:none;font-family:'Inter',sans-serif;resize:vertical;box-sizing:border-box" onfocus="this.style.borderColor='rgba(0,221,184,0.4)'" onblur="this.style.borderColor='rgba(255,255,255,0.1)'"></textarea>
+        </div>
+        <input type="hidden" name="access_key" value="31bc0d10-a9a7-4cf5-b718-b8f588bc2ba4">
+        <input type="hidden" name="subject" value="Nuevo sujeto de estudio — FAE Investigación">
+        <input type="hidden" name="from_name" value="FAE Fundación Alto Emprendimiento">
+        <button type="submit" style="width:100%;background:#00DDB8;color:#000;font-weight:700;font-size:15px;padding:16px;border-radius:999px;border:none;cursor:pointer;font-family:'Inter',sans-serif;transition:box-shadow 0.2s" onmouseover="this.style.boxShadow='0 0 28px rgba(0,221,184,0.4)'" onmouseout="this.style.boxShadow='none'">Apuntarme →</button>
+        <p style="font-size:11px;color:#5C6880;text-align:center;margin-top:12px">Voluntario · Confidencial · Sin compromiso</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ PAPER: TRIÁNGULO DE REGULACIÓN ═══ -->
+<div class="page" id="page-paper-triangulo" style="display:none">
+  <section class="sec" style="max-width:780px;margin:0 auto">
+    <button onclick="go('investigacion')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:32px;display:flex;align-items:center;gap:6px">← Volver a Investigación</button>
+
+    <span class="eyebrow">Fundación Alto Emprendimiento · Modelo Conceptual v1.0</span>
+    <h1 style="font-size:clamp(2rem,4vw,3.2rem);margin-bottom:8px">El Triángulo de Regulación<br>del Emprendedor</h1>
+    <p style="font-size:16px;color:#8A95A8;margin-bottom:12px;line-height:1.6">Un modelo tridimensional para sostener proyectos exigentes sin romperse</p>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:40px">
+      <span style="font-size:10px;background:rgba(0,221,184,0.1);color:#00DDB8;padding:3px 10px;border-radius:999px;font-weight:600">Neurociencia</span>
+      <span style="font-size:10px;background:rgba(255,255,255,0.06);color:#8A95A8;padding:3px 10px;border-radius:999px">Fisiología</span>
+      <span style="font-size:10px;background:rgba(255,255,255,0.06);color:#8A95A8;padding:3px 10px;border-radius:999px">Cognición</span>
+      <span style="font-size:10px;background:rgba(255,255,255,0.06);color:#8A95A8;padding:3px 10px;border-radius:999px">Contexto social</span>
+      <span style="font-size:10px;background:rgba(255,255,255,0.06);color:#8A95A8;padding:3px 10px;border-radius:999px">Estrés crónico</span>
+    </div>
+
+    <!-- Resumen ejecutivo -->
+    <div style="background:var(--card2);border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:16px;padding:28px;margin-bottom:40px">
+      <span style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#00DDB8;display:block;margin-bottom:12px">Resumen ejecutivo</span>
+      <p style="font-size:15px;color:#C8D0DC;line-height:1.8">Emprender no es solo tener una buena idea y ejecutarla. Es operar bajo presión crónica, incertidumbre económica, responsabilidad total y exposición pública durante años. Este documento propone que la sostenibilidad del emprendedor depende del equilibrio dinámico entre tres sistemas: <strong style="color:#F2F4F9">fisiología, cognición y contexto social</strong>. Cuando uno falla, los otros dos no pueden compensarlo indefinidamente.</p>
+    </div>
+
+    <!-- Sección 1 -->
+    <div style="border-left:2px solid rgba(0,221,184,0.3);padding-left:24px;margin-bottom:40px">
+      <h2 style="font-size:22px;margin-bottom:16px">1. El problema de fondo</h2>
+      <p style="font-size:15px;color:#C8D0DC;line-height:1.8;margin-bottom:16px">El ecosistema emprendedor ha desarrollado herramientas sofisticadas para trabajar el modelo de negocio, la estrategia de go-to-market, la captación de inversión o la construcción de equipos. Sin embargo, existe un punto ciego sistemático: <strong style="color:#F2F4F9">nadie trabaja al emprendedor como sistema biológico y psicológico.</strong></p>
+      <p style="font-size:15px;color:#C8D0DC;line-height:1.8">Los datos son elocuentes. Estudios sobre burnout en fundadores (Shepherd &amp; Haynie, 2011; Cardon &amp; Patel, 2015) muestran que la mayoría de fracasos empresariales no se deben a errores de producto o mercado, sino al deterioro de la capacidad de decisión del fundador bajo presión acumulada. El problema no es la empresa. Es la persona que la sostiene.</p>
+    </div>
+
+    <!-- Sección 2: El triángulo -->
+    <div style="border-left:2px solid rgba(0,221,184,0.3);padding-left:24px;margin-bottom:40px">
+      <h2 style="font-size:22px;margin-bottom:20px">2. El Triángulo de Regulación</h2>
+      <p style="font-size:15px;color:#C8D0DC;line-height:1.8;margin-bottom:28px">Proponemos un modelo de tres vértices interdependientes. Cada uno es necesario. Ninguno es suficiente por sí solo.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:28px">
+        <div style="background:var(--card2);border:1px solid var(--line);border-top:3px solid #00DDB8;border-radius:14px;padding:24px">
+          <div style="font-size:32px;margin-bottom:12px">🏋️</div>
+          <div style="font-size:14px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px">Vértice 1 · Fisiología</div>
+          <p style="font-size:14px;color:#8A95A8;line-height:1.7">El cuerpo es la infraestructura de todo lo demás. Sin base biológica sólida, la cognición y la regulación emocional se degradan bajo presión.</p>
+          <ul style="font-size:13px;color:#5C6880;line-height:2;list-style:none;padding:0;margin-top:12px">
+            <li>→ Ejercicio de intensidad</li>
+            <li>→ Calidad del sueño</li>
+            <li>→ Respiración y sistema nervioso autónomo</li>
+            <li>→ Exposición térmica</li>
+            <li>→ Nutrición y ritmos circadianos</li>
+          </ul>
+        </div>
+        <div style="background:var(--card2);border:1px solid var(--line);border-top:3px solid #00DDB8;border-radius:14px;padding:24px">
+          <div style="font-size:32px;margin-bottom:12px">🧠</div>
+          <div style="font-size:14px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px">Vértice 2 · Cognición</div>
+          <p style="font-size:14px;color:#8A95A8;line-height:1.7">La mente del emprendedor es su herramienta principal. Pero sin entrenamiento, tiende a la rumiación, la sobreanalyisis y el agotamiento decisional.</p>
+          <ul style="font-size:13px;color:#5C6880;line-height:2;list-style:none;padding:0;margin-top:12px">
+            <li>→ Metacognición y autoconciencia</li>
+            <li>→ Gestión de la incertidumbre</li>
+            <li>→ Toma de decisiones bajo presión</li>
+            <li>→ Regulación emocional</li>
+            <li>→ Planificación estratégica real</li>
+          </ul>
+        </div>
+        <div style="background:var(--card2);border:1px solid var(--line);border-top:3px solid #00DDB8;border-radius:14px;padding:24px">
+          <div style="font-size:32px;margin-bottom:12px">🤝</div>
+          <div style="font-size:14px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px">Vértice 3 · Contexto social</div>
+          <p style="font-size:14px;color:#8A95A8;line-height:1.7">El aislamiento es el mayor factor de riesgo silencioso del emprendedor. La regulación social del sistema nervioso es real y medible.</p>
+          <ul style="font-size:13px;color:#5C6880;line-height:2;list-style:none;padding:0;margin-top:12px">
+            <li>→ Mentoría de calidad</li>
+            <li>→ Comunidad de pares</li>
+            <li>→ Conversaciones significativas</li>
+            <li>→ Vínculos de confianza</li>
+            <li>→ Entorno familiar estable</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.15);border-radius:12px;padding:20px">
+        <p style="font-size:14px;color:#C8D0DC;line-height:1.7"><strong style="color:#00DDB8">Principio clave:</strong> Los tres vértices son interdependientes. Un emprendedor con excelente condición física pero aislado socialmente y con rumiación cognitiva crónica no es un emprendedor regulado. La estabilidad requiere los tres.</p>
+      </div>
+    </div>
+
+    <!-- Sección 3 -->
+    <div style="border-left:2px solid rgba(0,221,184,0.3);padding-left:24px;margin-bottom:40px">
+      <h2 style="font-size:22px;margin-bottom:16px">3. Por qué el estrés emprendedor es distinto</h2>
+      <p style="font-size:15px;color:#C8D0DC;line-height:1.8;margin-bottom:16px">No todo el estrés es igual. El estrés de un directivo corporativo y el de un emprendedor fundador tienen estructuras neurobiiológicas distintas. El directivo enfrenta <em>estrés político-organizacional</em>: conflictos jerárquicos, evaluación interna, presión por resultados trimestrales. El riesgo es reputacional o de posición.</p>
+      <p style="font-size:15px;color:#C8D0DC;line-height:1.8">El emprendedor enfrenta <em>estrés existencial económico</em>: incertidumbre de ingresos, riesgo patrimonial personal, responsabilidad total sobre decisiones, exposición pública del fracaso. La amenaza no es solo reputacional — puede implicar consecuencias directas sobre la estabilidad financiera personal y la supervivencia del proyecto. Sapolsky (2004) explica que el cerebro activa el sistema de estrés cuando percibe amenaza sobre recursos críticos. Para el emprendedor, esa amenaza es más amplia, más profunda y más prolongada.</p>
+    </div>
+
+    <!-- Sección 4 -->
+    <div style="border-left:2px solid rgba(0,221,184,0.3);padding-left:24px;margin-bottom:40px">
+      <h2 style="font-size:22px;margin-bottom:16px">4. El riesgo de la hiper-regulación cognitiva</h2>
+      <p style="font-size:15px;color:#C8D0DC;line-height:1.8">Muchos emprendedores compensan la presión utilizando principalmente la regulación cognitiva: análisis constante, anticipación estratégica, reflexión continua. Es comprensible — es lo que saben hacer mejor. Pero esto produce hiperactividad del <em>Default Mode Network</em> (Raichle et al., 2001), con consecuencias clásicas: rumiación, insomnio cognitivo, fatiga mental y deterioro de la calidad de las decisiones. <strong style="color:#F2F4F9">La regulación cognitiva sin descarga fisiológica ni interacción social es insostenible a largo plazo.</strong></p>
+    </div>
+
+    <!-- Sección 5 -->
+    <div style="border-left:2px solid rgba(0,221,184,0.3);padding-left:24px;margin-bottom:40px">
+      <h2 style="font-size:22px;margin-bottom:16px">5. Evidencia científica de base</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px">
+        <div style="background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:20px">
+          <div style="font-size:11px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px">Fisiología</div>
+          <p style="font-size:13px;color:#8A95A8;line-height:1.7">Stanley et al. (2013) demuestra que el ejercicio intenso mejora la elasticidad autonómica y la resiliencia al estrés. Hillman et al. (2008) vincula actividad física con mejora cognitiva directa.</p>
+        </div>
+        <div style="background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:20px">
+          <div style="font-size:11px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px">Cognición</div>
+          <p style="font-size:13px;color:#8A95A8;line-height:1.7">Gross (2015) establece que la regulación emocional es entrenable. McEwen (2007) describe cómo el estrés crónico altera la arquitectura cerebral en regiones de decisión.</p>
+        </div>
+        <div style="background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:20px">
+          <div style="font-size:11px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px">Social</div>
+          <p style="font-size:13px;color:#8A95A8;line-height:1.7">Coan et al. (2006) demuestra que el contacto social regula directamente la respuesta neural a la amenaza. El aislamiento no es solo psicológico — es biológico.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección 6 -->
+    <div style="border-left:2px solid rgba(0,221,184,0.3);padding-left:24px;margin-bottom:40px">
+      <h2 style="font-size:22px;margin-bottom:16px">6. Implicaciones prácticas para el acompañamiento</h2>
+      <p style="font-size:15px;color:#C8D0DC;line-height:1.8;margin-bottom:20px">Si el modelo es correcto, el acompañamiento efectivo de emprendedores debe trabajar los tres vértices de forma simultánea y personalizada. No es suficiente con mentoring estratégico. No es suficiente con psicología. No es suficiente con un programa de bienestar. Se necesitan los tres, coordinados, con medición objetiva.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        <div style="background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:18px">
+          <div style="font-size:12px;font-weight:600;color:#00DDB8;margin-bottom:8px">Lo que funciona</div>
+          <ul style="font-size:13px;color:#8A95A8;line-height:2;list-style:none;padding:0">
+            <li>✓ Protocolo físico personalizado</li>
+            <li>✓ Mentoring de calidad real</li>
+            <li>✓ Comunidad de pares sin filtros</li>
+            <li>✓ Medición biológica continua</li>
+            <li>✓ Trabajo de metacognición</li>
+          </ul>
+        </div>
+        <div style="background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:18px">
+          <div style="font-size:12px;font-weight:600;color:#FF4D62;margin-bottom:8px">Lo que no es suficiente</div>
+          <ul style="font-size:13px;color:#8A95A8;line-height:2;list-style:none;padding:0">
+            <li>✗ Solo coaching estratégico</li>
+            <li>✗ Solo terapia psicológica</li>
+            <li>✗ Solo networking superficial</li>
+            <li>✗ Solo métricas de negocio</li>
+            <li>✗ Solo motivación y actitud</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Conclusión -->
+    <div style="border-left:2px solid rgba(0,221,184,0.3);padding-left:24px;margin-bottom:48px">
+      <h2 style="font-size:22px;margin-bottom:16px">Conclusión</h2>
+      <p style="font-size:15px;color:#C8D0DC;line-height:1.8">El Triángulo de Regulación del Emprendedor no es una metáfora. Es un marco operativo para diseñar programas de acompañamiento que traten al emprendedor como lo que es: un sistema biológico, cognitivo y social que opera bajo condiciones extremas durante años. Ignorar cualquiera de los tres vértices no es una opción — es una garantía de deterioro. <strong style="color:#F2F4F9">Porque lo que se rompe no es la empresa. Eres tú.</strong></p>
+    </div>
+
+    <!-- Referencias -->
+    <div style="background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:48px">
+      <span style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#5C6880;display:block;margin-bottom:16px">Referencias</span>
+      <ul style="font-size:13px;color:#8A95A8;line-height:2.2;list-style:none;padding:0;margin:0">
+        <li>Sapolsky, R. (2004) — <em>Why Zebras Don't Get Ulcers</em></li>
+        <li>McEwen, B. (2007) — <em>Physiology and Neurobiology of Stress and Adaptation</em></li>
+        <li>Raichle, M. et al. (2001) — <em>A Default Mode of Brain Function</em></li>
+        <li>Gross, J. (2015) — <em>Emotion Regulation: Current Status and Future Prospects</em></li>
+        <li>Hillman, C. et al. (2008) — <em>Be Smart, Exercise Your Heart</em></li>
+        <li>Stanley, J. et al. (2013) — <em>Heart Rate Variability and Stress Resilience</em></li>
+        <li>Coan, J. et al. (2006) — <em>Social Regulation of the Neural Response to Threat</em></li>
+        <li>Shepherd, D. &amp; Haynie, J.M. (2011) — <em>Venture Failure, Stigma, and Impression Management</em></li>
+        <li>Cardon, M. &amp; Patel, P. (2015) — <em>Is Stress Worth It? Stress-Related Health and Wealth Trade-offs for Entrepreneurs</em></li>
+      </ul>
+    </div>
+
+    <!-- CTA -->
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:16px;padding:32px;text-align:center">
+      <span style="font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#00DDB8;display:block;margin-bottom:12px">Investigación FAE</span>
+      <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:22px;color:#F2F4F9;margin-bottom:10px">¿Quieres participar en nuestros experimentos?</h3>
+      <p style="font-size:14px;color:#8A95A8;margin-bottom:20px;line-height:1.6">Buscamos emprendedores y directivos para validar este modelo con datos reales.</p>
+      <button class="btn-hero" onclick="go('participa-investigacion')">Apuntarme como sujeto de estudio →</button>
     </div>
   </section>
 </div>
@@ -1331,7 +1619,7 @@ function closeMobileMenu() {
 document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeMobileMenu(); });
 
 /* ── ROUTER ── */
-var PAGES = ['home', 'emprendedores', 'corporaciones', 'inversores', 'viaje', 'nosotros', 'investigacion', 'paper-regulacion'];
+var PAGES = ['home', 'emprendedores', 'corporaciones', 'inversores', 'viaje', 'nosotros', 'investigacion', 'paper-regulacion', 'paper-triangulo', 'aplica-reto-2026', 'participa-investigacion'];
 var PAGE_TITLES = {
   home: 'FAE — Fundación Alto Emprendimiento | Acompañamiento integral para emprendedores',
   emprendedores: 'Para Emprendedores — Reto 2026 | FAE Fundación Alto Emprendimiento',
@@ -1340,7 +1628,10 @@ var PAGE_TITLES = {
   viaje: 'Nuestro Viaje 2024-2030 — Visión Perlora | FAE Fundación Alto Emprendimiento',
   nosotros: 'Quiénes Somos — Patronato y Carta Fundacional | FAE Fundación Alto Emprendimiento',
   investigacion: 'Investigación — Working Papers | FAE Fundación Alto Emprendimiento',
-  'paper-regulacion': 'Regulación Integral del Emprendedor — Working Paper v0.2 | FAE'
+  'paper-regulacion': 'Regulación Integral del Emprendedor — Working Paper v0.2 | FAE',
+  'paper-triangulo': 'El Triángulo de Regulación del Emprendedor — Modelo Conceptual | FAE Fundación Alto Emprendimiento',
+  'aplica-reto-2026': 'Aplica al Reto 2026 — Sólo 4 plazas | FAE Fundación Alto Emprendimiento',
+  'participa-investigacion': 'Participa como Sujeto de Estudio — Investigación FAE | Fundación Alto Emprendimiento'
 };
 
 function go(id) {
@@ -1348,7 +1639,7 @@ function go(id) {
     var pg = document.getElementById('page-' + p);
     if (pg) { pg.classList.toggle('active', p === id); pg.style.display = p === id ? 'block' : 'none'; }
     var nl = document.getElementById('nav-' + p);
-    if (nl) nl.classList.toggle('active', p === id);
+    if (nl) nl.classList.toggle('active', p === id || (p === 'investigacion' && (id === 'paper-regulacion' || id === 'paper-triangulo' || id === 'participa-investigacion')) || (p === 'emprendedores' && id === 'aplica-reto-2026'));
   });
   window.scrollTo({ top: 0, behavior: 'smooth' });
   document.title = PAGE_TITLES[id] || PAGE_TITLES.home;
@@ -1388,6 +1679,60 @@ function handleApply(inputId) {
   var input = document.getElementById(inputId);
   var email = input ? input.value.trim() : '';
   openApplyModal(email && email.includes('@') ? email : '');
+}
+
+/* ── APPLY PAGE FORM ── */
+var applyPageForm = document.getElementById('apply-page-form');
+if (applyPageForm) {
+  applyPageForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var btn = applyPageForm.querySelector('button[type=submit]');
+    if (btn) { btn.disabled = true; btn.textContent = 'Enviando…'; }
+    var data = new FormData(applyPageForm);
+    fetch('https://api.web3forms.com/submit', { method: 'POST', body: data })
+      .then(function(r) { return r.json(); })
+      .then(function(res) {
+        if (res.success) {
+          applyPageForm.style.display = 'none';
+          var s = document.getElementById('apply-page-success');
+          if (s) s.style.display = 'block';
+        } else {
+          if (btn) { btn.disabled = false; btn.textContent = 'Enviar solicitud →'; }
+          alert('Hubo un error. Inténtalo de nuevo.');
+        }
+      })
+      .catch(function() {
+        if (btn) { btn.disabled = false; btn.textContent = 'Enviar solicitud →'; }
+        alert('Hubo un error de conexión. Inténtalo de nuevo.');
+      });
+  });
+}
+
+/* ── SUBJECT PAGE FORM ── */
+var subjectPageForm = document.getElementById('subject-page-form');
+if (subjectPageForm) {
+  subjectPageForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var btn = subjectPageForm.querySelector('button[type=submit]');
+    if (btn) { btn.disabled = true; btn.textContent = 'Enviando…'; }
+    var data = new FormData(subjectPageForm);
+    fetch('https://api.web3forms.com/submit', { method: 'POST', body: data })
+      .then(function(r) { return r.json(); })
+      .then(function(res) {
+        if (res.success) {
+          subjectPageForm.style.display = 'none';
+          var s = document.getElementById('subject-page-success');
+          if (s) s.style.display = 'block';
+        } else {
+          if (btn) { btn.disabled = false; btn.textContent = 'Apuntarme →'; }
+          alert('Hubo un error. Inténtalo de nuevo.');
+        }
+      })
+      .catch(function() {
+        if (btn) { btn.disabled = false; btn.textContent = 'Apuntarme →'; }
+        alert('Hubo un error de conexión. Inténtalo de nuevo.');
+      });
+  });
 }
 
 /* ── SUBJECT MODAL ── */
