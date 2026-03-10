@@ -441,13 +441,13 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
 
   <section class="hero">
     <div class="hero-content">
-      <div class="pill"><span class="dot"></span>Reto 2026 · 4 plazas · Abierto</div>
-      <h1>Emprender es un<br>deporte de<br><em>alto rendimiento.</em></h1>
-      <p class="lead">Detectamos a los mejores emprendedores y los acompañamos de forma integral — <strong style="color:#F2F4F9">biológica, cognitiva y emocionalmente</strong> — para que lleguen lejos sin romperse.</p>
-      <p class="lead" style="font-size:15px">Primer centro de alto emprendimiento en España. Fundado en Asturias, 2024.</p>
+      <div class="pill"><span class="dot"></span><span data-i18n="home.pill">Reto 2026 · 4 plazas · Abierto</span></div>
+      <h1 data-i18n="home.h1">Emprender es un<br>deporte de<br><em>alto rendimiento.</em></h1>
+      <p class="lead" data-i18n="home.lead1">Detectamos a los mejores emprendedores y los acompañamos de forma integral — <strong style="color:#F2F4F9">biológica, cognitiva y emocionalmente</strong> — para que lleguen lejos sin romperse.</p>
+      <p class="lead" style="font-size:15px" data-i18n="home.lead2">Primer centro de alto emprendimiento en España. Fundado en Asturias, 2024.</p>
       <div class="hero-actions">
-        <button class="btn-hero" onclick="go('aplica-reto-2026')">Aplica al Reto 2026 →</button>
-        <button class="btn-outline" onclick="go('nosotros')">Leer la carta fundacional</button>
+        <button class="btn-hero" onclick="go('aplica-reto-2026')" data-i18n="home.btn.apply">Aplica al Reto 2026 →</button>
+        <button class="btn-outline" onclick="go('nosotros')" data-i18n="home.btn.carta">Leer la carta fundacional</button>
       </div>
     </div>
     <div class="hero-svg">
@@ -481,66 +481,66 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
 
   <div class="honest-bar">
     <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#000" stroke-width="1.4"/><path d="M9 5v4M9 12v1" stroke="#000" stroke-width="1.6" stroke-linecap="round"/></svg>
-    <p><strong>Lo estamos construyendo en tiempo real.</strong> En 2025 acompañamos a los cuatro primeros. En 2026 abrimos la siguiente cohorte. Si te apuntas ahora, formas parte del origen.</p>
+    <p data-i18n="home.honest"><strong>Lo estamos construyendo en tiempo real.</strong> En 2025 acompañamos a los cuatro primeros. En 2026 abrimos la siguiente cohorte. Si te apuntas ahora, formas parte del origen.</p>
   </div>
 
   <div class="aud-bar">
-    <div class="aud-tab" onclick="go('emprendedores')"><span class="aud-ico">🚀</span><div><span class="aud-lbl">Soy un</span><span class="aud-ttl">Emprendedor</span></div><span class="aud-arr">→</span></div>
-    <div class="aud-tab" onclick="go('corporaciones')"><span class="aud-ico">🏢</span><div><span class="aud-lbl">Soy una</span><span class="aud-ttl">Corporación</span></div><span class="aud-arr">→</span></div>
-    <div class="aud-tab" onclick="go('inversores')"><span class="aud-ico">📊</span><div><span class="aud-lbl">Soy un</span><span class="aud-ttl">Fondo de inversión</span></div><span class="aud-arr">→</span></div>
-    <div class="aud-tab" onclick="go('viaje')"><span class="aud-ico">🗺️</span><div><span class="aud-lbl">Quiero ver</span><span class="aud-ttl">Nuestro viaje</span></div><span class="aud-arr">→</span></div>
-    <div class="aud-tab" onclick="go('nosotros')"><span class="aud-ico">👥</span><div><span class="aud-lbl">Quiero saber</span><span class="aud-ttl">Quiénes somos</span></div><span class="aud-arr">→</span></div>
+    <div class="aud-tab" onclick="go('emprendedores')"><span class="aud-ico">🚀</span><div><span class="aud-lbl" data-i18n="home.aud.emp.lbl">Soy un</span><span class="aud-ttl" data-i18n="home.aud.emp.ttl">Emprendedor</span></div><span class="aud-arr">→</span></div>
+    <div class="aud-tab" onclick="go('corporaciones')"><span class="aud-ico">🏢</span><div><span class="aud-lbl" data-i18n="home.aud.corp.lbl">Soy una</span><span class="aud-ttl" data-i18n="home.aud.corp.ttl">Corporación</span></div><span class="aud-arr">→</span></div>
+    <div class="aud-tab" onclick="go('inversores')"><span class="aud-ico">📊</span><div><span class="aud-lbl" data-i18n="home.aud.inv.lbl">Soy un</span><span class="aud-ttl" data-i18n="home.aud.inv.ttl">Fondo de inversión</span></div><span class="aud-arr">→</span></div>
+    <div class="aud-tab" onclick="go('viaje')"><span class="aud-ico">🗺️</span><div><span class="aud-lbl" data-i18n="home.aud.viaje.lbl">Quiero ver</span><span class="aud-ttl" data-i18n="home.aud.viaje.ttl">Nuestro viaje</span></div><span class="aud-arr">→</span></div>
+    <div class="aud-tab" onclick="go('nosotros')"><span class="aud-ico">👥</span><div><span class="aud-lbl" data-i18n="home.aud.nos.lbl">Quiero saber</span><span class="aud-ttl" data-i18n="home.aud.nos.ttl">Quiénes somos</span></div><span class="aud-arr">→</span></div>
   </div>
 
   <div class="stats">
-    <div class="stat"><span class="stat-n">4<span></span></span><span class="stat-label">Primeros emprendedores acompañados en 2025</span></div>
-    <div class="stat"><span class="stat-n">3<span>D</span></span><span class="stat-label">Biología · Cognición · Contexto</span></div>
-    <div class="stat"><span class="stat-n">4<span></span></span><span class="stat-label">Plazas disponibles — Reto 2026</span></div>
-    <div class="stat"><span class="stat-n">1<span>ª</span></span><span class="stat-label">Fundación de alto emprendimiento en España</span></div>
+    <div class="stat"><span class="stat-n">4<span></span></span><span class="stat-label" data-i18n="home.stat1">Primeros emprendedores acompañados en 2025</span></div>
+    <div class="stat"><span class="stat-n">3<span>D</span></span><span class="stat-label" data-i18n="home.stat2">Biología · Cognición · Contexto</span></div>
+    <div class="stat"><span class="stat-n">4<span></span></span><span class="stat-label" data-i18n="home.stat3">Plazas disponibles — Reto 2026</span></div>
+    <div class="stat"><span class="stat-n">1<span>ª</span></span><span class="stat-label" data-i18n="home.stat4">Fundación de alto emprendimiento en España</span></div>
   </div>
 
   <section class="sec" style="text-align:center">
-    <span class="eyebrow">Nuestra misión</span>
-    <h2 style="max-width:760px;margin:0 auto 18px">Entrenamiento integral para emprendedores.<br><em>Porque lo que se rompe no es la empresa — eres tú.</em></h2>
-    <p class="lead" style="max-width:600px;margin:0 auto 14px">Detectar a los mejores emprendedores y acompañarlos de forma integral — cognitiva, emocional y biológicamente — para que lleguen lejos sin romperse.</p>
-    <p class="lead" style="max-width:600px;margin:0 auto 32px">El plan financiero ya lo hacen todos. Nosotros trabajamos algo más importante: <strong style="color:#F2F4F9">cómo funciona tu sistema nervioso bajo presión, cómo ejecutas cuando estás al límite.</strong></p>
-    <button class="btn-teal-lg" onclick="go('nosotros')">Leer la carta fundacional →</button>
+    <span class="eyebrow" data-i18n="home.mission.eyebrow">Nuestra misión</span>
+    <h2 style="max-width:760px;margin:0 auto 18px" data-i18n="home.mission.h2">Entrenamiento integral para emprendedores.<br><em>Porque lo que se rompe no es la empresa — eres tú.</em></h2>
+    <p class="lead" style="max-width:600px;margin:0 auto 14px" data-i18n="home.mission.lead1">Detectar a los mejores emprendedores y acompañarlos de forma integral — cognitiva, emocional y biológicamente — para que lleguen lejos sin romperse.</p>
+    <p class="lead" style="max-width:600px;margin:0 auto 32px" data-i18n="home.mission.lead2">El plan financiero ya lo hacen todos. Nosotros trabajamos algo más importante: <strong style="color:#F2F4F9">cómo funciona tu sistema nervioso bajo presión, cómo ejecutas cuando estás al límite.</strong></p>
+    <button class="btn-teal-lg" onclick="go('nosotros')" data-i18n="home.mission.btn">Leer la carta fundacional →</button>
   </section>
 
   <div class="cta-strip">
     <div class="strip-item">
       <span class="strip-ico">🚀</span>
-      <span class="strip-who">Eres emprendedor o intraemprendedor</span>
-      <h3 class="strip-head">¿Sabes realmente de qué estás hecho?</h3>
-      <p class="strip-body">Analízate. Conoce tus límites reales. Solo cuatro plazas en el Reto 2026.</p>
-      <button class="strip-btn" onclick="go('emprendedores')">Descubre más <span>→</span></button>
+      <span class="strip-who" data-i18n="home.strip.emp.who">Eres emprendedor o intraemprendedor</span>
+      <h3 class="strip-head" data-i18n="home.strip.emp.h">¿Sabes realmente de qué estás hecho?</h3>
+      <p class="strip-body" data-i18n="home.strip.emp.body">Analízate. Conoce tus límites reales. Solo cuatro plazas en el Reto 2026.</p>
+      <button class="strip-btn" onclick="go('emprendedores')" data-i18n="home.strip.btn">Descubre más <span>→</span></button>
     </div>
     <div class="strip-item">
       <span class="strip-ico">🏢</span>
-      <span class="strip-who">Eres una corporación</span>
-      <h3 class="strip-head">¿Cómo le das estabilidad real a tu equipo de innovación?</h3>
-      <p class="strip-body">Detectamos el talento intraemprendedor que ya tienes dentro.</p>
-      <button class="strip-btn" onclick="go('corporaciones')">Descubre más <span>→</span></button>
+      <span class="strip-who" data-i18n="home.strip.corp.who">Eres una corporación</span>
+      <h3 class="strip-head" data-i18n="home.strip.corp.h">¿Cómo le das estabilidad real a tu equipo de innovación?</h3>
+      <p class="strip-body" data-i18n="home.strip.corp.body">Detectamos el talento intraemprendedor que ya tienes dentro.</p>
+      <button class="strip-btn" onclick="go('corporaciones')" data-i18n="home.strip.btn">Descubre más <span>→</span></button>
     </div>
     <div class="strip-item">
       <span class="strip-ico">📊</span>
-      <span class="strip-who">Eres un fondo de inversión</span>
-      <h3 class="strip-head">El mayor riesgo no es el mercado. Es el equipo.</h3>
-      <p class="strip-body">Evaluamos y acompañamos equipos fundadores antes de que se rompan.</p>
-      <button class="strip-btn" onclick="go('inversores')">Descubre más <span>→</span></button>
+      <span class="strip-who" data-i18n="home.strip.inv.who">Eres un fondo de inversión</span>
+      <h3 class="strip-head" data-i18n="home.strip.inv.h">El mayor riesgo no es el mercado. Es el equipo.</h3>
+      <p class="strip-body" data-i18n="home.strip.inv.body">Evaluamos y acompañamos equipos fundadores antes de que se rompan.</p>
+      <button class="strip-btn" onclick="go('inversores')" data-i18n="home.strip.btn">Descubre más <span>→</span></button>
     </div>
   </div>
 
   <section class="cta-sec">
     <div class="cta-inner">
-      <span class="eyebrow" style="text-align:center">Reto 2026 · Solo 4 plazas</span>
-      <h2>Si resuena contigo,<br>probablemente eres<br><em>de los nuestros.</em></h2>
-      <p class="cta-sub">Sin pitch. Sin presión. Solo honestidad y datos.</p>
+      <span class="eyebrow" style="text-align:center" data-i18n="home.cta.eyebrow">Reto 2026 · Solo 4 plazas</span>
+      <h2 data-i18n="home.cta.h2">Si resuena contigo,<br>probablemente eres<br><em>de los nuestros.</em></h2>
+      <p class="cta-sub" data-i18n="home.cta.sub">Sin pitch. Sin presión. Solo honestidad y datos.</p>
       <div class="cta-row">
         <input type="email" class="cta-email" placeholder="tu@email.com" id="home-email">
-        <button class="cta-go" onclick="go('aplica-reto-2026')">Aplica →</button>
+        <button class="cta-go" onclick="go('aplica-reto-2026')" data-i18n="home.cta.btn">Aplica →</button>
       </div>
-      <p class="cta-fine">Sin compromiso · Proceso confidencial</p>
+      <p class="cta-fine" data-i18n="home.cta.fine">Sin compromiso · Proceso confidencial</p>
     </div>
   </section>
 
@@ -551,9 +551,9 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
 
   <div class="page-hero">
     <div class="page-hero-inner">
-      <span class="eyebrow">Para emprendedores e intraemprendedores</span>
-      <h1>¿Sabes realmente<br>de qué estás<br><em>hecho?</em></h1>
-      <p class="lead">No te pedimos un pitch. No nos importa tu deck. Queremos entender tu biología, tu mente y tu historia. Porque <strong style="color:#F2F4F9">tú eres el proyecto.</strong></p>
+      <span class="eyebrow" data-i18n="emp.eyebrow">Para emprendedores e intraemprendedores</span>
+      <h1 data-i18n="emp.h1">¿Sabes realmente<br>de qué estás<br><em>hecho?</em></h1>
+      <p class="lead" data-i18n="emp.lead">No te pedimos un pitch. No nos importa tu deck. Queremos entender tu biología, tu mente y tu historia. Porque <strong style="color:#F2F4F9">tú eres el proyecto.</strong></p>
       <div class="hero-actions">
         <button class="btn-hero" onclick="go('aplica-reto-2026')">Aplica al Reto 2026 →</button>
         <button class="btn-outline" onclick="go('nosotros')">Quiénes somos</button>
@@ -562,13 +562,13 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
   </div>
 
   <section class="sec">
-    <span class="eyebrow">Cómo te analizamos</span>
-    <h2>Seleccionamos<br>como la <em>NASA.</em></h2>
-    <p class="lead" style="max-width:560px">La NASA no busca personas con ideas brillantes. Busca personas capaces de sostener misiones exigentes durante años. Nosotros hacemos lo mismo — con análisis psicométrico, perfilado de personalidad y evaluación integral.</p>
+    <span class="eyebrow" data-i18n="emp.analysis.eyebrow">Cómo te analizamos</span>
+    <h2 data-i18n="emp.analysis.h2">Seleccionamos<br>como la <em>NASA.</em></h2>
+    <p class="lead" style="max-width:560px" data-i18n="emp.analysis.lead">La NASA no busca personas con ideas brillantes. Busca personas capaces de sostener misiones exigentes durante años. Nosotros hacemos lo mismo — con análisis psicométrico, perfilado de personalidad y evaluación integral.</p>
     <div class="card-grid3">
-      <div class="crd"><span class="crd-ico">🧬</span><span class="crd-lbl t">01 · Hardware</span><div class="crd-title">Biológico</div><p class="crd-body">Análisis genómico, epigenético y bioquímico. Tu base biológica, tus límites reales y cómo responde tu cuerpo bajo presión sostenida durante años.</p></div>
-      <div class="crd"><span class="crd-ico">🧠</span><span class="crd-lbl t">02 · Software</span><div class="crd-title">Cognitivo y psicométrico</div><p class="crd-body">Mapa cognitivo, emocional y análisis de personalidad. Cómo decides bajo presión, cómo funciona tu equipo, cómo lideras cuando todo falla.</p></div>
-      <div class="crd"><span class="crd-ico">🧭</span><span class="crd-lbl t">03 · Trayectoria</span><div class="crd-title">Contexto y historia</div><p class="crd-body">Historia, propósito, golpes acumulados, circunstancias reales. No solo lo que has hecho — sino con qué lo has hecho y cómo te ha afectado.</p></div>
+      <div class="crd"><span class="crd-ico">🧬</span><span class="crd-lbl t" data-i18n="emp.card1.lbl">01 · Hardware</span><div class="crd-title" data-i18n="emp.card1.title">Biológico</div><p class="crd-body" data-i18n="emp.card1.body">Análisis genómico, epigenético y bioquímico. Tu base biológica, tus límites reales y cómo responde tu cuerpo bajo presión sostenida durante años.</p></div>
+      <div class="crd"><span class="crd-ico">🧠</span><span class="crd-lbl t" data-i18n="emp.card2.lbl">02 · Software</span><div class="crd-title" data-i18n="emp.card2.title">Cognitivo y psicométrico</div><p class="crd-body" data-i18n="emp.card2.body">Mapa cognitivo, emocional y análisis de personalidad. Cómo decides bajo presión, cómo funciona tu equipo, cómo lideras cuando todo falla.</p></div>
+      <div class="crd"><span class="crd-ico">🧭</span><span class="crd-lbl t" data-i18n="emp.card3.lbl">03 · Trayectoria</span><div class="crd-title" data-i18n="emp.card3.title">Contexto y historia</div><p class="crd-body" data-i18n="emp.card3.body">Historia, propósito, golpes acumulados, circunstancias reales. No solo lo que has hecho — sino con qué lo has hecho y cómo te ha afectado.</p></div>
     </div>
   </section>
 
@@ -576,20 +576,20 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
     <div class="two-grid">
       <div>
         <div class="chart-box">
-          <span class="chart-ey">Lo que nadie te cuenta sobre la edad</span>
-          <div class="bar-row"><span class="bar-age" style="color:#00DDB8">20</span><div class="bar-track"><div class="bar-fill fill-t" data-w="90%"></div></div><span class="bar-txt">Crees que lo comes todo</span></div>
-          <div class="bar-row"><span class="bar-age" style="color:#FF8C00">30</span><div class="bar-track"><div class="bar-fill fill-o" data-w="55%"></div></div><span class="bar-txt">Hostia, empieza a notar</span></div>
-          <div class="bar-row"><span class="bar-age" style="color:#FF4D62">40</span><div class="bar-track"><div class="bar-fill fill-r" data-w="18%"></div></div><span class="bar-txt">¿Ya te has roto alguna vez?</span></div>
-          <div class="bar-row"><span class="bar-age" style="color:#9B59B6">50</span><div class="bar-track"><div class="bar-fill" style="background:#9B59B6;width:0;transition:width 1.2s ease" data-w="72%"></div></div><span class="bar-txt">Si has tenido suerte, vuelves a emprender con toda la experiencia. Si no… opositando.</span></div>
-          <p class="chart-note">Sin preparación, el sistema te consume antes de que puedas dar lo mejor de ti. Y lo peor: piensas que el problema eres tú.</p>
+          <span class="chart-ey" data-i18n="emp.age.eyebrow">Lo que nadie te cuenta sobre la edad</span>
+          <div class="bar-row"><span class="bar-age" style="color:#00DDB8">20</span><div class="bar-track"><div class="bar-fill fill-t" data-w="90%"></div></div><span class="bar-txt" data-i18n="emp.age.20">Crees que lo comes todo</span></div>
+          <div class="bar-row"><span class="bar-age" style="color:#FF8C00">30</span><div class="bar-track"><div class="bar-fill fill-o" data-w="55%"></div></div><span class="bar-txt" data-i18n="emp.age.30">Hostia, empieza a notar</span></div>
+          <div class="bar-row"><span class="bar-age" style="color:#FF4D62">40</span><div class="bar-track"><div class="bar-fill fill-r" data-w="18%"></div></div><span class="bar-txt" data-i18n="emp.age.40">¿Ya te has roto alguna vez?</span></div>
+          <div class="bar-row"><span class="bar-age" style="color:#9B59B6">50</span><div class="bar-track"><div class="bar-fill" style="background:#9B59B6;width:0;transition:width 1.2s ease" data-w="72%"></div></div><span class="bar-txt" data-i18n="emp.age.50">Si has tenido suerte, vuelves a emprender con toda la experiencia. Si no… opositando.</span></div>
+          <p class="chart-note" data-i18n="emp.age.note">Sin preparación, el sistema te consume antes de que puedas dar lo mejor de ti. Y lo peor: piensas que el problema eres tú.</p>
         </div>
       </div>
       <div>
-        <span class="eyebrow">La realidad</span>
-        <h2>Trabajas más.<br>No mejor.<br>Y eso te <em>destroza.</em></h2>
-        <p class="lead">Un atleta de élite entrena 2–4 horas al día. El resto es <strong style="color:#F2F4F9">recuperación, análisis, estrategia, datos, descanso, mente.</strong> Todo medido.</p>
-        <p class="lead">Un emprendedor cree que trabajar 12 horas es correcto. Y cuando no lo hace, se siente culpable.</p>
-        <p class="lead"><strong style="color:#F2F4F9">No es valentía. Es mala preparación.</strong> Nosotros cambiamos eso con datos, estructura y el entorno adecuado.</p>
+        <span class="eyebrow" data-i18n="emp.reality.eyebrow">La realidad</span>
+        <h2 data-i18n="emp.reality.h2">Trabajas más.<br>No mejor.<br>Y eso te <em>destroza.</em></h2>
+        <p class="lead" data-i18n="emp.reality.lead1">Un atleta de élite entrena 2–4 horas al día. El resto es <strong style="color:#F2F4F9">recuperación, análisis, estrategia, datos, descanso, mente.</strong> Todo medido.</p>
+        <p class="lead" data-i18n="emp.reality.lead2">Un emprendedor cree que trabajar 12 horas es correcto. Y cuando no lo hace, se siente culpable.</p>
+        <p class="lead" data-i18n="emp.reality.lead3"><strong style="color:#F2F4F9">No es valentía. Es mala preparación.</strong> Nosotros cambiamos eso con datos, estructura y el entorno adecuado.</p>
       </div>
     </div>
   </section>
@@ -703,9 +703,9 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
 
   <div class="page-hero">
     <div class="page-hero-inner">
-      <span class="eyebrow">Para corporaciones y grandes empresas</span>
-      <h1>¿Tienes al lado<br>a la persona adecuada<br>para <em>innovar?</em></h1>
-      <p class="lead">¿Sería capaz de innovar sin un salario fijo todos los meses? ¿O innova tranquilo porque a fin de mes cobra igual?</p>
+      <span class="eyebrow" data-i18n="corp.eyebrow">Para corporaciones y grandes empresas</span>
+      <h1 data-i18n="corp.h1">¿Tienes al lado<br>a la persona adecuada<br>para <em>innovar?</em></h1>
+      <p class="lead" data-i18n="corp.lead">¿Sería capaz de innovar sin un salario fijo todos los meses? ¿O innova tranquilo porque a fin de mes cobra igual?</p>
       <div class="hero-actions">
         <a href="mailto:hola@fundacionaltoemprendimiento.org" class="btn-hero">Contacto →</a>
         <button class="btn-outline" onclick="go('nosotros')">Quiénes somos</button>
@@ -716,10 +716,10 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
   <section class="sec">
     <div class="two-grid">
       <div>
-        <span class="eyebrow">El reto que no resuelve nadie</span>
-        <h2>El talento intraemprendedor<br>existe.<br><em>Pero no lo ves.</em></h2>
-        <p class="lead">Está dentro de tu organización. Ha llegado hasta donde está empujando con uñas y dientes. Pero nadie lo ha analizado bien. Nadie sabe si puede sostener lo que se le va a pedir.</p>
-        <p class="lead"><strong style="color:#F2F4F9">Nosotros te ayudamos a saberlo — y a darle el entorno que necesita para rendir de verdad.</strong></p>
+        <span class="eyebrow" data-i18n="corp.talent.eyebrow">El reto que no resuelve nadie</span>
+        <h2 data-i18n="corp.talent.h2">El talento intraemprendedor<br>existe.<br><em>Pero no lo ves.</em></h2>
+        <p class="lead" data-i18n="corp.talent.lead1">Está dentro de tu organización. Ha llegado hasta donde está empujando con uñas y dientes. Pero nadie lo ha analizado bien. Nadie sabe si puede sostener lo que se le va a pedir.</p>
+        <p class="lead" data-i18n="corp.talent.lead2"><strong style="color:#F2F4F9">Nosotros te ayudamos a saberlo — y a darle el entorno que necesita para rendir de verdad.</strong></p>
         <div class="tag-cloud">
           <span class="tag-pill">Detección de talento interno</span>
           <span class="tag-pill">Spin-offs corporativos</span>
@@ -765,9 +765,9 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
 
   <div class="page-hero">
     <div class="page-hero-inner">
-      <span class="eyebrow">Para fondos de inversión</span>
-      <h1>El mayor riesgo<br>no es el mercado.<br><em>Es el equipo.</em></h1>
-      <p class="lead">Su resistencia real. Si van a aguantar tres años de presión extrema, incertidumbre y fracasos encadenados — o si se van a romper justo cuando más los necesitas.</p>
+      <span class="eyebrow" data-i18n="inv.eyebrow">Para fondos de inversión</span>
+      <h1 data-i18n="inv.h1">El mayor riesgo<br>no es el mercado.<br><em>Es el equipo.</em></h1>
+      <p class="lead" data-i18n="inv.lead">Su resistencia real. Si van a aguantar tres años de presión extrema, incertidumbre y fracasos encadenados — o si se van a romper justo cuando más los necesitas.</p>
       <div class="hero-actions">
         <a href="mailto:hola@fundacionaltoemprendimiento.org" class="btn-hero">Llámanos →</a>
         <button class="btn-outline" onclick="go('nosotros')">Quiénes somos</button>
@@ -776,8 +776,8 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
   </div>
 
   <section class="sec">
-    <span class="eyebrow">Lo que ofrecemos a inversores</span>
-    <h2>Due diligence<br><em>humana.</em></h2>
+    <span class="eyebrow" data-i18n="inv.dd.eyebrow">Lo que ofrecemos a inversores</span>
+    <h2 data-i18n="inv.dd.h2">Due diligence<br><em>humana.</em></h2>
     <div class="card-grid3">
       <div class="crd"><span class="crd-ico">🔬</span><div class="crd-title">Evaluación de fundadores</div><p class="crd-body">Análisis biológico, cognitivo y emocional de los fundadores en los que estás a punto de invertir. Sabemos si van a aguantar — antes de que pongas el dinero.</p></div>
       <div class="crd"><span class="crd-ico">🤝</span><div class="crd-title">Compatibilidad de equipos</div><p class="crd-body">Analizamos cómo funciona el equipo bajo presión extrema. Dinámica, comunicación, gestión del conflicto, toma de decisiones en entornos de incertidumbre.</p></div>
@@ -826,15 +826,15 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
 
   <div class="page-hero">
     <div class="page-hero-inner">
-      <span class="eyebrow">Nuestro viaje</span>
-      <h1>Lo estamos<br>construyendo en<br><em>tiempo real.</em></h1>
-      <p class="lead">No vendemos ninguna película. Esto es lo que hay, lo que está pasando, lo que viene y lo que soñamos. Con honestidad total.</p>
+      <span class="eyebrow" data-i18n="viaje.eyebrow">Nuestro viaje</span>
+      <h1 data-i18n="viaje.h1">Lo estamos<br>construyendo en<br><em>tiempo real.</em></h1>
+      <p class="lead" data-i18n="viaje.lead">No vendemos ninguna película. Esto es lo que hay, lo que está pasando, lo que viene y lo que soñamos. Con honestidad total.</p>
     </div>
   </div>
 
   <section class="sec">
-    <span class="eyebrow">Hoja de ruta</span>
-    <h2>De 2024<br>al <em>primer centro<br>del mundo.</em></h2>
+    <span class="eyebrow" data-i18n="viaje.roadmap.eyebrow">Hoja de ruta</span>
+    <h2 data-i18n="viaje.roadmap.h2">De 2024<br>al <em>primer centro<br>del mundo.</em></h2>
     <div class="roadmap">
       <div class="rstep">
         <div class="rstep-badge done">24</div>
@@ -885,8 +885,8 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
          alt="Ciudad de vacaciones de Perlora, Asturias — frente al Mar Cantábrico." class="perlora-img" loading="lazy" decoding="async">
     <div class="perlora-overlay">
       <div class="perlora-content">
-        <span class="eyebrow">El sueño de 2030</span>
-        <h2>Perlora.<br>La ciudad<br><em>emprendedora.</em></h2>
+        <span class="eyebrow" data-i18n="viaje.perlora.eyebrow">El sueño de 2030</span>
+        <h2 data-i18n="viaje.perlora.h2">Perlora.<br>La ciudad<br><em>emprendedora.</em></h2>
         <p class="lead">Perlora fue construida en 1954 en la costa asturiana del Mar Cantábrico como ciudad de vacaciones para trabajadores. 36 hectáreas frente al mar, 274 viviendas, comedores comunes, zonas verdes. Diseñada para que las personas descansaran, se recuperaran y dieran lo mejor de sí mismas.</p>
         <p class="lead">Lleva décadas abandonada. <strong style="color:#F2F4F9">Nosotros queremos devolverle la vida — con otro propósito.</strong></p>
         <p class="lead">100 emprendedores de alto rendimiento. Periodos de nueve meses. El programa más riguroso del mundo. En un entorno donde el mar, el espacio y la comunidad hacen parte del método.</p>
@@ -896,8 +896,8 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
   </div>
 
   <section class="sec-alt">
-    <span class="eyebrow">Investigación y publicaciones</span>
-    <h2>El sustrato<br><em>intelectual.</em></h2>
+    <span class="eyebrow" data-i18n="viaje.research.eyebrow">Investigación y publicaciones</span>
+    <h2 data-i18n="viaje.research.h2">El sustrato<br><em>intelectual.</em></h2>
     <p class="lead" style="max-width:520px">La metodología FAE se apoya en investigación real. Aquí iremos publicando los marcos y el pensamiento propio que fundamenta lo que hacemos.</p>
     <div class="research-grid">
       <div class="research-card"><span class="research-type t">Nota de investigación</span><div class="research-title">Teoría Polivagal y el emprendedor bajo presión</div><p class="research-body">Cómo el sistema nervioso autónomo determina la capacidad de decisión, regulación emocional y resiliencia en contextos de incertidumbre extrema.</p><span class="ph">[ En preparación ]</span></div>
@@ -914,15 +914,15 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
 
   <div class="page-hero">
     <div class="page-hero-inner">
-      <span class="eyebrow">Quiénes somos</span>
-      <h1>Dos emprendedores<br>y una psicóloga.<br><em>Sin adornos.</em></h1>
-      <p class="lead">Sin figuras decorativas. Sin advisors de perfil de LinkedIn. Las personas que están detrás de FAE son las que hacen el trabajo.</p>
+      <span class="eyebrow" data-i18n="nos.eyebrow">Quiénes somos</span>
+      <h1 data-i18n="nos.h1">Dos emprendedores<br>y una psicóloga.<br><em>Sin adornos.</em></h1>
+      <p class="lead" data-i18n="nos.lead">Sin figuras decorativas. Sin advisors de perfil de LinkedIn. Las personas que están detrás de FAE son las que hacen el trabajo.</p>
     </div>
   </div>
 
   <section class="sec">
-    <span class="eyebrow">Patronato</span>
-    <h2>Las personas<br>que hacen<br><em>el trabajo.</em></h2>
+    <span class="eyebrow" data-i18n="nos.patronato.eyebrow">Patronato</span>
+    <h2 data-i18n="nos.patronato.h2">Las personas<br>que hacen<br><em>el trabajo.</em></h2>
     <div class="person-grid3">
       <div class="person-card">
         <div class="person-avatar">DS</div>
@@ -946,9 +946,9 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
   </section>
 
   <section class="sec-alt">
-    <span class="eyebrow">Red de mentores</span>
-    <h2>Los que han<br><em>estado ahí.</em></h2>
-    <p class="lead" style="max-width:640px">Los emprendedores de FAE acceden a una red de mentores de primera línea. <strong style="color:#F2F4F9">Mentores reales. Personas que lo han hecho y que lo están haciendo.</strong> Que hablan desde la práctica y la experiencia, no desde la teoría.</p>
+    <span class="eyebrow" data-i18n="nos.mentores.eyebrow">Red de mentores</span>
+    <h2 data-i18n="nos.mentores.h2">Los que han<br><em>estado ahí.</em></h2>
+    <p class="lead" style="max-width:640px" data-i18n="nos.mentores.lead">Los emprendedores de FAE acceden a una red de mentores de primera línea. <strong style="color:#F2F4F9">Mentores reales. Personas que lo han hecho y que lo están haciendo.</strong> Que hablan desde la práctica y la experiencia, no desde la teoría.</p>
     <div class="card-grid4">
       <div class="person-card sm"><div class="person-avatar">JA</div><div class="person-name">Jesús Alonso</div><span class="person-role">Emprendedor en serie</span><p class="person-bio" style="color:#5C6880;font-style:italic">[ Bio pendiente ]</p></div>
       <div class="person-card sm"><div class="person-avatar">M2</div><div class="person-name">Mentor 2</div><span class="person-role">Inversor / VC</span><p class="person-bio" style="color:#5C6880;font-style:italic">[ Placeholder — próximamente ]</p></div>
@@ -958,8 +958,8 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
   </section>
 
   <section class="sec">
-    <span class="eyebrow">Partners tecnológicos y científicos</span>
-    <h2>Construyendo<br>las alianzas<br><em>adecuadas.</em></h2>
+    <span class="eyebrow" data-i18n="nos.partners.eyebrow">Partners tecnológicos y científicos</span>
+    <h2 data-i18n="nos.partners.h2">Construyendo<br>las alianzas<br><em>adecuadas.</em></h2>
     <div class="empresa-grid">
       <div class="empresa-card confirmed"><span class="empresa-tag t">Partner tecnológico · En conversación</span><div class="empresa-logo">Aura</div><p class="empresa-desc">Plataforma de análisis biológico y seguimiento de marcadores de salud para el programa de acompañamiento integral.</p></div>
       <div class="empresa-card confirmed"><span class="empresa-tag t">Wearable · Partner</span><div class="empresa-logo">Oura Ring</div><p class="empresa-desc">Anillo inteligente de seguimiento biológico — sueño, recuperación, variabilidad cardíaca y temperatura corporal. Integrado en el programa de monitorización continua de los emprendedores.</p></div>
@@ -971,16 +971,16 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
   </section>
 
   <section class="sec-alt" style="text-align:center">
-    <span class="eyebrow">Carta fundacional</span>
-    <h2>Por qué<br><em>existe FAE.</em></h2>
+    <span class="eyebrow" data-i18n="nos.carta.eyebrow">Carta fundacional</span>
+    <h2 data-i18n="nos.carta.h2">Por qué<br><em>existe FAE.</em></h2>
     <div class="carta-box">
       <div class="carta-text">
-        <p>Llevamos años viendo lo mismo. Personas extraordinarias que se rompen. No por falta de talento, ni de esfuerzo, ni de ideas. Se rompen porque nadie les enseñó a sostener lo que estaban construyendo.</p>
-        <p>Las aceleradoras trabajan el modelo de negocio. Los inversores trabajan las métricas. Los MBA trabajan la estrategia. Pero nadie trabaja al emprendedor. Nadie pregunta cómo funciona su sistema nervioso bajo presión crónica. Nadie analiza si su biología le permite aguantar décadas. Nadie mide cómo decide cuando está agotado.</p>
-        <p>FAE nace de esa convicción: que el mayor activo de cualquier proyecto no es el producto, ni el mercado, ni la financiación. Es la persona que lo sostiene todo. Y esa persona necesita preparación científica, integral y honesta.</p>
-        <p>No somos una aceleradora. No somos una escuela de negocios. Somos la primera fundación que trata al emprendedor como lo que es: un ser humano completo que opera en condiciones extremas durante años — y que merece el mismo rigor y el mismo cuidado que un atleta de élite.</p>
-        <p>Detectamos a los mejores. Los acompañamos de forma integral — cognitiva, emocional y biológicamente. Y trabajamos para que lleguen lejos sin romperse.</p>
-        <p>Porque lo que se rompe no es la empresa. Eres tú.</p>
+        <p data-i18n="nos.carta.p1">Llevamos años viendo lo mismo. Personas extraordinarias que se rompen. No por falta de talento, ni de esfuerzo, ni de ideas. Se rompen porque nadie les enseñó a sostener lo que estaban construyendo.</p>
+        <p data-i18n="nos.carta.p2">Las aceleradoras trabajan el modelo de negocio. Los inversores trabajan las métricas. Los MBA trabajan la estrategia. Pero nadie trabaja al emprendedor. Nadie pregunta cómo funciona su sistema nervioso bajo presión crónica. Nadie analiza si su biología le permite aguantar décadas. Nadie mide cómo decide cuando está agotado.</p>
+        <p data-i18n="nos.carta.p3">FAE nace de esa convicción: que el mayor activo de cualquier proyecto no es el producto, ni el mercado, ni la financiación. Es la persona que lo sostiene todo. Y esa persona necesita preparación científica, integral y honesta.</p>
+        <p data-i18n="nos.carta.p4">No somos una aceleradora. No somos una escuela de negocios. Somos la primera fundación que trata al emprendedor como lo que es: un ser humano completo que opera en condiciones extremas durante años — y que merece el mismo rigor y el mismo cuidado que un atleta de élite.</p>
+        <p data-i18n="nos.carta.p5">Detectamos a los mejores. Los acompañamos de forma integral — cognitiva, emocional y biológicamente. Y trabajamos para que lleguen lejos sin romperse.</p>
+        <p data-i18n="nos.carta.p6">Porque lo que se rompe no es la empresa. Eres tú.</p>
       </div>
       <div class="carta-firma">
         <div class="person-avatar" style="width:44px;height:44px;font-size:13px;margin:0;flex-shrink:0">DS</div>
@@ -999,20 +999,20 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
 
   <section class="hero" style="min-height:60vh">
     <div class="hero-content">
-      <div class="pill"><span class="dot"></span>Investigación activa · FAE 2025–2026</div>
-      <h1>Ciencia para<br>entender al<br><em>emprendedor.</em></h1>
-      <p class="lead">Desde la Fundación Alto Emprendimiento llevamos a cabo investigaciones sobre la biología, la cognición y el contexto del emprendedor. <strong style="color:#F2F4F9">Buscamos patrones reales, no teorías.</strong></p>
-      <p class="lead" style="font-size:15px">Si quieres participar como sujeto de estudio en alguno de nuestros experimentos, apuntate aquí.</p>
+      <div class="pill"><span class="dot"></span><span data-i18n="inv2.pill">Investigación activa · FAE 2025–2026</span></div>
+      <h1 data-i18n="inv2.h1">Ciencia para<br>entender al<br><em>emprendedor.</em></h1>
+      <p class="lead" data-i18n="inv2.lead1">Desde la Fundación Alto Emprendimiento llevamos a cabo investigaciones sobre la biología, la cognición y el contexto del emprendedor. <strong style="color:#F2F4F9">Buscamos patrones reales, no teorías.</strong></p>
+      <p class="lead" style="font-size:15px" data-i18n="inv2.lead2">Si quieres participar como sujeto de estudio en alguno de nuestros experimentos, apúntate aquí.</p>
       <div class="hero-actions">
-        <button class="btn-hero" onclick="go('participa-investigacion')">Quiero participar como sujeto de estudio →</button>
+        <button class="btn-hero" onclick="go('participa-investigacion')" data-i18n="inv2.btn">Quiero participar como sujeto de estudio →</button>
       </div>
     </div>
   </section>
 
   <section class="sec">
-    <span class="eyebrow">Working Papers</span>
-    <h2>Investigaciones<br><em>en curso.</em></h2>
-    <p class="lead" style="max-width:560px">Publicamos nuestros trabajos en abierto. Son documentos vivos — versiones preliminares que evolucionan con los datos.</p>
+    <span class="eyebrow" data-i18n="inv2.papers.eyebrow">Working Papers</span>
+    <h2 data-i18n="inv2.papers.h2">Investigaciones<br><em>en curso.</em></h2>
+    <p class="lead" style="max-width:560px" data-i18n="inv2.papers.lead">Publicamos nuestros trabajos en abierto. Son documentos vivos — versiones preliminares que evolucionan con los datos.</p>
 
     <div class="card-grid3" style="margin-top:32px">
       <div class="cohort-card" style="cursor:pointer" onclick="go('paper-regulacion')">
@@ -2068,11 +2068,12 @@ function toggleLang() {
   applyLang();
 }
 
-/* Restore saved language */
-(function() {
+/* Restore saved language on DOM ready */
+document.addEventListener('DOMContentLoaded', function() {
   var saved = localStorage.getItem('fae-lang');
-  if (saved && saved !== 'es') { LANG = saved; applyLang(); }
-})();
+  if (saved) { LANG = saved; }
+  applyLang();
+});
 
 /* ── BAR CHART ── */
 function animateBars() {
