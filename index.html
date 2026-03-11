@@ -435,7 +435,7 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
   <button class="close-btn" onclick="closeMobileMenu()">✕</button>
   <button class="logo" onclick="go('home');closeMobileMenu()">F<b>A</b>E</button>
   <button onclick="go('emprendedores');closeMobileMenu()">Emprendedores</button>
-  <button onclick="go('corporaciones');closeMobileMenu()">Retos</button>
+  <button onclick="go('retos');closeMobileMenu()">Retos</button>
   <button onclick="go('inversores');closeMobileMenu()">Inversión</button>
   <button onclick="go('nosotros');closeMobileMenu()">La Fundación</button>
   <button onclick="go('investigacion');closeMobileMenu()">Investigación</button>
@@ -495,10 +495,10 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
 
   <div class="aud-bar">
     <div class="aud-tab" onclick="go('emprendedores')"><span class="aud-ico">🚀</span><div><span class="aud-lbl" data-i18n="home.aud.emp.lbl">Soy un</span><span class="aud-ttl" data-i18n="home.aud.emp.ttl">Emprendedor</span></div><span class="aud-arr">→</span></div>
-    <div class="aud-tab" onclick="go('corporaciones')"><span class="aud-ico">🏢</span><div><span class="aud-lbl" data-i18n="home.aud.corp.lbl">Soy una</span><span class="aud-ttl" data-i18n="home.aud.corp.ttl">Corporación</span></div><span class="aud-arr">→</span></div>
+    <div class="aud-tab" onclick="go('retos')"><span class="aud-ico">🏢</span><div><span class="aud-lbl" data-i18n="home.aud.corp.lbl">Soy una</span><span class="aud-ttl" data-i18n="home.aud.corp.ttl">Corporación</span></div><span class="aud-arr">→</span></div>
     <div class="aud-tab" onclick="go('inversores')"><span class="aud-ico">📊</span><div><span class="aud-lbl" data-i18n="home.aud.inv.lbl">Soy un</span><span class="aud-ttl" data-i18n="home.aud.inv.ttl">Fondo de inversión</span></div><span class="aud-arr">→</span></div>
     <div class="aud-tab" onclick="go('viaje')"><span class="aud-ico">🗺️</span><div><span class="aud-lbl" data-i18n="home.aud.viaje.lbl">Quiero ver</span><span class="aud-ttl" data-i18n="home.aud.viaje.ttl">Nuestro viaje</span></div><span class="aud-arr">→</span></div>
-    <div class="aud-tab" onclick="go('nosotros')"><span class="aud-ico">👥</span><div><span class="aud-lbl" data-i18n="home.aud.nos.lbl">Quiero saber</span><span class="aud-ttl" data-i18n="home.aud.nos.ttl">Quiénes somos</span></div><span class="aud-arr">→</span></div>
+    <div class="aud-tab" onclick="go('nosotros')"><span class="aud-ico">👥</span><div><span class="aud-lbl" data-i18n="home.aud.nos.lbl">Quiero saber</span><span class="aud-ttl" data-i18n="home.aud.nos.ttl">La Fundación</span></div><span class="aud-arr">→</span></div>
   </div>
 
   <div class="stats">
@@ -529,7 +529,7 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
       <span class="strip-who" data-i18n="home.strip.corp.who">Eres una corporación</span>
       <h3 class="strip-head" data-i18n="home.strip.corp.h">¿Cómo le das estabilidad real a tu equipo de innovación?</h3>
       <p class="strip-body" data-i18n="home.strip.corp.body">Detectamos el talento intraemprendedor que ya tienes dentro.</p>
-      <button class="strip-btn" onclick="go('corporaciones')" data-i18n="home.strip.btn">Descubre más <span>→</span></button>
+      <button class="strip-btn" onclick="go('retos')" data-i18n="home.strip.btn">Descubre más <span>→</span></button>
     </div>
     <div class="strip-item">
       <span class="strip-ico">📊</span>
@@ -565,7 +565,7 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
       <p class="lead" data-i18n="emp.lead">No te pedimos un pitch. No nos importa tu deck. Queremos entender tu biología, tu mente y tu historia. Porque <strong style="color:#F2F4F9">tú eres el proyecto.</strong></p>
       <div class="hero-actions">
         <button class="btn-hero" onclick="go('aplica-reto-2026')">Aplica al Reto 2026 →</button>
-        <button class="btn-outline" onclick="go('nosotros')">Quiénes somos</button>
+        <button class="btn-outline" onclick="go('nosotros')">La Fundación</button>
       </div>
     </div>
   </div>
@@ -719,7 +719,7 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
       <p class="lead" data-i18n="corp.lead">¿Sería capaz de innovar sin un salario fijo todos los meses? ¿O innova tranquilo porque a fin de mes cobra igual?</p>
       <div class="hero-actions">
         <a href="mailto:hola@fundacionaltoemprendimiento.org" class="btn-hero">Contacto →</a>
-        <button class="btn-outline" onclick="go('nosotros')">Quiénes somos</button>
+        <button class="btn-outline" onclick="go('nosotros')">La Fundación</button>
       </div>
     </div>
   </div>
@@ -776,7 +776,7 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
       <p class="lead" data-i18n="inv.lead">Su resistencia real. Si van a aguantar tres años de presión extrema, incertidumbre y fracasos encadenados — o si se van a romper justo cuando más los necesitas.</p>
       <div class="hero-actions">
         <a href="mailto:hola@fundacionaltoemprendimiento.org" class="btn-hero">Llámanos →</a>
-        <button class="btn-outline" onclick="go('nosotros')">Quiénes somos</button>
+        <button class="btn-outline" onclick="go('nosotros')">La Fundación</button>
       </div>
     </div>
   </div>
@@ -2230,30 +2230,51 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
         <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perfil →</span>
       </div>
 
-      <!-- Placeholder 2 -->
-      <div style="background:var(--card2);border:1px dashed rgba(255,255,255,0.08);border-radius:20px;padding:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;min-height:280px">
-        <div style="width:80px;height:80px;border-radius:50%;background:rgba(255,255,255,0.04);border:1px dashed rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <!-- Pedro Serrahima -->
+      <div onclick="go('mentores-pedroserrahima')" style="background:var(--card2);border:1px solid var(--line);border-radius:20px;padding:28px;cursor:pointer;transition:border-color 0.2s,transform 0.2s;display:flex;flex-direction:column;gap:16px" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--line)';this.style.transform='none'">
+        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/pedro-serrahima_ccbf3ddc.jpg" alt="Pedro Serrahima" style="width:80px;height:80px;border-radius:50%;object-fit:cover;object-position:center 15%;border:2px solid rgba(0,221,184,0.25)">
+        <div>
+          <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px;color:#F2F4F9;margin-bottom:4px">Pedro Serrahima</div>
+          <span style="font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;color:#00DDB8">Fundador · Pepephone &amp; O2</span>
         </div>
-        <span style="font-size:12px;color:#5C6880;font-style:italic">Próximamente</span>
-      </div>
-
-      <!-- Placeholder 3 -->
-      <div style="background:var(--card2);border:1px dashed rgba(255,255,255,0.08);border-radius:20px;padding:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;min-height:280px">
-        <div style="width:80px;height:80px;border-radius:50%;background:rgba(255,255,255,0.04);border:1px dashed rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <p style="font-size:13px;color:#8A95A8;line-height:1.7;flex:1">Fundador de Pepephone y O2. Ex-Director de Experiencia de Cliente en Telefónica España. Referente en coherencia, transparencia y hacer las cosas bien de verdad.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          <span style="background:rgba(0,221,184,0.07);border:1px solid rgba(0,221,184,0.15);color:#00DDB8;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:20px">Cultura</span>
+          <span style="background:rgba(0,221,184,0.07);border:1px solid rgba(0,221,184,0.15);color:#00DDB8;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:20px">Marca</span>
+          <span style="background:rgba(0,221,184,0.07);border:1px solid rgba(0,221,184,0.15);color:#00DDB8;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:20px">Coherencia</span>
         </div>
-        <span style="font-size:12px;color:#5C6880;font-style:italic">Próximamente</span>
+        <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perfil →</span>
       </div>
-
-      <!-- Placeholder 4 -->
-      <div style="background:var(--card2);border:1px dashed rgba(255,255,255,0.08);border-radius:20px;padding:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;min-height:280px">
-        <div style="width:80px;height:80px;border-radius:50%;background:rgba(255,255,255,0.04);border:1px dashed rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <!-- Álvaro Hernández -->
+      <div onclick="go('mentores-alvarohernandez')" style="background:var(--card2);border:1px solid var(--line);border-radius:20px;padding:28px;cursor:pointer;transition:border-color 0.2s,transform 0.2s;display:flex;flex-direction:column;gap:16px" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--line)';this.style.transform='none'">
+        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/alvaro-hernandez-ongres_9f738964.jpg" alt="Álvaro Hernández" style="width:80px;height:80px;border-radius:50%;object-fit:cover;object-position:center 20%;border:2px solid rgba(0,221,184,0.25)">
+        <div>
+          <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px;color:#F2F4F9;margin-bottom:4px">Álvaro Hernández</div>
+          <span style="font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;color:#00DDB8">CEO · OnGres &amp; StackGres</span>
         </div>
-        <span style="font-size:12px;color:#5C6880;font-style:italic">Próximamente</span>
+        <p style="font-size:13px;color:#8A95A8;line-height:1.7;flex:1">Fundador y CEO de OnGres y creador de StackGres. Referente internacional en infraestructura cloud-native, bases de datos y open source. Cofinanciado por la UE.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          <span style="background:rgba(0,221,184,0.07);border:1px solid rgba(0,221,184,0.15);color:#00DDB8;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:20px">Tecnología</span>
+          <span style="background:rgba(0,221,184,0.07);border:1px solid rgba(0,221,184,0.15);color:#00DDB8;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:20px">Open Source</span>
+          <span style="background:rgba(0,221,184,0.07);border:1px solid rgba(0,221,184,0.15);color:#00DDB8;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:20px">Cloud</span>
+        </div>
+        <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perfil →</span>
       </div>
-
+      <!-- Daniel Suárez Sánchez -->
+      <div onclick="go('mentores-danielsuarez')" style="background:var(--card2);border:1px solid var(--line);border-radius:20px;padding:28px;cursor:pointer;transition:border-color 0.2s,transform 0.2s;display:flex;flex-direction:column;gap:16px" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--line)';this.style.transform='none'">
+        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/daniel-suarez-sanchez_a8701b65.png" alt="Daniel Suárez Sánchez" style="width:80px;height:80px;border-radius:50%;object-fit:cover;object-position:center 10%;border:2px solid rgba(0,221,184,0.25)">
+        <div>
+          <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px;color:#F2F4F9;margin-bottom:4px">Daniel Suárez Sánchez</div>
+          <span style="font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;color:#00DDB8">Fundador · FAE</span>
+        </div>
+        <p style="font-size:13px;color:#8A95A8;line-height:1.7;flex:1">Emprendedor en serie. Más de 12 empresas fundadas, 50+ corporaciones acompañadas. Seleccionado entre los 100 mejores emprendedores de España. Creador del modelo Econología.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          <span style="background:rgba(0,221,184,0.07);border:1px solid rgba(0,221,184,0.15);color:#00DDB8;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:20px">Visión</span>
+          <span style="background:rgba(0,221,184,0.07);border:1px solid rgba(0,221,184,0.15);color:#00DDB8;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:20px">Econología</span>
+          <span style="background:rgba(0,221,184,0.07);border:1px solid rgba(0,221,184,0.15);color:#00DDB8;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 9px;border-radius:20px">Inversión</span>
+        </div>
+        <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perfil →</span>
+      </div>
     </div>
 
     <!-- CTA -->
@@ -3129,7 +3150,7 @@ var T = {
     'home.aud.viaje.lbl': 'Quiero ver',
     'home.aud.viaje.ttl': 'Nuestro viaje',
     'home.aud.nos.lbl': 'Quiero saber',
-    'home.aud.nos.ttl': 'Quiénes somos',
+    'home.aud.nos.ttl': 'La Fundación',
     'home.stat1': 'Primeros emprendedores acompañados en 2025',
     'home.stat2': 'Biología · Cognición · Contexto',
     'home.stat3': 'Plazas disponibles — Reto 2026',
