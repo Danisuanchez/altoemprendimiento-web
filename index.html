@@ -2276,7 +2276,7 @@ function closeMobileMenu() {
 document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeMobileMenu(); });
 
 /* ── ROUTER ── */
-var PAGES = ['home', 'emprendedores', 'corporaciones', 'inversores', 'viaje', 'nosotros', 'investigacion', 'paper-regulacion', 'paper-triangulo', 'aplica-reto-2026', 'participa-investigacion', 'mentores', 'mentores-jesusalonsogallo', 'emprendedor-blanca', 'emprendedor-aitor', 'emprendedor-mario', 'emprendedor-beatriz', 'emprendedor-marcos', 'emprendedor-alvaro', 'perlora'];
+var PAGES = ['home', 'emprendedores', 'corporaciones', 'inversores', 'viaje', 'nosotros', 'investigacion', 'paper-regulacion', 'paper-triangulo', 'aplica-reto-2026', 'participa-investigacion', 'mentores', 'mentores-jesusalonsogallo', 'emprendedor-blanca', 'emprendedor-aitor', 'emprendedor-mario', 'emprendedor-beatriz', 'emprendedor-marcos', 'emprendedor-alvaro', 'emprendedor-tassilo', 'perlora'];
 var PAGE_TITLES = {
   home: 'FAE — Fundación Alto Emprendimiento | Acompañamiento integral para emprendedores',
   emprendedores: 'Para Emprendedores — Reto 2026 | FAE Fundación Alto Emprendimiento',
@@ -2296,7 +2296,8 @@ var PAGE_TITLES = {
   'emprendedor-mario': 'Mario de Zárraga — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
   'emprendedor-beatriz': 'Beatriz — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
   'emprendedor-marcos': 'Marcos Ladreda — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
-  'emprendedor-alvaro': 'Álvaro Tau — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
+  'emprendedor-alvaro': 'Álvaro Tau — Cohorte 2025 | FAE Fundación Alto Emprendimiento',,
+  'emprendedor-tassilo': 'Tassilo de la Torre — Emprendedor Cohorte 2026 | FAE Fundación Alto Emprendimiento'
   'perlora': 'Centro de Alto Emprendimiento — El sueño de FAE | Fundación de Alto Emprendimiento'
 };
 
@@ -2885,5 +2886,77 @@ if (mform) {
   });
 }
 </script>
+
+<!-- ═════════════════════════════════════════════ EMPRENDEDOR: TASSILO ═══ -->
+<div class="page" id="page-emprendedor-tassilo" style="display:none">
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <button onclick="go('emprendedores')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;display:flex;align-items:center;gap:6px">← Cohorte 2026</button>
+      <span class="eyebrow">Emprendedor · Cohorte 2026</span>
+      <h1 style="font-size:clamp(2.4rem,5vw,4rem);line-height:1.05;margin-bottom:16px">Tassilo<br>de la Torre<br><em>Schönborn-Wiesentheid.</em></h1>
+      <p class="lead" style="max-width:580px">Arquitecto con visión global. Fundador de <a href="https://antiga.es" target="_blank" rel="noopener" style="color:#00DDB8">antiga.es</a> — el primer escaparate digital de antigüedades para interioristas y profesionales del diseño.</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:24px">
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:#00DDB8;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Marketplace</span>
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:#00DDB8;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Diseño de interiores</span>
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:#00DDB8;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Arquitectura</span>
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:#00DDB8;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Antigüedades</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROPUESTA DE VALOR -->
+  <section class="sec">
+    <div style="background:rgba(0,221,184,0.04);border:1px solid rgba(0,221,184,0.15);border-radius:20px;padding:36px 40px;max-width:760px;margin:0 auto">
+      <span style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#00DDB8;display:block;margin-bottom:12px">El proyecto</span>
+      <p style="font-size:18px;color:#F2F4F9;line-height:1.7;font-family:'Bricolage Grotesque',sans-serif;font-weight:500">El mercado de antigüedades es opaco, fragmentado y analógico. Tassilo está construyendo el primer escaparate digital pensado para interioristas y profesionales del diseño — donde la pieza correcta llega al profesional correcto.</p>
+    </div>
+  </section>
+
+  <!-- BIO -->
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <span class="eyebrow">Trayectoria</span>
+    <h2 style="font-size:clamp(1.8rem,3.5vw,2.6rem);margin-bottom:32px">Arquitecto<br><em>con visión global.</em></h2>
+
+    <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:20px">Tassilo de la Torre Schönborn-Wiesentheid es arquitecto con una formación y visión internacional. Su experiencia en el mundo del diseño, la arquitectura y el patrimonio le ha dado una perspectiva única sobre el mercado de antigüedades: un sector con enorme valor cultural y económico que sigue funcionando de forma mayoritariamente analógica y local.</p>
+
+    <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:40px">Con <a href="https://antiga.es" target="_blank" rel="noopener" style="color:#00DDB8;text-decoration:none">antiga.es</a>, Tassilo está construyendo el primer marketplace especializado en antigüedades para interioristas y profesionales del diseño en España. No es un portal de segunda mano — es un escaparate curado, donde cada pieza tiene historia, contexto y el nivel de calidad que exige el mercado profesional del diseño de interiores.</p>
+
+    <!-- ÁREAS -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:48px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:22px">
+        <div style="font-size:22px;margin-bottom:10px">🏛</div>
+        <div style="font-size:13px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px">Marketplace digital</div>
+        <p style="font-size:13px;color:#8A95A8;line-height:1.7;margin:0">Plataforma especializada en antigüedades para interioristas y profesionales del diseño.</p>
+      </div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:22px">
+        <div style="font-size:22px;margin-bottom:10px">🎨</div>
+        <div style="font-size:13px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px">Diseño de interiores</div>
+        <p style="font-size:13px;color:#8A95A8;line-height:1.7;margin:0">Conectar piezas únicas con los profesionales que las necesitan para sus proyectos.</p>
+      </div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:22px">
+        <div style="font-size:22px;margin-bottom:10px">🌍</div>
+        <div style="font-size:13px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px">Visión global</div>
+        <p style="font-size:13px;color:#8A95A8;line-height:1.7;margin:0">Formación y experiencia internacional en arquitectura y patrimonio cultural.</p>
+      </div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:22px">
+        <div style="font-size:22px;margin-bottom:10px">🏺</div>
+        <div style="font-size:13px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px">Patrimonio</div>
+        <p style="font-size:13px;color:#8A95A8;line-height:1.7;margin:0">Digitalizar y democratizar el acceso a piezas de antigüedad con valor histórico y estético.</p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div style="background:var(--card2);border:1px solid var(--line);border-radius:20px;padding:36px;text-align:center">
+      <span class="eyebrow" style="display:block;margin-bottom:16px">Reto 2026 · Máximo 12 emprendedores</span>
+      <h3 style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:12px">Tassilo forma parte<br><em>del Reto 2026.</em></h3>
+      <p style="font-size:15px;color:#8A95A8;margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto">Si quieres aplicar al programa o conocer más sobre antiga.es, escríbenos.</p>
+      <button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button>
+      <p style="font-size:12px;color:#5C6880;margin-top:16px">Proceso confidencial · Sin compromiso</p>
+    </div>
+  </section>
+
+</div>
+
 </body>
 </html>
