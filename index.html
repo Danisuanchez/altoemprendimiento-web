@@ -1185,7 +1185,7 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
         <div style="padding:24px">
           <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#00DDB8;margin-bottom:8px">Mentor · Fundador · Presidente FAE</div>
           <h3 style="font-size:1.3rem;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;margin-bottom:8px">Daniel Suárez Sánchez</h3>
-          <p style="font-size:13px;color:#8A95A8;line-height:1.6;margin-bottom:16px">Emprendedor en serie, fundador de más de 12 empresas y autor del modelo de gestión econológico. Economista, MBA, CEO de Zapiens.ai y Presidente de la Fundación de Alto Emprendimiento.</p>
+          <p style="font-size:13px;color:#8A95A8;line-height:1.6;margin-bottom:16px">Emprendedor en serie, fundador de más de 12 empresas y autor del modelo de gestión econológico. Seleccionado entre los 100 mejores emprendedores de España. Business angel y autor del modelo de gestión econológico.</p>
           <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px">
             <span style="font-size:10px;background:rgba(0,221,184,0.08);border:1px solid rgba(0,221,184,0.15);color:#00DDB8;padding:3px 8px;border-radius:20px;font-weight:600">Visión</span>
             <span style="font-size:10px;background:rgba(255,255,255,0.05);color:#8A95A8;padding:3px 8px;border-radius:20px">Modelo de negocio</span>
@@ -2331,7 +2331,7 @@ function closeMobileMenu() {
 document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeMobileMenu(); });
 
 /* ── ROUTER ── */
-var PAGES = ['home', 'emprendedores', 'corporaciones', 'inversores', 'viaje', 'nosotros', 'investigacion', 'paper-regulacion', 'paper-triangulo', 'aplica-reto-2026', 'participa-investigacion', 'mentores', 'mentores-jesusalonsogallo', 'emprendedor-blanca', 'emprendedor-aitor', 'emprendedor-mario', 'emprendedor-beatriz', 'emprendedor-marcos', 'emprendedor-alvaro', 'emprendedor-tassilo', 'perlora'];
+var PAGES = ['home', 'emprendedores', 'corporaciones', 'inversores', 'viaje', 'nosotros', 'investigacion', 'paper-regulacion', 'paper-triangulo', 'aplica-reto-2026', 'participa-investigacion', 'mentores', 'mentores-jesusalonsogallo', 'mentores-pedroserrahima', 'mentores-alvarohernandez', 'mentores-danielsuarez', 'emprendedor-blanca', 'emprendedor-aitor', 'emprendedor-mario', 'emprendedor-beatriz', 'emprendedor-marcos', 'emprendedor-alvaro', 'emprendedor-tassilo', 'perlora', 'centro', 'sustrato', 'fundacion'];
 var PAGE_TITLES = {
   home: 'FAE — Fundación Alto Emprendimiento | Acompañamiento integral para emprendedores',
   emprendedores: 'Para Emprendedores — Reto 2026 | FAE Fundación Alto Emprendimiento',
@@ -2361,7 +2361,7 @@ function go(id) {
     var pg = document.getElementById('page-' + p);
     if (pg) { pg.classList.toggle('active', p === id); pg.style.display = p === id ? 'block' : 'none'; }
     var nl = document.getElementById('nav-' + p);
-    if (nl) nl.classList.toggle('active', p === id || (p === 'investigacion' && (id === 'paper-regulacion' || id === 'paper-triangulo' || id === 'participa-investigacion')) || (p === 'sustrato' && (id === 'paper-regulacion' || id === 'paper-triangulo')) || (p === 'emprendedores' && (id === 'aplica-reto-2026' || id.startsWith('emprendedor-'))) || (p === 'mentores' && id === 'mentores-jesusalonsogallo'));
+    if (nl) nl.classList.toggle('active', p === id || (p === 'investigacion' && (id === 'paper-regulacion' || id === 'paper-triangulo' || id === 'participa-investigacion')) || (p === 'sustrato' && (id === 'paper-regulacion' || id === 'paper-triangulo')) || (p === 'emprendedores' && (id === 'aplica-reto-2026' || id.startsWith('emprendedor-'))) || (p === 'mentores' && id.startsWith('mentores-')) || (p === 'mentores' && id === 'mentores-jesusalonsogallo'));
   });
   window.scrollTo({ top: 0, behavior: 'smooth' });
   document.title = PAGE_TITLES[id] || PAGE_TITLES.home;
@@ -3186,9 +3186,9 @@ if (mform) {
   <div class="page-hero">
     <div class="page-hero-inner">
       <button onclick="go('mentores')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;display:flex;align-items:center;gap:6px">← Red de mentores</button>
-      <span class="eyebrow">Fundador · Presidente · Mentor — Fundación de Alto Emprendimiento</span>
+      <span class="eyebrow">Mentor — Fundación de Alto Emprendimiento</span>
       <h1 style="font-size:clamp(2.4rem,5vw,4rem);line-height:1.05;margin-bottom:16px">Daniel<br>Suárez<br><em>Sánchez.</em></h1>
-      <p class="lead" style="max-width:600px">Emprendedor en serie. Fundador de más de 12 empresas. Autor del modelo de gestión econológico. Economista, MBA y CEO de <a href="https://zapiens.ai" target="_blank" rel="noopener" style="color:#00DDB8">Zapiens.ai</a>. Presidente de la Fundación de Alto Emprendimiento.</p>
+      <p class="lead" style="max-width:600px">Emprendedor en serie. Fundador de más de 12 empresas. Business angel. Seleccionado entre los 100 mejores emprendedores de España. Con experiencia trabajando con más de 50 grandes corporaciones.</p>
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:24px">
         <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:#00DDB8;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Visión</span>
         <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:#00DDB8;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Modelo de negocio</span>
@@ -3204,22 +3204,33 @@ if (mform) {
   <section class="sec">
     <div style="display:flex;gap:48px;align-items:flex-start;flex-wrap:wrap;max-width:900px;margin:0 auto">
       <div style="flex-shrink:0">
-        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/daniel-suarez-sanchez_a8701b65.png" alt="Daniel Suárez Sánchez — Fundador FAE"
+        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/daniel-suarez-sanchez_a8701b65.png" alt="Daniel Suárez Sánchez — Mentor FAE"
              style="width:260px;height:320px;object-fit:cover;object-position:center 10%;border-radius:16px;border:1px solid rgba(0,221,184,0.15);background:#0d1117">
       </div>
-      <div style="flex:1;min-width:280px">
-        <div style="background:rgba(0,221,184,0.04);border:1px solid rgba(0,221,184,0.15);border-radius:20px;padding:32px;margin-bottom:20px">
-          <span style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#00DDB8;display:block;margin-bottom:12px">El modelo econológico</span>
-          <p style="font-size:17px;color:#F2F4F9;line-height:1.7;font-family:'Bricolage Grotesque',sans-serif;font-weight:500">La econología es la gestión del conocimiento como activo estratégico de la empresa. No es tecnología por la tecnología — es saber qué sabe tu organización, dónde está ese conocimiento y cómo convertirlo en ventaja competitiva real.</p>
-        </div>
-        <div style="background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:24px">
-          <span style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#8A95A8;display:block;margin-bottom:12px">Roles actuales</span>
-          <div style="display:flex;flex-direction:column;gap:8px">
-            <div style="font-size:14px;color:#F2F4F9">🏛 Presidente — Fundación de Alto Emprendimiento</div>
-            <div style="font-size:14px;color:#F2F4F9">🤖 CEO — <a href="https://zapiens.ai" target="_blank" rel="noopener" style="color:#00DDB8">Zapiens.ai</a></div>
-            <div style="font-size:14px;color:#F2F4F9">🌿 Fundador — Freehouse (primera incubadora orgánica de España)</div>
-            <div style="font-size:14px;color:#F2F4F9">📐 Fundador — Asociación de Emprendimiento Rural Sostenible (AEERS)</div>
+      <div style="flex:1;min-width:280px;display:flex;flex-direction:column;gap:16px">
+        <div style="background:rgba(0,221,184,0.04);border:1px solid rgba(0,221,184,0.15);border-radius:20px;padding:28px">
+          <span style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#00DDB8;display:block;margin-bottom:12px">En números</span>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div>
+              <div style="font-size:2rem;font-weight:800;color:#00DDB8;font-family:'Bricolage Grotesque',sans-serif">+12</div>
+              <div style="font-size:12px;color:#8A95A8">empresas fundadas</div>
+            </div>
+            <div>
+              <div style="font-size:2rem;font-weight:800;color:#00DDB8;font-family:'Bricolage Grotesque',sans-serif">+50</div>
+              <div style="font-size:12px;color:#8A95A8">grandes corporaciones</div>
+            </div>
+            <div>
+              <div style="font-size:1.3rem;font-weight:800;color:#00DDB8;font-family:'Bricolage Grotesque',sans-serif">Top 100</div>
+              <div style="font-size:12px;color:#8A95A8">emprendedores de España</div>
+            </div>
+            <div>
+              <div style="font-size:1.3rem;font-weight:800;color:#00DDB8;font-family:'Bricolage Grotesque',sans-serif">+20 años</div>
+              <div style="font-size:12px;color:#8A95A8">emprendiendo</div>
+            </div>
           </div>
+        </div>
+        <div style="background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:20px">
+          <a href="https://danisuanchez.es" target="_blank" rel="noopener" style="color:#00DDB8;font-size:14px;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:8px">🌐 danisuanchez.es →</a>
         </div>
       </div>
     </div>
@@ -3230,13 +3241,13 @@ if (mform) {
     <span class="eyebrow">Trayectoria</span>
     <h2 style="font-size:clamp(1.8rem,3.5vw,2.6rem);margin-bottom:32px">Más de 12 empresas.<br><em>Una sola filosofía.</em></h2>
 
-    <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:20px">Daniel Suárez Sánchez es economista, MBA y emprendedor en serie con más de dos décadas creando empresas desde Asturias y con proyección global. Ha fundado más de 12 empresas en sectores tan distintos como la tecnología, la educación, el emprendimiento rural y la inteligencia artificial — siempre desde la misma convicción: que el conocimiento bien gestionado es la ventaja competitiva más duradera que existe.</p>
+    <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:20px">Daniel Suárez Sánchez es emprendedor en serie con más de dos décadas construyendo empresas desde Asturias. Ha fundado más de 12 compañías en sectores distintos, siempre desde la misma convicción: que el conocimiento bien gestionado es la ventaja competitiva más duradera que existe.</p>
 
-    <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:20px">Es el autor del <strong style="color:#F2F4F9">modelo de gestión econológico</strong>, un marco propio que integra economía, tecnología y gestión del conocimiento para ayudar a las organizaciones a aprender más rápido, tomar mejores decisiones y crecer de forma sostenible. Este modelo es la base de <strong style="color:#F2F4F9">Zapiens.ai</strong>, plataforma de aprendizaje y gestión del conocimiento utilizada por grandes empresas en España y Latinoamérica.</p>
+    <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:20px">Como business angel ha invertido en startups en fase temprana y ha trabajado con más de 50 grandes corporaciones, ayudándoles a innovar, aprender más rápido y tomar mejores decisiones. Su experiencia abarca todo el ciclo del emprendimiento: desde la idea hasta la venta, pasando por la financiación, el escalado y la internacionalización.</p>
 
-    <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:20px">Fundó <strong style="color:#F2F4F9">Freehouse</strong>, la primera incubadora orgánica de España, donde creó e invirtió en más de 12 empresas. Desde el corazón del Parque Natural de Somiedo (Asturias), demuestra que se puede construir tecnología de impacto global desde cualquier lugar — y que el entorno no es un límite sino una ventaja.</p>
+    <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:20px">Es el autor del <strong style="color:#F2F4F9">modelo de gestión econológico</strong> — un marco propio que integra economía, tecnología y gestión del conocimiento para que las organizaciones aprendan más rápido que la competencia. Ha sido seleccionado como uno de los <strong style="color:#F2F4F9">100 mejores emprendedores de España</strong>.</p>
 
-    <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:40px">Como Presidente de la <strong style="color:#F2F4F9">Fundación de Alto Emprendimiento</strong>, Daniel aporta al programa algo que no se puede enseñar en ningún aula: la perspectiva de alguien que ha construido, fracasado, aprendido y vuelto a construir más de una docena de veces — y que ha convertido esa experiencia en un modelo replicable.</p>
+    <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:40px">En la Fundación de Alto Emprendimiento aporta algo que no se puede enseñar en ningún aula: la perspectiva de alguien que ha construido, fracasado, aprendido y vuelto a construir más de una docena de veces — y que ha convertido esa experiencia en un modelo replicable.</p>
 
     <!-- ÁREAS -->
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:48px">
@@ -3280,5 +3291,3 @@ if (mform) {
 
 </div>
 
-</body>
-</html>
