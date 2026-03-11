@@ -684,9 +684,9 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
       <p class="lead" style="max-width:500px;margin-bottom:0">La cohorte está abierta. Los encontramos en cualquier sitio — en un evento, porque alguien habló de ti. O puedes escribirnos tú.</p>
     </div>
     <div class="card-grid3" style="margin-top:28px">
-      <div class="cohort-card"><div class="cohort-photo">🌵<span class="cohort-badge">Seleccionada</span></div><div class="cohort-body"><div class="cohort-name">Carla Pérez</div><span class="cohort-role">Fundadora · Admex</span><p class="cohort-bio">[ Bio pendiente — proyecto en el sector... ]</p></div></div>
-      <div class="cohort-card"><div class="cohort-photo">📱<span class="cohort-badge">Seleccionada</span></div><div class="cohort-body"><div class="cohort-name">Yolanda Díaz</div><span class="cohort-role">Fundadora · SDR Platform</span><p class="cohort-bio">Plataforma de SDRs online — digitalización de agentes de ventas. [ Bio pendiente ]</p></div></div>
-      <div class="cohort-card"><div class="cohort-photo">🌿<span class="cohort-badge">Seleccionada</span></div><div class="cohort-body"><div class="cohort-name">Alicia Ortiga</div><span class="cohort-role">Fundadora · Biotextiles</span><p class="cohort-bio">Biotextiles de ortiga — materiales textiles sostenibles de base natural. [ Bio pendiente ]</p></div></div>
+      <div class="cohort-card" onclick="go('emprendedor-tassilo')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''"><div class="cohort-photo" style="overflow:hidden;position:relative"><span style="font-size:2.5rem">🏛️</span><span class="cohort-badge">Seleccionado</span></div><div class="cohort-body"><div class="cohort-name">Tassilo de la Torre</div><span class="cohort-role">Fundador · Antiga</span><p class="cohort-bio">Arquitecto. Primer escaparate digital de antigüedades para interioristas y profesionales del diseño.</p><span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perfil →</span></div></div>
+      <div class="cohort-card" style="border-style:dashed;opacity:0.6"><div class="cohort-photo"><span style="font-size:2rem;opacity:0.3">?</span></div><div class="cohort-body"><div class="cohort-name" style="color:#5C6880">Próximamente</div><span class="cohort-role" style="color:#5C6880">En selección</span><p class="cohort-bio" style="color:#5C6880">La cohorte 2026 sigue abierta. Máximo 12 emprendedores.</p></div></div>
+      <div class="cohort-card" style="border-style:dashed;opacity:0.6"><div class="cohort-photo"><span style="font-size:2rem;opacity:0.3">?</span></div><div class="cohort-body"><div class="cohort-name" style="color:#5C6880">Próximamente</div><span class="cohort-role" style="color:#5C6880">En selección</span><p class="cohort-bio" style="color:#5C6880">¿Eres tú? Escríbenos.</p></div></div>
     </div>
     <div class="plaza-notice">
       <span style="font-size:22px">🔍</span>
@@ -724,47 +724,22 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
     </div>
   </div>
 
-  <section class="sec">
-    <div class="two-grid">
-      <div>
-        <span class="eyebrow" data-i18n="corp.talent.eyebrow">El reto que no resuelve nadie</span>
-        <h2 data-i18n="corp.talent.h2">El talento intraemprendedor<br>existe.<br><em>Pero no lo ves.</em></h2>
-        <p class="lead" data-i18n="corp.talent.lead1">Está dentro de tu organización. Ha llegado hasta donde está empujando con uñas y dientes. Pero nadie lo ha analizado bien. Nadie sabe si puede sostener lo que se le va a pedir.</p>
-        <p class="lead" data-i18n="corp.talent.lead2"><strong style="color:#F2F4F9">Nosotros te ayudamos a saberlo — y a darle el entorno que necesita para rendir de verdad.</strong></p>
-        <div class="tag-cloud">
-          <span class="tag-pill">Detección de talento interno</span>
-          <span class="tag-pill">Spin-offs corporativos</span>
-          <span class="tag-pill">Laboratorios de innovación</span>
-          <span class="tag-pill">Equipos de frontera</span>
-          <span class="tag-pill">Scouting externo</span>
-        </div>
-      </div>
-      <div class="crd-big">
-        <div class="crd-big-num">02</div>
-        <h3 class="crd-big-title">Conecta con los emprendedores que tu organización necesita.</h3>
-        <p class="crd-big-body">Detectamos, analizamos y conectamos talento emprendedor real — dentro y fuera de tu empresa. Perfiles validados para proyectos piloto, spin-offs e innovación que no sea solo teatro corporativo.</p>
-        <a href="mailto:hola@fundacionaltoemprendimiento.org" class="btn-teal-lg">Queremos conocerte →</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec-alt">
-    <span class="eyebrow">Empresas con las que trabajamos</span>
-    <h2>Las organizaciones<br>que apuestan por<br><em>talento real.</em></h2>
-    <div class="empresa-grid">
-      <div class="empresa-card confirmed"><span class="empresa-tag t">Empresa partner · Activo</span><div class="empresa-logo">ArcelorMittal</div><p class="empresa-desc">Conectamos con talento intraemprendedor dentro de grandes organizaciones industriales. FAE trabaja con equipos de innovación que necesitan más que un workshop de design thinking.</p></div>
-      <div class="empresa-card confirmed"><span class="empresa-tag t">Company builder · Activo</span><div class="empresa-logo">Open Disrupt Ventures</div><p class="empresa-desc">Company builder que trabaja con nosotros en scouting y análisis de perfiles emprendedores para sus proyectos de construcción de empresa.</p></div>
-      <div class="empresa-card" style="cursor:pointer;border-style:dashed" onclick="window.location='mailto:hola@fundacionaltoemprendimiento.org'"><span class="empresa-tag">¿Quieres ser partner?</span><div class="empresa-logo" style="color:#00DDB8">+ Tu empresa</div><p class="empresa-desc">Si crees en lo que hacemos y trabajas con equipos de innovación, escríbenos. <span style="color:#00DDB8">hola@fundacionaltoemprendimiento.org</span></p></div>
+  <section class="sec" style="max-width:760px;margin:0 auto;text-align:center">
+    <span class="eyebrow">Para corporaciones y grandes empresas</span>
+    <h2 style="font-size:clamp(2rem,4vw,3rem);margin-bottom:28px">¿Quieres conocer<br>a los mejores<br><em>emprendedores?</em></h2>
+    <p class="lead" style="max-width:580px;margin:0 auto 20px">Si estás interesado en conocer a los mejores emprendedores o tienes un reto — un challenge — al que quieras que desde la Fundación ataquemos, ponte en contacto con nosotros.</p>
+    <div style="margin-top:40px">
+      <a href="mailto:dani@danisuanchez.es" class="btn-hero" style="text-decoration:none">Escríbenos →</a>
     </div>
   </section>
 
   <section class="cta-sec">
     <div class="cta-inner">
       <span class="eyebrow" style="text-align:center">Para corporaciones</span>
-      <h2>¿Cómo le das<br>estabilidad real a tu<br><em>equipo de innovación?</em></h2>
-      <p class="cta-sub">Cuéntanos tu caso. Sin presentaciones. Sin intermediarios.</p>
+      <h2>Un reto real.<br><em>Emprendedores reales.</em></h2>
+      <p class="cta-sub">Sin presentaciones. Sin intermediarios. Solo honestidad.</p>
       <div style="text-align:center;margin-top:16px">
-        <a href="mailto:hola@fundacionaltoemprendimiento.org" class="btn-teal-lg">hola@fundacionaltoemprendimiento.org →</a>
+        <a href="mailto:dani@danisuanchez.es" class="btn-teal-lg">Escríbenos →</a>
       </div>
     </div>
   </section>
@@ -863,7 +838,7 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
         <div class="rstep-badge future">26</div>
         <div class="rstep-body">
           <span class="spill next"><span class="sdot"></span>Próximamente</span>
-          <div class="rstep-title">Reto 2026 — Segunda cohorte · Máximo 12 emprendedores</div>
+          <div class="rstep-title">Reto 2026 — Segunda cohorte · Formato mixto · Máximo 12 emprendedores</div>
           <p>Selección de hasta 12 emprendedores. Programa de acompañamiento mixto de mínimo seis meses. Metodología más consolidada, primeros partners tecnológicos integrados. Kickoff presencial en Asturias. Entre los seleccionados hasta ahora: Carla Pérez (Admex), Yolanda Díaz (SDR Platform) y Alicia Ortiga (Biotextiles).</p>
         </div>
       </div>
@@ -952,7 +927,7 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
         <div class="rstep-badge future">26</div>
         <div class="rstep-body">
           <span class="spill next"><span class="sdot"></span>Próximamente</span>
-          <div class="rstep-title">Reto 2026 — Segunda cohorte · Máximo 12 emprendedores</div>
+          <div class="rstep-title">Reto 2026 — Segunda cohorte · Formato mixto · Máximo 12 emprendedores</div>
           <p>Selección de hasta 12 emprendedores. Programa de acompañamiento mixto de mínimo seis meses. Metodología más consolidada, primeros partners tecnológicos integrados. Kickoff presencial en Asturias. Entre los seleccionados hasta ahora: Carla Pérez (Admex), Yolanda Díaz (SDR Platform) y Alicia Ortiga (Biotextiles).</p>
         </div>
       </div>
