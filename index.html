@@ -422,6 +422,8 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
     <li><button id="nav-nosotros" onclick="go('nosotros')">Quiénes somos</button></li>
     <li><button id="nav-investigacion" onclick="go('investigacion')">Investigación</button></li>
     <li><button id="nav-mentores" onclick="go('mentores')">Mentores</button></li>
+    <li><button id="nav-perlora" onclick="go('perlora')">Perlora</button></li>
+    <li><button id="nav-sustrato" onclick="go('sustrato')">Sustrato</button></li>
     <li><button class="btn-nav" onclick="go('aplica-reto-2026')" data-i18n="nav.apply">Aplica al Reto 2026</button></li>
     <li><button id="lang-btn" onclick="toggleLang()" style="background:none;border:1px solid rgba(255,255,255,0.15);color:#8A95A8;font-size:11px;font-weight:700;letter-spacing:0.08em;padding:5px 10px;border-radius:6px;cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='#00DDB8';this.style.color='#00DDB8'" onmouseout="this.style.borderColor='rgba(255,255,255,0.15)';this.style.color='#8A95A8'">EN</button></li>
   </ul>
@@ -441,6 +443,8 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
   <button onclick="go('nosotros');closeMobileMenu()">Quiénes somos</button>
   <button onclick="go('investigacion');closeMobileMenu()">Investigación</button>
   <button onclick="go('mentores');closeMobileMenu()">Mentores</button>
+  <button onclick="go('perlora');closeMobileMenu()">Perlora</button>
+  <button onclick="go('sustrato');closeMobileMenu()">Sustrato intelectual</button>
   <button class="btn-apply" onclick="go('aplica-reto-2026');closeMobileMenu()" data-i18n="nav.apply">Aplica al Reto 2026</button>
   <button onclick="toggleLang();closeMobileMenu()" style="margin-top:8px;background:none;border:1px solid rgba(255,255,255,0.15);color:#8A95A8;font-size:12px;font-weight:700;letter-spacing:0.08em;padding:8px 16px;border-radius:8px;cursor:pointer" id="lang-btn-mobile">EN — Switch to English</button>
 </div>
@@ -1879,6 +1883,205 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
 
 </div>
 
+
+<!-- ═══════════════════════════════════════════════ PERLORA ═══ -->
+<div class="page" id="page-perlora" style="display:none">
+
+  <!-- HERO con foto de fondo -->
+  <div style="position:relative;min-height:70vh;display:flex;align-items:flex-end;overflow:hidden">
+    <div style="position:absolute;inset:0;background-image:url('https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/perlora-playa1_ba9a7617.jpg');background-size:cover;background-position:center 40%;filter:brightness(0.45)"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(7,9,14,1) 0%, rgba(7,9,14,0.3) 60%, transparent 100%)"></div>
+    <div style="position:relative;z-index:2;padding:80px 52px 64px;max-width:900px">
+      <span class="eyebrow" style="margin-bottom:16px">Asturias · Costa Verde · Kickoff presencial</span>
+      <h1 style="font-size:clamp(2.8rem,6vw,5rem);line-height:1.05;margin-bottom:20px">El suelo de<br><em style="color:var(--teal)">Perlora.</em></h1>
+      <p class="lead" style="max-width:600px;color:#C8D0E0">Donde el emprendimiento se trabaja en persona. El punto de encuentro físico de la Fundación de Alto Emprendimiento, en la costa asturiana.</p>
+    </div>
+  </div>
+
+  <!-- VISIÓN -->
+  <section class="sec">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center" class="profile-grid">
+      <div>
+        <span class="eyebrow" style="margin-bottom:16px">Por qué Perlora</span>
+        <h2 style="font-size:clamp(1.8rem,3vw,2.8rem);margin-bottom:24px">Un lugar que <em>te obliga a pensar.</em></h2>
+        <p style="color:#9BA8BF;line-height:1.8;font-size:15px;margin-bottom:16px">Perlora no es un coworking. No es una aceleradora con mesas de ping-pong. Es un lugar en la costa norte de España donde el ruido del mundo se apaga y lo único que importa es construir con claridad.</p>
+        <p style="color:#9BA8BF;line-height:1.8;font-size:15px;margin-bottom:16px">La naturaleza, el mar y el silencio no son el decorado — son parte de la metodología. Cuando el sistema nervioso se regula, la cognición mejora. Cuando la cognición mejora, las decisiones son mejores.</p>
+        <p style="color:#9BA8BF;line-height:1.8;font-size:15px">Aquí es donde los emprendedores de FAE se encuentran cara a cara, trabajan en profundidad y construyen los vínculos que sostienen proyectos a largo plazo.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/perlora-playa2_93cecc04.jpg" alt="Perlora costa" style="width:100%;height:200px;object-fit:cover;border-radius:12px">
+        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/perlora-aerea_4d78906a.jpg" alt="Perlora aérea" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-top:24px">
+        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/perlora-senda_24af4bf1.jpg" alt="Perlora senda" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-top:-24px">
+        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/perlora-playa1_ba9a7617.jpg" alt="Perlora playa" style="width:100%;height:200px;object-fit:cover;border-radius:12px">
+      </div>
+    </div>
+  </section>
+
+  <!-- LOS DOS PROGRAMAS -->
+  <section class="sec-alt">
+    <div style="text-align:center;margin-bottom:56px">
+      <span class="eyebrow">Programas presenciales</span>
+      <h2 style="font-size:clamp(1.8rem,3vw,2.6rem)">Dos formatos.<br>Un mismo <em>nivel de exigencia.</em></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:960px;margin:0 auto" class="profile-grid">
+
+      <!-- Programa 3 meses -->
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:20px;padding:40px;position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),transparent)"></div>
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px">
+          <div style="width:44px;height:44px;border-radius:50%;background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);display:flex;align-items:center;justify-content:center;font-size:20px">⚡</div>
+          <div>
+            <div style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--teal)">Intensivo</div>
+            <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px;color:#F2F4F9">Programa de 3 meses</div>
+          </div>
+        </div>
+        <p style="color:#9BA8BF;line-height:1.7;font-size:14px;margin-bottom:24px">Inmersión intensiva en Perlora. Tres meses de trabajo profundo en persona, con sesiones de análisis biológico, cognitivo y de contexto. Para emprendedores que necesitan un salto de claridad rápido y estructurado.</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:#8A95A8"><span style="color:var(--teal);font-weight:700;flex-shrink:0">→</span>Análisis de perfil completo (biológico, cognitivo, social)</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:#8A95A8"><span style="color:var(--teal);font-weight:700;flex-shrink:0">→</span>Sesiones semanales presenciales en Perlora</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:#8A95A8"><span style="color:var(--teal);font-weight:700;flex-shrink:0">→</span>Acceso a red de mentores y partners tecnológicos</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:#8A95A8"><span style="color:var(--teal);font-weight:700;flex-shrink:0">→</span>Grupo reducido — máximo 12 emprendedores</li>
+        </ul>
+      </div>
+
+      <!-- Programa 6 meses -->
+      <div style="background:var(--card2);border:1px solid rgba(0,221,184,0.2);border-radius:20px;padding:40px;position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--teal)"></div>
+        <div style="position:absolute;top:16px;right:16px;background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:var(--teal);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:4px 10px;border-radius:20px">Programa principal</div>
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px">
+          <div style="width:44px;height:44px;border-radius:50%;background:rgba(0,221,184,0.15);border:1px solid rgba(0,221,184,0.3);display:flex;align-items:center;justify-content:center;font-size:20px">🏔</div>
+          <div>
+            <div style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--teal)">Alto Emprendimiento</div>
+            <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px;color:#F2F4F9">Programa de 6 meses</div>
+          </div>
+        </div>
+        <p style="color:#9BA8BF;line-height:1.7;font-size:14px;margin-bottom:24px">El programa completo de la Fundación. Seis meses de acompañamiento mixto — presencial en Perlora y online — con análisis continuo, mentoría estratégica y acceso a la red de inversores y corporaciones partner.</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:#8A95A8"><span style="color:var(--teal);font-weight:700;flex-shrink:0">→</span>Todo lo del programa intensivo, más 3 meses adicionales</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:#8A95A8"><span style="color:var(--teal);font-weight:700;flex-shrink:0">→</span>Kickoff presencial en Perlora (primavera)</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:#8A95A8"><span style="color:var(--teal);font-weight:700;flex-shrink:0">→</span>Seguimiento online semanal entre sesiones presenciales</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:#8A95A8"><span style="color:var(--teal);font-weight:700;flex-shrink:0">→</span>Acceso a red de inversores y corporaciones FAE</li>
+          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:#8A95A8"><span style="color:var(--teal);font-weight:700;flex-shrink:0">→</span>Máximo 12 emprendedores por cohorte</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATOS DEL LUGAR -->
+  <section class="sec">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:800px;margin:0 auto 56px;text-align:center">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:28px 20px">
+        <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:2.2rem;font-weight:900;color:var(--teal);margin-bottom:8px">Asturias</div>
+        <div style="font-size:12px;color:#8A95A8;text-transform:uppercase;letter-spacing:0.06em">Costa Verde · Norte de España</div>
+      </div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:28px 20px">
+        <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:2.2rem;font-weight:900;color:var(--teal);margin-bottom:8px">2×/año</div>
+        <div style="font-size:12px;color:#8A95A8;text-transform:uppercase;letter-spacing:0.06em">Kickoffs presenciales</div>
+      </div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:28px 20px">
+        <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:2.2rem;font-weight:900;color:var(--teal);margin-bottom:8px">Máx. 12</div>
+        <div style="font-size:12px;color:#8A95A8;text-transform:uppercase;letter-spacing:0.06em">Emprendedores por cohorte</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="sec-alt" style="text-align:center">
+    <span class="eyebrow">Reto 2026 · Kickoff en Perlora</span>
+    <h2 style="font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:16px">¿Te vemos en Perlora?</h2>
+    <p class="lead" style="max-width:520px;margin:0 auto 28px">El próximo kickoff presencial es en primavera de 2026. Si aplicas ahora, formas parte del origen.</p>
+    <button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button>
+  </section>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════ SUSTRATO INTELECTUAL ═══ -->
+<div class="page" id="page-sustrato" style="display:none">
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <span class="eyebrow" style="margin-bottom:16px">Pensamiento propio · Marcos conceptuales · Investigación aplicada</span>
+      <h1 style="font-size:clamp(2.4rem,5vw,4rem);line-height:1.1;margin-bottom:20px">El sustrato<br><em style="color:var(--teal)">intelectual.</em></h1>
+      <p class="lead" style="max-width:640px">La metodología FAE se apoya en investigación real. Aquí publicamos los marcos y el pensamiento propio que fundamenta lo que hacemos. No teoría prestada — pensamiento construido desde la práctica.</p>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <section class="sec">
+    <div style="max-width:760px;margin:0 auto;text-align:center;margin-bottom:56px">
+      <div style="background:rgba(0,221,184,0.04);border:1px solid rgba(0,221,184,0.12);border-radius:16px;padding:32px 40px">
+        <p style="font-size:16px;color:#C8D0E0;line-height:1.8;font-style:italic">"No tenemos todas las respuestas. Pero sí tenemos las preguntas correctas, y estamos construyendo los marcos para responderlas desde la evidencia y la práctica directa con emprendedores reales."</p>
+        <div style="margin-top:16px;font-size:12px;color:#8A95A8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">— Fundación de Alto Emprendimiento</div>
+      </div>
+    </div>
+
+    <!-- PUBLICACIONES -->
+    <div style="max-width:900px;margin:0 auto">
+      <span class="eyebrow" style="margin-bottom:32px;display:block">Publicaciones</span>
+      <div style="display:flex;flex-direction:column;gap:20px">
+
+        <!-- Paper 1 -->
+        <div onclick="go('paper-regulacion')" style="background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:28px 32px;cursor:pointer;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(0,221,184,0.3)'" onmouseout="this.style.borderColor='var(--line)'">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap">
+            <div style="flex:1;min-width:200px">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+                <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:var(--teal);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:20px">Working Paper</span>
+                <span style="font-size:11px;color:#8A95A8">v0.2 · 2025</span>
+              </div>
+              <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-size:18px;font-weight:700;color:#F2F4F9;margin-bottom:8px">Regulación Integral del Emprendedor de Alto Rendimiento</h3>
+              <p style="font-size:13px;color:#8A95A8;line-height:1.6">Marco conceptual para el análisis y la intervención en los tres sistemas de regulación del emprendedor: fisiológico, cognitivo y social.</p>
+            </div>
+            <div style="color:var(--teal);font-size:20px;flex-shrink:0;align-self:center">→</div>
+          </div>
+        </div>
+
+        <!-- Paper 2 -->
+        <div onclick="go('paper-triangulo')" style="background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:28px 32px;cursor:pointer;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(0,221,184,0.3)'" onmouseout="this.style.borderColor='var(--line)'">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap">
+            <div style="flex:1;min-width:200px">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+                <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:var(--teal);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:20px">Modelo Conceptual</span>
+                <span style="font-size:11px;color:#8A95A8">v1.0 · 2025</span>
+              </div>
+              <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-size:18px;font-weight:700;color:#F2F4F9;margin-bottom:8px">El Triángulo de Regulación del Emprendedor</h3>
+              <p style="font-size:13px;color:#8A95A8;line-height:1.6">Los tres vértices que determinan la capacidad de un emprendedor para sostener el rendimiento sin colapsar: fisiología, cognición y contexto social.</p>
+            </div>
+            <div style="color:var(--teal);font-size:20px;flex-shrink:0;align-self:center">→</div>
+          </div>
+        </div>
+
+        <!-- Próximamente 1 -->
+        <div style="background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:28px 32px;opacity:0.5">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+            <span style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#8A95A8;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:20px">Próximamente</span>
+          </div>
+          <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-size:18px;font-weight:700;color:#F2F4F9;margin-bottom:8px">Perfil psicológico del emprendedor de alto rendimiento</h3>
+          <p style="font-size:13px;color:#8A95A8;line-height:1.6">Basado en los datos de la cohorte 2025. Patrones comunes, diferencias individuales y lo que realmente predice el éxito sostenido.</p>
+        </div>
+
+        <!-- Próximamente 2 -->
+        <div style="background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:28px 32px;opacity:0.5">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+            <span style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#8A95A8;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:20px">Próximamente</span>
+          </div>
+          <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-size:18px;font-weight:700;color:#F2F4F9;margin-bottom:8px">Carga alostática y toma de decisiones en emprendedores</h3>
+          <p style="font-size:13px;color:#8A95A8;line-height:1.6">Cómo el estrés acumulado degrada la calidad de las decisiones estratégicas y qué protocolos de recuperación funcionan realmente.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA PARTICIPAR -->
+  <section class="sec-alt" style="text-align:center">
+    <span class="eyebrow">Investigación activa · Sujetos de estudio</span>
+    <h2 style="font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:16px">¿Quieres participar<br>en la investigación?</h2>
+    <p class="lead" style="max-width:520px;margin:0 auto 28px">Si eres emprendedor y quieres contribuir a construir este conocimiento — y beneficiarte de él — apúntate como sujeto de estudio.</p>
+    <button onclick="go('participa-investigacion')" class="btn-hero">Participar en la investigación →</button>
+  </section>
+
+</div>
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-top">
@@ -1902,6 +2105,8 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
         <li><button onclick="go('nosotros')">Carta fundacional</button></li>
         <li><button onclick="go('mentores')">Mentores</button></li>
         <li><button onclick="go('investigacion')">Investigación</button></li>
+        <li><button onclick="go('sustrato')">Sustrato intelectual</button></li>
+        <li><button onclick="go('perlora')">Perlora</button></li>
         <li><a href="mailto:hola@fundacionaltoemprendimiento.org">Contacto</a></li>
       </ul>
     </div>
@@ -2121,7 +2326,7 @@ function closeMobileMenu() {
 document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeMobileMenu(); });
 
 /* ── ROUTER ── */
-var PAGES = ['home', 'emprendedores', 'corporaciones', 'inversores', 'viaje', 'nosotros', 'investigacion', 'paper-regulacion', 'paper-triangulo', 'aplica-reto-2026', 'participa-investigacion', 'mentores', 'mentores-jesusalonsogallo', 'emprendedor-blanca', 'emprendedor-aitor', 'emprendedor-mario', 'emprendedor-beatriz', 'emprendedor-marcos', 'emprendedor-alvaro'];
+var PAGES = ['home', 'emprendedores', 'corporaciones', 'inversores', 'viaje', 'nosotros', 'investigacion', 'paper-regulacion', 'paper-triangulo', 'aplica-reto-2026', 'participa-investigacion', 'mentores', 'mentores-jesusalonsogallo', 'emprendedor-blanca', 'emprendedor-aitor', 'emprendedor-mario', 'emprendedor-beatriz', 'emprendedor-marcos', 'emprendedor-alvaro', 'perlora', 'sustrato'];
 var PAGE_TITLES = {
   home: 'FAE — Fundación Alto Emprendimiento | Acompañamiento integral para emprendedores',
   emprendedores: 'Para Emprendedores — Reto 2026 | FAE Fundación Alto Emprendimiento',
@@ -2141,7 +2346,9 @@ var PAGE_TITLES = {
   'emprendedor-mario': 'Mario de Zárraga — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
   'emprendedor-beatriz': 'Beatriz — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
   'emprendedor-marcos': 'Marcos Ladreda — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
-  'emprendedor-alvaro': 'Álvaro Tau — Cohorte 2025 | FAE Fundación Alto Emprendimiento'
+  'emprendedor-alvaro': 'Álvaro Tau — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
+  'perlora': 'Perlora — El espacio físico de FAE | Fundación de Alto Emprendimiento',
+  'sustrato': 'El Sustrato Intelectual — Investigación y marcos conceptuales | FAE'
 };
 
 function go(id) {
@@ -2149,7 +2356,7 @@ function go(id) {
     var pg = document.getElementById('page-' + p);
     if (pg) { pg.classList.toggle('active', p === id); pg.style.display = p === id ? 'block' : 'none'; }
     var nl = document.getElementById('nav-' + p);
-    if (nl) nl.classList.toggle('active', p === id || (p === 'investigacion' && (id === 'paper-regulacion' || id === 'paper-triangulo' || id === 'participa-investigacion')) || (p === 'emprendedores' && (id === 'aplica-reto-2026' || id.startsWith('emprendedor-'))) || (p === 'mentores' && id === 'mentores-jesusalonsogallo'));
+    if (nl) nl.classList.toggle('active', p === id || (p === 'investigacion' && (id === 'paper-regulacion' || id === 'paper-triangulo' || id === 'participa-investigacion')) || (p === 'sustrato' && (id === 'paper-regulacion' || id === 'paper-triangulo')) || (p === 'emprendedores' && (id === 'aplica-reto-2026' || id.startsWith('emprendedor-'))) || (p === 'mentores' && id === 'mentores-jesusalonsogallo'));
   });
   window.scrollTo({ top: 0, behavior: 'smooth' });
   document.title = PAGE_TITLES[id] || PAGE_TITLES.home;
