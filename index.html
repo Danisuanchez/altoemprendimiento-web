@@ -416,12 +416,13 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
   <button class="logo" onclick="go('home')">F<b>A</b>E</button>
   <ul class="nav-links">
     <li><button id="nav-emprendedores" onclick="go('emprendedores')">Emprendedores</button></li>
-    <li><button id="nav-corporaciones" onclick="go('corporaciones')">Corporaciones</button></li>
-    <li><button id="nav-inversores" onclick="go('inversores')">Inversores</button></li>
-    <li><button id="nav-fundacion" onclick="go('nosotros')">La Fundación</button></li>
+    <li><button id="nav-mentores" onclick="go('mentores')">Mentores</a></li>
+          <li><a href="#" onclick="go('perks')">Perks</button></li>
+    <li><button id="nav-perks" onclick="go('perks')">Perks</button></li>
+    <li><button id="nav-retos" onclick="go('retos')">Retos</button></li>
+    <li><button id="nav-inversion" onclick="go('inversores')">Inversión</button></li>
     <li><button id="nav-investigacion" onclick="go('investigacion')">Investigación</button></li>
-    <li><button id="nav-mentores" onclick="go('mentores')">Mentores</button></li>
-    <li><button id="nav-centro" onclick="go('perlora')">Centro</button></li>
+    <li><button id="nav-fundacion" onclick="go('nosotros')">La Fundación</button></li>
     <li><button class="btn-nav" onclick="go('aplica-reto-2026')" data-i18n="nav.apply">Aplica al Reto 2026</button></li>
     <li><button id="lang-btn" onclick="toggleLang()" style="background:none;border:1px solid rgba(255,255,255,0.15);color:#8A95A8;font-size:11px;font-weight:700;letter-spacing:0.08em;padding:5px 10px;border-radius:6px;cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='#00DDB8';this.style.color='#00DDB8'" onmouseout="this.style.borderColor='rgba(255,255,255,0.15)';this.style.color='#8A95A8'">EN</button></li>
   </ul>
@@ -435,8 +436,8 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
   <button class="close-btn" onclick="closeMobileMenu()">✕</button>
   <button class="logo" onclick="go('home');closeMobileMenu()">F<b>A</b>E</button>
   <button onclick="go('emprendedores');closeMobileMenu()">Emprendedores</button>
-  <button onclick="go('corporaciones');closeMobileMenu()">Corporaciones</button>
-  <button onclick="go('inversores');closeMobileMenu()">Inversores</button>
+  <button onclick="go('corporaciones');closeMobileMenu()">Retos</button>
+  <button onclick="go('inversores');closeMobileMenu()">Inversión</button>
   <button onclick="go('nosotros');closeMobileMenu()">La Fundación</button>
   <button onclick="go('investigacion');closeMobileMenu()">Investigación</button>
   <button onclick="go('mentores');closeMobileMenu()">Mentores</button>
@@ -710,7 +711,7 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
 </main>
 
 <!-- ═══════════════════════════════════════════ CORPORACIONES ═══ -->
-<main class="page" id="page-corporaciones" style="display:none">
+<main class="page" id="page-retos" style="display:none">
 
   <div class="page-hero">
     <div class="page-hero-inner">
@@ -724,12 +725,32 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
     </div>
   </div>
 
-  <section class="sec" style="max-width:760px;margin:0 auto;text-align:center">
-    <span class="eyebrow">Para corporaciones y grandes empresas</span>
-    <h2 style="font-size:clamp(2rem,4vw,3rem);margin-bottom:28px">¿Quieres conocer<br>a los mejores<br><em>emprendedores?</em></h2>
-    <p class="lead" style="max-width:580px;margin:0 auto 20px">Si estás interesado en conocer a los mejores emprendedores o tienes un reto — un challenge — al que quieras que desde la Fundación ataquemos, ponte en contacto con nosotros.</p>
-    <div style="margin-top:40px">
-      <a href="mailto:dani@danisuanchez.es" class="btn-hero" style="text-decoration:none">Escríbenos →</a>
+  <section class="sec" style="max-width:800px;margin:0 auto">
+    <div class="two-grid" style="gap:48px;align-items:start">
+      <div>
+        <span class="eyebrow">Para empresas con retos de innovación</span>
+        <h2 style="font-size:clamp(1.8rem,3.5vw,2.8rem);margin-bottom:20px">¿Tienes un reto<br>que nadie<br><em>ha resuelto?</em></h2>
+        <p class="lead" style="margin-bottom:20px">Si eres una empresa y tienes un reto de innovación abierto, plantéanoslo. Trabajamos con corporaciones para atacarlo con los mejores emprendedores.</p>
+        <p class="lead" style="margin-bottom:32px">También si simplemente quieres conocer a los mejores emprendedores de la cantera FAE — escríbenos.</p>
+        <a href="mailto:dani@danisuanchez.es" class="btn-hero" style="text-decoration:none">Plantéanos tu reto →</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.15);border-radius:12px;padding:24px">
+          <div style="font-size:1.5rem;margin-bottom:10px">🎯</div>
+          <div style="font-weight:700;color:#F2F4F9;margin-bottom:8px">Retos de innovación</div>
+          <div style="font-size:14px;color:#8892A0">Atacamos tu reto con emprendedores seleccionados y metodología real.</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:24px">
+          <div style="font-size:1.5rem;margin-bottom:10px">🤝</div>
+          <div style="font-weight:700;color:#F2F4F9;margin-bottom:8px">Conoce la cantera</div>
+          <div style="font-size:14px;color:#8892A0">Accede a los mejores emprendedores de la Fundación antes de que estén disponibles.</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:24px">
+          <div style="font-size:1.5rem;margin-bottom:10px">🔬</div>
+          <div style="font-weight:700;color:#F2F4F9;margin-bottom:8px">Sin teatro corporativo</div>
+          <div style="font-size:14px;color:#8892A0">Sin presentaciones. Sin intermediarios. Solo honestidad y resultados.</div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -2306,7 +2327,7 @@ function closeMobileMenu() {
 document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeMobileMenu(); });
 
 /* ── ROUTER ── */
-var PAGES = ['home', 'emprendedores', 'corporaciones', 'inversores', 'viaje', 'nosotros', 'investigacion', 'paper-regulacion', 'paper-triangulo', 'aplica-reto-2026', 'participa-investigacion', 'mentores', 'mentores-jesusalonsogallo', 'mentores-pedroserrahima', 'mentores-alvarohernandez', 'mentores-danielsuarez', 'emprendedor-blanca', 'emprendedor-aitor', 'emprendedor-mario', 'emprendedor-beatriz', 'emprendedor-marcos', 'emprendedor-alvaro', 'emprendedor-tassilo', 'perlora', 'centro', 'sustrato', 'fundacion'];
+var PAGES = ['home', 'emprendedores', 'mentores', 'perks', 'retos', 'inversores', 'investigacion', 'nosotros', 'viaje', 'corporaciones', 'paper-regulacion', 'paper-triangulo', 'aplica-reto-2026', 'participa-investigacion', 'perlora', 'centro', 'sustrato', 'emprendedor-blanca', 'emprendedor-aitor', 'emprendedor-mario', 'emprendedor-beatriz', 'emprendedor-marcos', 'emprendedor-alvaro', 'emprendedor-tassilo', 'mentores-jesusalonsogallo', 'mentores-pedroserrahima', 'mentores-alvarohernandez', 'mentores-danielsuarez', 'perks-iberia', 'perks-renfe', 'perks-santander', 'perks-seur', 'perks-openai', 'perks-manus', 'perks-claude', 'perks-aws', 'perks-google'];
 var PAGE_TITLES = {
   home: 'FAE — Fundación Alto Emprendimiento | Acompañamiento integral para emprendedores',
   emprendedores: 'Para Emprendedores — Reto 2026 | FAE Fundación Alto Emprendimiento',
@@ -2320,6 +2341,19 @@ var PAGE_TITLES = {
   'aplica-reto-2026': 'Aplica al Reto 2026 — Máximo 12 emprendedores | FAE Fundación Alto Emprendimiento',
   'participa-investigacion': 'Participa como Sujeto de Estudio — Investigación FAE | Fundación Alto Emprendimiento',
   'mentores': 'Mentores — Red de Mentores de Primera Línea | FAE Fundación Alto Emprendimiento',
+  'perks': 'Perks para Emprendedores | FAE Fundación Alto Emprendimiento',
+  'retos': 'Retos de Innovación | FAE Fundación Alto Emprendimiento',
+  'perks-iberia': 'Iberia — Perk FAE | Fundación Alto Emprendimiento',
+  'perks-renfe': 'Renfe — Perk FAE | Fundación Alto Emprendimiento',
+  'perks-santander': 'Banco Santander — Perk FAE | Fundación Alto Emprendimiento',
+  'perks-seur': 'SEUR — Perk FAE | Fundación Alto Emprendimiento',
+  'perks-openai': 'OpenAI — Perk FAE | Fundación Alto Emprendimiento',
+  'perks-manus': 'Manus.im — Perk FAE | Fundación Alto Emprendimiento',
+  'perks-claude': 'Anthropic Claude — Perk FAE | Fundación Alto Emprendimiento',
+  'perks-aws': 'Amazon Web Services — Perk FAE | Fundación Alto Emprendimiento',
+  'perks-google': 'Google Cloud — Perk FAE | Fundación Alto Emprendimiento',
+  'mentores-alvarohernandez': 'Álvaro Hernández — Mentor | FAE Fundación Alto Emprendimiento',
+  'mentores-danielsuarez': 'Daniel Suárez Sánchez — Mentor | FAE Fundación Alto Emprendimiento',
   'mentores-jesusalonsogallo': 'Jesús Alonso Gallo — Mentor | Fundación de Alto Emprendimiento',
   'emprendedor-blanca': 'Blanca Montoro Prieto — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
   'emprendedor-aitor': 'Aitor Fernández — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
@@ -2988,6 +3022,381 @@ if (mform) {
 
 </div>
 
+
+
+<!-- ═════════════════════════════════════════════════════════ PERKS ═══ -->
+<div class="page" id="page-perks" style="display:none">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <span class="eyebrow">Para emprendedores FAE</span>
+      <h1>Perks.<br><em>Lo que necesitas<br>para construir.</em></h1>
+      <p class="lead" style="max-width:600px">Si eres una empresa que quiere ayudar y facilitar el éxito de los emprendedores, contamos contigo para crear la mejor cantera de emprendedores de España. ¿Qué necesita un emprendedor? De todo.</p>
+    </div>
+  </div>
+
+  <section class="sec">
+    <span class="eyebrow">Para empresas y partners</span>
+    <h2 style="font-size:clamp(1.8rem,3.5vw,2.8rem);margin-bottom:16px">¿Te animas a apoyar<br>a la Fundación?</h2>
+    <p class="lead" style="max-width:640px;margin-bottom:48px">Para que sus emprendedores tengan la mejor banca, los mejores billetes, los mejores servidores. Escríbenos y lo construimos juntos.</p>
+    <div style="text-align:center;margin-bottom:64px">
+      <a href="mailto:dani@danisuanchez.es" class="btn-hero" style="text-decoration:none">Quiero ser partner →</a>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
+
+      <!-- VIAJES Y TRANSPORTE -->
+      <div style="grid-column:1/-1;margin-bottom:8px">
+        <span class="eyebrow" style="font-size:11px">Viajes y transporte</span>
+      </div>
+
+      <div class="cohort-card" onclick="go('perks-iberia')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">✈️</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Iberia</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">10% de descuento en vuelos para emprendedores FAE. Tarjeta Iberia Plus con beneficios exclusivos.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
+        </div>
+      </div>
+
+      <div class="cohort-card" onclick="go('perks-renfe')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🚄</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Renfe</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">10% de descuento en billetes de tren. Tarjeta Renfe con acceso a tarifas preferenciales.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
+        </div>
+      </div>
+
+      <!-- FINANZAS -->
+      <div style="grid-column:1/-1;margin-top:24px;margin-bottom:8px">
+        <span class="eyebrow" style="font-size:11px">Finanzas</span>
+      </div>
+
+      <div class="cohort-card" onclick="go('perks-santander')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🏦</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Banco Santander</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Financiación básica y prioritaria para emprendedores FAE. Descuento en comisiones y acceso a líneas de crédito preferentes.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
+        </div>
+      </div>
+
+      <!-- LOGÍSTICA -->
+      <div style="grid-column:1/-1;margin-top:24px;margin-bottom:8px">
+        <span class="eyebrow" style="font-size:11px">Logística</span>
+      </div>
+
+      <div class="cohort-card" onclick="go('perks-seur')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">📦</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">SEUR</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Tarifas preferenciales en envíos y logística para startups FAE. Acceso a la red de distribución nacional.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
+        </div>
+      </div>
+
+      <!-- TECNOLOGÍA E IA -->
+      <div style="grid-column:1/-1;margin-top:24px;margin-bottom:8px">
+        <span class="eyebrow" style="font-size:11px">Tecnología e Inteligencia Artificial</span>
+      </div>
+
+      <div class="cohort-card" onclick="go('perks-aws')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">☁️</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Amazon Web Services</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Créditos de cloud para emprendedores FAE. Infraestructura escalable desde el primer día.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
+        </div>
+      </div>
+
+      <div class="cohort-card" onclick="go('perks-google')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🔵</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Google Cloud</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Créditos de Google Cloud para startups FAE. Acceso a herramientas de IA y machine learning de Google.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
+        </div>
+      </div>
+
+      <div class="cohort-card" onclick="go('perks-openai')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🤖</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">OpenAI</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Créditos de API de OpenAI para emprendedores FAE. Acceso a GPT-4, DALL-E y el resto del stack.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
+        </div>
+      </div>
+
+      <div class="cohort-card" onclick="go('perks-claude')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🧠</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Anthropic Claude</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Créditos de Claude para emprendedores FAE. El modelo de IA más avanzado para razonamiento y programación.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
+        </div>
+      </div>
+
+      <div class="cohort-card" onclick="go('perks-manus')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">⚡</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Manus.im</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">2.000 créditos de Manus para emprendedores FAE. El agente de IA más avanzado para automatizar cualquier tarea.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-sec">
+    <div class="cta-inner">
+      <span class="eyebrow" style="text-align:center">¿Eres empresa?</span>
+      <h2>Construye<br>la mejor cantera<br><em>con nosotros.</em></h2>
+      <p class="cta-sub">Escríbenos y diseñamos juntos el perk que más impacto tenga en los emprendedores.</p>
+      <div style="text-align:center;margin-top:16px">
+        <a href="mailto:dani@danisuanchez.es" class="btn-teal-lg">Quiero ser partner →</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════ PERK: IBERIA ═══ -->
+<div class="page" id="page-perks-iberia" style="display:none">
+  <div class="page-hero"><div class="page-hero-inner">
+    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
+    <span class="eyebrow">Perk FAE · Viajes</span>
+    <h1>✈️ Iberia<br><em>10% descuento<br>en vuelos.</em></h1>
+    <p class="lead">Como emprendedor FAE, accedes a tarifas preferenciales en Iberia y beneficios exclusivos de Iberia Plus.</p>
+  </div></div>
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
+      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> 10% de descuento en vuelos nacionales e internacionales</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Tarjeta Iberia Plus con acumulación de puntos desde el primer vuelo</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso prioritario a check-in y embarque</li>
+        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
+      </ul>
+    </div>
+    <p style="font-size:14px;color:#5C6880;text-align:center">Para acceder a este perk, aplica al programa FAE. Los perks se activan una vez seleccionado.</p>
+    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════ PERK: RENFE ═══ -->
+<div class="page" id="page-perks-renfe" style="display:none">
+  <div class="page-hero"><div class="page-hero-inner">
+    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
+    <span class="eyebrow">Perk FAE · Transporte</span>
+    <h1>🚄 Renfe<br><em>10% descuento<br>en trenes.</em></h1>
+    <p class="lead">Movilidad preferencial para emprendedores FAE en toda la red de alta velocidad y media distancia de Renfe.</p>
+  </div></div>
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
+      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> 10% de descuento en billetes AVE, Alvia y Media Distancia</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Tarjeta Renfe con puntos acumulables en cada viaje</li>
+        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
+      </ul>
+    </div>
+    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════ PERK: SANTANDER ═══ -->
+<div class="page" id="page-perks-santander" style="display:none">
+  <div class="page-hero"><div class="page-hero-inner">
+    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
+    <span class="eyebrow">Perk FAE · Finanzas</span>
+    <h1>🏦 Banco Santander<br><em>Financiación<br>prioritaria.</em></h1>
+    <p class="lead">Acceso a financiación básica y prioritaria para emprendedores FAE. Descuento en comisiones y líneas de crédito preferentes.</p>
+  </div></div>
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
+      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Financiación básica y prioritaria para startups FAE</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Descuento en comisiones bancarias</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso a líneas de crédito preferentes para emprendedores</li>
+        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Descuento de facturas y financiación de circulante</li>
+      </ul>
+    </div>
+    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════ PERK: SEUR ═══ -->
+<div class="page" id="page-perks-seur" style="display:none">
+  <div class="page-hero"><div class="page-hero-inner">
+    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
+    <span class="eyebrow">Perk FAE · Logística</span>
+    <h1>📦 SEUR<br><em>Logística<br>preferencial.</em></h1>
+    <p class="lead">Tarifas preferenciales en envíos y logística para startups FAE. Acceso a la red de distribución nacional de SEUR.</p>
+  </div></div>
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
+      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Tarifas preferenciales en envíos nacionales e internacionales</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso a la red de distribución nacional de SEUR</li>
+        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Gestión de logística inversa y devoluciones</li>
+      </ul>
+    </div>
+    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════ PERK: OPENAI ═══ -->
+<div class="page" id="page-perks-openai" style="display:none">
+  <div class="page-hero"><div class="page-hero-inner">
+    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
+    <span class="eyebrow">Perk FAE · Inteligencia Artificial</span>
+    <h1>🤖 OpenAI<br><em>Créditos API<br>para construir.</em></h1>
+    <p class="lead">Créditos de API de OpenAI para emprendedores FAE. Acceso a GPT-4, DALL-E y el stack completo de OpenAI.</p>
+  </div></div>
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
+      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Créditos de API de OpenAI para emprendedores FAE</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso a GPT-4o, DALL-E 3 y Whisper</li>
+        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
+      </ul>
+    </div>
+    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════ PERK: MANUS ═══ -->
+<div class="page" id="page-perks-manus" style="display:none">
+  <div class="page-hero"><div class="page-hero-inner">
+    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
+    <span class="eyebrow">Perk FAE · Agentes IA</span>
+    <h1>⚡ Manus.im<br><em>2.000 créditos<br>de agentes IA.</em></h1>
+    <p class="lead">2.000 créditos de Manus para emprendedores FAE. El agente de IA más avanzado para automatizar cualquier tarea de negocio.</p>
+  </div></div>
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
+      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> 2.000 créditos de Manus.im para emprendedores FAE</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso al agente de IA más avanzado para automatizar tareas complejas</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Programación, investigación, análisis de datos, webs y más</li>
+        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
+      </ul>
+    </div>
+    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════ PERK: CLAUDE ═══ -->
+<div class="page" id="page-perks-claude" style="display:none">
+  <div class="page-hero"><div class="page-hero-inner">
+    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
+    <span class="eyebrow">Perk FAE · Inteligencia Artificial</span>
+    <h1>🧠 Anthropic Claude<br><em>El modelo IA<br>para razonar.</em></h1>
+    <p class="lead">Créditos de Claude para emprendedores FAE. El modelo de IA más avanzado para razonamiento complejo y programación.</p>
+  </div></div>
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
+      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Créditos de Anthropic Claude para emprendedores FAE</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso a Claude Sonnet y Claude Opus para tareas complejas</li>
+        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
+      </ul>
+    </div>
+    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════ PERK: AWS ═══ -->
+<div class="page" id="page-perks-aws" style="display:none">
+  <div class="page-hero"><div class="page-hero-inner">
+    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
+    <span class="eyebrow">Perk FAE · Cloud</span>
+    <h1>☁️ Amazon Web Services<br><em>Créditos cloud<br>para escalar.</em></h1>
+    <p class="lead">Créditos de AWS para emprendedores FAE. Infraestructura escalable desde el primer día sin coste inicial.</p>
+  </div></div>
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
+      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Créditos de Amazon Web Services para startups FAE</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso a EC2, S3, RDS, Lambda y el stack completo de AWS</li>
+        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
+      </ul>
+    </div>
+    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════ PERK: GOOGLE ═══ -->
+<div class="page" id="page-perks-google" style="display:none">
+  <div class="page-hero"><div class="page-hero-inner">
+    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
+    <span class="eyebrow">Perk FAE · Cloud</span>
+    <h1>🔵 Google Cloud<br><em>Créditos cloud<br>y herramientas IA.</em></h1>
+    <p class="lead">Créditos de Google Cloud para startups FAE. Acceso a herramientas de IA y machine learning de Google.</p>
+  </div></div>
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
+      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Créditos de Google Cloud para startups FAE</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso a Vertex AI, BigQuery y herramientas de machine learning</li>
+        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
+      </ul>
+    </div>
+    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
+  </section>
+</div>
 
 <!-- ═══════════════════════════════════════ MENTOR: PEDRO SERRAHIMA ═══════ -->
 <div class="page" id="page-mentores-pedroserrahima" style="display:none">
