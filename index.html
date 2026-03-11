@@ -1054,7 +1054,7 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
     <h2 data-i18n="nos.mentores.h2">Los que han<br><em>estado ahí.</em></h2>
     <p class="lead" style="max-width:640px" data-i18n="nos.mentores.lead">Los emprendedores de FAE acceden a una red de mentores de primera línea. <strong style="color:#F2F4F9">Mentores reales. Personas que lo han hecho y que lo están haciendo.</strong> Que hablan desde la práctica y la experiencia, no desde la teoría.</p>
     <div class="card-grid4">
-      <div class="person-card sm" style="cursor:pointer" onclick="go('mentores-jesusalonsogallo')">
+      <div class="person-card sm" style="cursor:pointer" onclick="go('mentores-jesusalonsogallo', 'mentores-pedroserrahima')">
         <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/jesus-alonso-gallo_f2c23d5e.jpg" alt="Jesús Alonso Gallo" style="width:72px;height:72px;border-radius:50%;object-fit:cover;margin-bottom:12px;border:2px solid rgba(0,221,184,0.3)">
         <div class="person-name">Jesús Alonso Gallo</div>
         <span class="person-role">Full Stack Entrepreneur</span>
@@ -1138,6 +1138,24 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
             <span style="font-size:10px;background:rgba(255,255,255,0.06);color:#8A95A8;padding:3px 8px;border-radius:999px">HRV</span>
           </div>
           <span style="color:#00DDB8;font-size:13px;font-weight:600">Leer →</span>
+        </div>
+      </div>
+
+      <!-- Pedro Serrahima -->
+      <div onclick="go('mentores-pedroserrahima')" style="background:var(--card2);border:1px solid var(--line);border-radius:20px;overflow:hidden;cursor:pointer;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor='var(--line)'">
+        <div style="height:220px;overflow:hidden">
+          <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/pedro-serrahima_ccbf3ddc.jpg" alt="Pedro Serrahima" style="width:100%;height:100%;object-fit:cover;object-position:center 15%">
+        </div>
+        <div style="padding:24px">
+          <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#00DDB8;margin-bottom:8px">Mentor · Experiencia de cliente</div>
+          <h3 style="font-size:1.3rem;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;margin-bottom:8px">Pedro Serrahima</h3>
+          <p style="font-size:13px;color:#8A95A8;line-height:1.6;margin-bottom:16px">Fundador de Pepephone y O2. Ex-Director de Experiencia de Cliente en Telefónica España. Referente en coherencia, transparencia y hacer las cosas bien de verdad.</p>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px">
+            <span style="font-size:10px;background:rgba(0,221,184,0.08);border:1px solid rgba(0,221,184,0.15);color:#00DDB8;padding:3px 8px;border-radius:20px;font-weight:600">Experiencia de cliente</span>
+            <span style="font-size:10px;background:rgba(255,255,255,0.05);color:#8A95A8;padding:3px 8px;border-radius:20px">Transparencia</span>
+            <span style="font-size:10px;background:rgba(255,255,255,0.05);color:#8A95A8;padding:3px 8px;border-radius:20px">Startups</span>
+          </div>
+          <div style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perfil →</div>
         </div>
       </div>
 
@@ -2296,7 +2314,7 @@ var PAGE_TITLES = {
   'emprendedor-mario': 'Mario de Zárraga — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
   'emprendedor-beatriz': 'Beatriz — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
   'emprendedor-marcos': 'Marcos Ladreda — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
-  'emprendedor-alvaro': 'Álvaro Tau — Cohorte 2025 | FAE Fundación Alto Emprendimiento',,
+  'emprendedor-alvaro': 'Álvaro Tau — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
   'emprendedor-tassilo': 'Tassilo de la Torre — Emprendedor Cohorte 2026 | FAE Fundación Alto Emprendimiento'
   'perlora': 'Centro de Alto Emprendimiento — El sueño de FAE | Fundación de Alto Emprendimiento'
 };
@@ -2951,6 +2969,89 @@ if (mform) {
       <span class="eyebrow" style="display:block;margin-bottom:16px">Reto 2026 · Máximo 12 emprendedores</span>
       <h3 style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:12px">Tassilo forma parte<br><em>del Reto 2026.</em></h3>
       <p style="font-size:15px;color:#8A95A8;margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto">Si quieres aplicar al programa o conocer más sobre antiga.es, escríbenos.</p>
+      <button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button>
+      <p style="font-size:12px;color:#5C6880;margin-top:16px">Proceso confidencial · Sin compromiso</p>
+    </div>
+  </section>
+
+</div>
+
+
+<!-- ═══════════════════════════════════════ MENTOR: PEDRO SERRAHIMA ═══════ -->
+<div class="page" id="page-mentores-pedroserrahima" style="display:none">
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <button onclick="go('mentores')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;display:flex;align-items:center;gap:6px">← Red de mentores</button>
+      <span class="eyebrow">Mentor · Fundación de Alto Emprendimiento</span>
+      <h1 style="font-size:clamp(2.4rem,5vw,4rem);line-height:1.05;margin-bottom:16px">Pedro<br>Serrahima.</h1>
+      <p class="lead" style="max-width:580px">Fundador de Pepephone y O2. Referente en España en experiencia de cliente, coherencia empresarial y gestión honesta. Acaba de dejar Telefónica para iniciar nuevos proyectos.</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:24px">
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:#00DDB8;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Experiencia de cliente</span>
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:#00DDB8;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Coherencia</span>
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:#00DDB8;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Transparencia</span>
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:#00DDB8;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Gestión honesta</span>
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:#00DDB8;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Startups</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOTO + PROPUESTA DE VALOR -->
+  <section class="sec">
+    <div style="display:flex;gap:48px;align-items:flex-start;flex-wrap:wrap;max-width:900px;margin:0 auto">
+      <div style="flex-shrink:0">
+        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/pedro-serrahima_ccbf3ddc.jpg" alt="Pedro Serrahima — Mentor FAE"
+             style="width:260px;height:320px;object-fit:cover;object-position:center 15%;border-radius:16px;border:1px solid rgba(0,221,184,0.15)">
+      </div>
+      <div style="flex:1;min-width:280px">
+        <div style="background:rgba(0,221,184,0.04);border:1px solid rgba(0,221,184,0.15);border-radius:20px;padding:32px">
+          <span style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#00DDB8;display:block;margin-bottom:12px">Lo que aporta</span>
+          <p style="font-size:17px;color:#F2F4F9;line-height:1.7;font-family:'Bricolage Grotesque',sans-serif;font-weight:500">Experiencia real en construir empresas donde el cliente no es un dato — es el centro de todo. Pedro ha demostrado que se puede crecer siendo coherente, transparente y honesto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIO -->
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <span class="eyebrow">Trayectoria</span>
+    <h2 style="font-size:clamp(1.8rem,3.5vw,2.6rem);margin-bottom:32px">Hacer las cosas bien<br><em>como ventaja competitiva.</em></h2>
+
+    <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:20px">Pedro Serrahima es uno de los emprendedores más respetados del ecosistema tecnológico español. Fundó <strong style="color:#F2F4F9">Pepephone</strong>, la operadora de telecomunicaciones que se convirtió en referente de atención al cliente y transparencia en España — un modelo radicalmente distinto al del sector, donde la honestidad con el cliente era la estrategia de negocio. Pepephone fue adquirida por MásMóvil en 2016.</p>
+
+    <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:20px">Posteriormente lideró el lanzamiento y desarrollo de <strong style="color:#F2F4F9">O2</strong> en España para Telefónica, aplicando los mismos principios: coherencia, sencillez y respeto al cliente. Fue Director de Experiencia de Cliente y Calidad de Telefónica España hasta febrero de 2026, cuando decidió dejar la compañía para iniciar nuevos proyectos.</p>
+
+    <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:40px">En la Fundación de Alto Emprendimiento, Pedro aporta algo que no se enseña en ningún MBA: cómo construir una empresa donde la coherencia interna y la honestidad con el cliente no son valores decorativos, sino el motor real del crecimiento.</p>
+
+    <!-- ÁREAS -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:48px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:22px">
+        <div style="font-size:22px;margin-bottom:10px">🎯</div>
+        <div style="font-size:13px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px">Experiencia de cliente</div>
+        <p style="font-size:13px;color:#8A95A8;line-height:1.7;margin:0">Diseño de modelos de negocio centrados en el cliente. Atención, retención y fidelización real.</p>
+      </div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:22px">
+        <div style="font-size:22px;margin-bottom:10px">🤝</div>
+        <div style="font-size:13px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px">Coherencia y transparencia</div>
+        <p style="font-size:13px;color:#8A95A8;line-height:1.7;margin:0">Cómo construir una cultura empresarial donde los valores no son marketing sino operativa real.</p>
+      </div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:22px">
+        <div style="font-size:22px;margin-bottom:10px">🚀</div>
+        <div style="font-size:13px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px">Creación de startups</div>
+        <p style="font-size:13px;color:#8A95A8;line-height:1.7;margin:0">Desde cero hasta la venta: Pepephone como caso de estudio de emprendimiento honesto y escalable.</p>
+      </div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:22px">
+        <div style="font-size:22px;margin-bottom:10px">⚖️</div>
+        <div style="font-size:13px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px">Gestión honesta</div>
+        <p style="font-size:13px;color:#8A95A8;line-height:1.7;margin:0">Liderazgo ético, toma de decisiones con criterio y gestión de equipos con integridad.</p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div style="background:var(--card2);border:1px solid var(--line);border-radius:20px;padding:36px;text-align:center">
+      <span class="eyebrow" style="display:block;margin-bottom:16px">Reto 2026 · Máximo 12 emprendedores</span>
+      <h3 style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:12px">Pedro acompaña a los emprendedores<br><em>del Reto 2026.</em></h3>
+      <p style="font-size:15px;color:#8A95A8;margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto">Si quieres aplicar al programa y trabajar con Pedro, escríbenos.</p>
       <button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button>
       <p style="font-size:12px;color:#5C6880;margin-top:16px">Proceso confidencial · Sin compromiso</p>
     </div>
