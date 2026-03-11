@@ -418,11 +418,10 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
     <li><button id="nav-emprendedores" onclick="go('emprendedores')">Emprendedores</button></li>
     <li><button id="nav-corporaciones" onclick="go('corporaciones')">Corporaciones</button></li>
     <li><button id="nav-inversores" onclick="go('inversores')">Inversores</button></li>
-    <li><button id="nav-viaje" onclick="go('viaje')">Nuestro viaje</button></li>
-    <li><button id="nav-nosotros" onclick="go('nosotros')">Quiénes somos</button></li>
+    <li><button id="nav-fundacion" onclick="go('nosotros')">La Fundación</button></li>
     <li><button id="nav-investigacion" onclick="go('investigacion')">Investigación</button></li>
     <li><button id="nav-mentores" onclick="go('mentores')">Mentores</button></li>
-    <li><button id="nav-perlora" onclick="go('perlora')">Perlora</button></li>
+    <li><button id="nav-centro" onclick="go('perlora')">Centro</button></li>
     <li><button class="btn-nav" onclick="go('aplica-reto-2026')" data-i18n="nav.apply">Aplica al Reto 2026</button></li>
     <li><button id="lang-btn" onclick="toggleLang()" style="background:none;border:1px solid rgba(255,255,255,0.15);color:#8A95A8;font-size:11px;font-weight:700;letter-spacing:0.08em;padding:5px 10px;border-radius:6px;cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='#00DDB8';this.style.color='#00DDB8'" onmouseout="this.style.borderColor='rgba(255,255,255,0.15)';this.style.color='#8A95A8'">EN</button></li>
   </ul>
@@ -438,11 +437,10 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
   <button onclick="go('emprendedores');closeMobileMenu()">Emprendedores</button>
   <button onclick="go('corporaciones');closeMobileMenu()">Corporaciones</button>
   <button onclick="go('inversores');closeMobileMenu()">Inversores</button>
-  <button onclick="go('viaje');closeMobileMenu()">Nuestro viaje</button>
-  <button onclick="go('nosotros');closeMobileMenu()">Quiénes somos</button>
+  <button onclick="go('nosotros');closeMobileMenu()">La Fundación</button>
   <button onclick="go('investigacion');closeMobileMenu()">Investigación</button>
   <button onclick="go('mentores');closeMobileMenu()">Mentores</button>
-  <button onclick="go('perlora');closeMobileMenu()">Perlora</button>
+  <button onclick="go('perlora');closeMobileMenu()">Centro</button>
   <button class="btn-apply" onclick="go('aplica-reto-2026');closeMobileMenu()" data-i18n="nav.apply">Aplica al Reto 2026</button>
   <button onclick="toggleLang();closeMobileMenu()" style="margin-top:8px;background:none;border:1px solid rgba(255,255,255,0.15);color:#8A95A8;font-size:12px;font-weight:700;letter-spacing:0.08em;padding:8px 16px;border-radius:8px;cursor:pointer" id="lang-btn-mobile">EN — Switch to English</button>
 </div>
@@ -832,6 +830,91 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
     </div>
   </section>
 
+
+  <!-- ═══════ NUESTRO VIAJE (fusionado en La Fundación) ═══════ -->
+  <div id="tab-viaje" style="scroll-margin-top:80px"></div>
+  <section class="sec" style="border-top:2px solid var(--line)">
+    <span class="eyebrow">Nuestro viaje</span>
+    <h2 style="font-size:clamp(1.8rem,3vw,2.6rem);margin-bottom:8px">De 2024<br>al primer centro<br><em>de alto emprendimiento del mundo.</em></h2>
+  </section>
+
+
+  <section class="sec">
+    <span class="eyebrow" data-i18n="viaje.roadmap.eyebrow">Hoja de ruta</span>
+    <h2 data-i18n="viaje.roadmap.h2">De 2024<br>al <em>primer centro<br>de alto emprendimiento del mundo.</em></h2>
+    <div class="roadmap">
+      <div class="rstep">
+        <div class="rstep-badge done">24</div>
+        <div class="rstep-body">
+          <span class="spill done"><span class="sdot"></span>Completado</span>
+          <div class="rstep-title">Fundación y marco conceptual</div>
+          <p>Constitución de la Fundación Alto Emprendimiento. Definición de la tesis central: el emprendedor como sistema integral — biológico, cognitivo y emocional. Primeros contactos con investigadores, expertos en sistema nervioso, epigenética y psicología del rendimiento.</p>
+        </div>
+      </div>
+      <div class="rstep">
+        <div class="rstep-badge active">25</div>
+        <div class="rstep-body">
+          <span class="spill now"><span class="sdot"></span>En curso ahora mismo</span>
+          <div class="rstep-title">Primera cohorte — 6 emprendedores</div>
+          <p>Acompañamiento integral a los seis primeros emprendedores seleccionados: Blanca Montoro Prieto (Wild Square), Aitor Fernández (Luna), Mario de Zárraga (Top Sithing), Beatriz (servicio de externalización de limpieza), Marcos Ladreda (ETERNA Diagnostics) y Álvaro Tau (Adua). Programa mixto. Estamos definiendo y validando la metodología en tiempo real. Búsqueda activa de partners tecnológicos — Oura Ring, Fitbit y Hum en conversación avanzada — y centros de investigación en genética y epigenética.</p>
+        </div>
+      </div>
+      <div class="rstep">
+        <div class="rstep-badge future">26</div>
+        <div class="rstep-body">
+          <span class="spill next"><span class="sdot"></span>Próximamente</span>
+          <div class="rstep-title">Reto 2026 — Segunda cohorte · Máximo 12 emprendedores</div>
+          <p>Selección de hasta 12 emprendedores. Programa de acompañamiento mixto de mínimo seis meses. Metodología más consolidada, primeros partners tecnológicos integrados. Kickoff presencial en Asturias. Entre los seleccionados hasta ahora: Carla Pérez (Admex), Yolanda Díaz (SDR Platform) y Alicia Ortiga (Biotextiles).</p>
+        </div>
+      </div>
+      <div class="rstep">
+        <div class="rstep-badge future">27</div>
+        <div class="rstep-body">
+          <span class="spill next"><span class="sdot"></span>En el horizonte</span>
+          <div class="rstep-title">Escala, investigación y metodología propia</div>
+          <p>Centro de investigación consolidado. Red de partners científicos establecida — genómica, epigenética, neurociencia del liderazgo, sistema nervioso autónomo. Publicaciones de referencia. Benchmark del ecosistema emprendedor europeo. Ampliación del programa a 10–20 emprendedores anuales.</p>
+        </div>
+      </div>
+      <div class="rstep">
+        <div class="rstep-badge dream">30</div>
+        <div class="rstep-body">
+          <span class="spill dream"><span class="sdot"></span>El gran sueño</span>
+          <div class="rstep-title">El primer centro mundial de alto emprendimiento</div>
+          <p>100 plazas. Emprendedores de alto rendimiento alojados en periodos de nueve meses. El programa más riguroso, científico e integral del mundo. En un lugar que ya fue, una vez, una ciudad para que las personas dieran lo mejor de sí mismas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="perlora-sec">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Perlora_panorama.jpg/1280px-Perlora_panorama.jpg"
+         onerror="this.style.display='none';this.parentElement.style.background='#161E30'"
+         alt="Ciudad de vacaciones de Perlora, Asturias — frente al Mar Cantábrico." class="perlora-img" loading="lazy" decoding="async">
+    <div class="perlora-overlay">
+      <div class="perlora-content">
+        <span class="eyebrow" data-i18n="viaje.perlora.eyebrow">El sueño de 2030</span>
+        <h2 data-i18n="viaje.perlora.h2">Perlora.<br>La ciudad<br><em>emprendedora.</em></h2>
+        <p class="lead">Perlora fue construida en 1954 en la costa asturiana del Mar Cantábrico como ciudad de vacaciones para trabajadores. 36 hectáreas frente al mar, 274 viviendas, comedores comunes, zonas verdes. Diseñada para que las personas descansaran, se recuperaran y dieran lo mejor de sí mismas.</p>
+        <p class="lead">Lleva décadas abandonada. <strong style="color:#F2F4F9">Nosotros queremos devolverle la vida — con otro propósito.</strong></p>
+        <p class="lead">100 emprendedores de alto rendimiento. Periodos de nueve meses. El programa más riguroso del mundo. En un entorno donde el mar, el espacio y la comunidad hacen parte del método.</p>
+        <p class="lead" style="color:#00DDB8;font-weight:600">Esperamos poder construirlo. Ese es el reto definitivo.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="sec-alt">
+    <span class="eyebrow" data-i18n="viaje.research.eyebrow">Investigación y publicaciones</span>
+    <h2 data-i18n="viaje.research.h2">El sustrato<br><em>intelectual.</em></h2>
+    <p class="lead" style="max-width:520px">La metodología FAE se apoya en investigación real. Aquí iremos publicando los marcos y el pensamiento propio que fundamenta lo que hacemos.</p>
+    <div class="research-grid">
+      <div class="research-card"><span class="research-type t">Nota de investigación</span><div class="research-title">Teoría Polivagal y el emprendedor bajo presión</div><p class="research-body">Cómo el sistema nervioso autónomo determina la capacidad de decisión, regulación emocional y resiliencia en contextos de incertidumbre extrema.</p><span class="ph">[ En preparación ]</span></div>
+      <div class="research-card"><span class="research-type t">Benchmark</span><div class="research-title">Aceleradoras del mundo: lo que hacen y lo que no hacen</div><p class="research-body">Análisis comparativo de Y Combinator, Techstars, Station F y otros programas globales — y el hueco que ninguno cubre.</p><span class="ph">[ En elaboración ]</span></div>
+      <div class="research-card"><span class="research-type">Marco conceptual</span><div class="research-title">Epigenética y rendimiento: lo que tu historia le hace a tu biología</div><p class="research-body">Cómo las experiencias acumuladas modifican la expresión génica y condicionan la capacidad de respuesta futura bajo presión sostenida.</p><span class="ph">[ En elaboración ]</span></div>
+      <div class="research-card"><span class="research-type">Reflexión</span><div class="research-title">¿Por qué fracasan los emprendedores de 40?</div><p class="research-body">No por falta de experiencia. El patrón que encontramos en los cuatro primeros emprendedores acompañados en 2025 apunta a algo estructural.</p><span class="ph">[ Basada en cohorte 2025 ]</span></div>
+    </div>
+  </section>
+
+
 </main>
 
 <!-- ═══════════════════════════════════════════ VIAJE ═══ -->
@@ -924,6 +1007,14 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
 
 <!-- ═══════════════════════════════════════════ NOSOTROS ═══ -->
 <main class="page" id="page-nosotros" style="display:none">
+
+  <!-- Sub-nav tabs -->
+  <div style="background:var(--card2);border-bottom:1px solid var(--line);padding:0 52px;display:flex;gap:0;overflow-x:auto;position:sticky;top:64px;z-index:10">
+    <button onclick="document.getElementById('tab-quienes').scrollIntoView({behavior:'smooth'})" style="background:none;border:none;border-bottom:2px solid var(--teal);color:#F2F4F9;font-size:13px;font-weight:600;padding:16px 20px;cursor:pointer;white-space:nowrap;letter-spacing:0.04em">Quiénes somos</button>
+    <button onclick="document.getElementById('tab-viaje').scrollIntoView({behavior:'smooth'})" style="background:none;border:none;border-bottom:2px solid transparent;color:#8A95A8;font-size:13px;font-weight:600;padding:16px 20px;cursor:pointer;white-space:nowrap;letter-spacing:0.04em" onmouseover="this.style.color='#F2F4F9'" onmouseout="this.style.color='#8A95A8'">Nuestro viaje</button>
+    <button onclick="document.getElementById('tab-carta').scrollIntoView({behavior:'smooth'})" style="background:none;border:none;border-bottom:2px solid transparent;color:#8A95A8;font-size:13px;font-weight:600;padding:16px 20px;cursor:pointer;white-space:nowrap;letter-spacing:0.04em" onmouseover="this.style.color='#F2F4F9'" onmouseout="this.style.color='#8A95A8'">Carta fundacional</button>
+  </div>
+  <div id="tab-quienes"></div>
 
   <div class="page-hero">
     <div class="page-hero-inner">
@@ -1890,8 +1981,8 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
     <div style="position:absolute;inset:0;background-image:url('https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/perlora-playa1_ba9a7617.jpg');background-size:cover;background-position:center 40%;filter:brightness(0.45)"></div>
     <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(7,9,14,1) 0%, rgba(7,9,14,0.3) 60%, transparent 100%)"></div>
     <div style="position:relative;z-index:2;padding:80px 52px 64px;max-width:900px">
-      <span class="eyebrow" style="margin-bottom:16px">Asturias · Costa Verde · Kickoff presencial</span>
-      <h1 style="font-size:clamp(2.8rem,6vw,5rem);line-height:1.05;margin-bottom:20px">El suelo de<br><em style="color:var(--teal)">Perlora.</em></h1>
+      <span class="eyebrow" style="margin-bottom:16px">El sueño · Asturias · Costa Verde</span>
+      <h1 style="font-size:clamp(2.8rem,6vw,5rem);line-height:1.05;margin-bottom:20px">El Centro de<br><em style="color:var(--teal)">Alto Emprendimiento.</em></h1>
       <p class="lead" style="max-width:600px;color:#C8D0E0">Donde el emprendimiento se trabaja en persona. El punto de encuentro físico de la Fundación de Alto Emprendimiento, en la costa asturiana.</p>
     </div>
   </div>
@@ -1901,8 +1992,8 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center" class="profile-grid">
       <div>
         <span class="eyebrow" style="margin-bottom:16px">Por qué Perlora</span>
-        <h2 style="font-size:clamp(1.8rem,3vw,2.8rem);margin-bottom:24px">Un lugar que <em>te obliga a pensar.</em></h2>
-        <p style="color:#9BA8BF;line-height:1.8;font-size:15px;margin-bottom:16px">Perlora no es un coworking. No es una aceleradora con mesas de ping-pong. Es un lugar en la costa norte de España donde el ruido del mundo se apaga y lo único que importa es construir con claridad.</p>
+        <h2 style="font-size:clamp(1.8rem,3vw,2.8rem);margin-bottom:24px">El primer centro del mundo<br><em>para emprendedores de alto rendimiento.</em></h2>
+        <p style="color:#9BA8BF;line-height:1.8;font-size:15px;margin-bottom:16px">El sueño es construir el primer centro de alto emprendimiento del mundo. Un espacio físico permanente en la costa norte de España — en Perlora, Asturias — donde el ruido del mundo se apaga y lo único que importa es construir con claridad.</p>
         <p style="color:#9BA8BF;line-height:1.8;font-size:15px;margin-bottom:16px">La naturaleza, el mar y el silencio no son el decorado — son parte de la metodología. Cuando el sistema nervioso se regula, la cognición mejora. Cuando la cognición mejora, las decisiones son mejores.</p>
         <p style="color:#9BA8BF;line-height:1.8;font-size:15px">Aquí es donde los emprendedores de FAE se encuentran cara a cara, trabajan en profundidad y construyen los vínculos que sostienen proyectos a largo plazo.</p>
       </div>
@@ -2192,7 +2283,7 @@ var PAGE_TITLES = {
   corporaciones: 'Para Corporaciones — Talento intraemprendedor | FAE Fundación Alto Emprendimiento',
   inversores: 'Para Inversores — Due diligence humana | FAE Fundación Alto Emprendimiento',
   viaje: 'Nuestro Viaje 2024-2030 — Visión Perlora | FAE Fundación Alto Emprendimiento',
-  nosotros: 'Quiénes Somos — Patronato y Carta Fundacional | FAE Fundación Alto Emprendimiento',
+  nosotros: 'La Fundación — Quiénes somos, Nuestro Viaje y Carta Fundacional | FAE',
   investigacion: 'Investigación — Working Papers | FAE Fundación Alto Emprendimiento',
   'paper-regulacion': 'Regulación Integral del Emprendedor — Working Paper v0.2 | FAE',
   'paper-triangulo': 'El Triángulo de Regulación del Emprendedor — Modelo Conceptual | FAE Fundación Alto Emprendimiento',
@@ -2206,7 +2297,7 @@ var PAGE_TITLES = {
   'emprendedor-beatriz': 'Beatriz — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
   'emprendedor-marcos': 'Marcos Ladreda — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
   'emprendedor-alvaro': 'Álvaro Tau — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
-  'perlora': 'Perlora — El espacio físico de FAE | Fundación de Alto Emprendimiento'
+  'perlora': 'Centro de Alto Emprendimiento — El sueño de FAE | Fundación de Alto Emprendimiento'
 };
 
 function go(id) {
