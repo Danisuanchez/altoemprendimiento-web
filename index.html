@@ -423,7 +423,6 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
     <li><button id="nav-investigacion" onclick="go('investigacion')">Investigación</button></li>
     <li><button id="nav-mentores" onclick="go('mentores')">Mentores</button></li>
     <li><button id="nav-perlora" onclick="go('perlora')">Perlora</button></li>
-    <li><button id="nav-sustrato" onclick="go('sustrato')">Sustrato</button></li>
     <li><button class="btn-nav" onclick="go('aplica-reto-2026')" data-i18n="nav.apply">Aplica al Reto 2026</button></li>
     <li><button id="lang-btn" onclick="toggleLang()" style="background:none;border:1px solid rgba(255,255,255,0.15);color:#8A95A8;font-size:11px;font-weight:700;letter-spacing:0.08em;padding:5px 10px;border-radius:6px;cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='#00DDB8';this.style.color='#00DDB8'" onmouseout="this.style.borderColor='rgba(255,255,255,0.15)';this.style.color='#8A95A8'">EN</button></li>
   </ul>
@@ -444,7 +443,6 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
   <button onclick="go('investigacion');closeMobileMenu()">Investigación</button>
   <button onclick="go('mentores');closeMobileMenu()">Mentores</button>
   <button onclick="go('perlora');closeMobileMenu()">Perlora</button>
-  <button onclick="go('sustrato');closeMobileMenu()">Sustrato intelectual</button>
   <button class="btn-apply" onclick="go('aplica-reto-2026');closeMobileMenu()" data-i18n="nav.apply">Aplica al Reto 2026</button>
   <button onclick="toggleLang();closeMobileMenu()" style="margin-top:8px;background:none;border:1px solid rgba(255,255,255,0.15);color:#8A95A8;font-size:12px;font-weight:700;letter-spacing:0.08em;padding:8px 16px;border-radius:8px;cursor:pointer" id="lang-btn-mobile">EN — Switch to English</button>
 </div>
@@ -1995,145 +1993,6 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
 
 </div>
 
-<!-- ═══════════════════════════════════════════════ SUSTRATO INTELECTUAL ═══ -->
-<div class="page" id="page-sustrato" style="display:none">
-
-  <div class="page-hero">
-    <div class="page-hero-inner">
-      <span class="eyebrow" style="margin-bottom:16px">Pensamiento propio · Marcos conceptuales · Investigación aplicada</span>
-      <h1 style="font-size:clamp(2.4rem,5vw,4rem);line-height:1.1;margin-bottom:20px">El sustrato<br><em style="color:var(--teal)">intelectual.</em></h1>
-      <p class="lead" style="max-width:640px">La metodología FAE se apoya en investigación real. Aquí publicamos los marcos y el pensamiento propio que fundamenta lo que hacemos. No teoría prestada — pensamiento construido desde la práctica.</p>
-    </div>
-  </div>
-
-  <!-- INTRO -->
-  <section class="sec">
-    <div style="max-width:760px;margin:0 auto;text-align:center;margin-bottom:56px">
-      <div style="background:rgba(0,221,184,0.04);border:1px solid rgba(0,221,184,0.12);border-radius:16px;padding:32px 40px">
-        <p style="font-size:16px;color:#C8D0E0;line-height:1.8;font-style:italic">"No tenemos todas las respuestas. Pero sí tenemos las preguntas correctas, y estamos construyendo los marcos para responderlas desde la evidencia y la práctica directa con emprendedores reales."</p>
-        <div style="margin-top:16px;font-size:12px;color:#8A95A8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">— Fundación de Alto Emprendimiento</div>
-      </div>
-    </div>
-
-    <!-- PUBLICACIONES -->
-    <div style="max-width:900px;margin:0 auto">
-      <span class="eyebrow" style="margin-bottom:32px;display:block">Publicaciones</span>
-      <div style="display:flex;flex-direction:column;gap:20px">
-
-        <!-- Paper 1 -->
-        <div onclick="go('paper-regulacion')" style="background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:28px 32px;cursor:pointer;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(0,221,184,0.3)'" onmouseout="this.style.borderColor='var(--line)'">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap">
-            <div style="flex:1;min-width:200px">
-              <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
-                <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:var(--teal);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:20px">Working Paper</span>
-                <span style="font-size:11px;color:#8A95A8">v0.2 · 2025</span>
-              </div>
-              <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-size:18px;font-weight:700;color:#F2F4F9;margin-bottom:8px">Regulación Integral del Emprendedor de Alto Rendimiento</h3>
-              <p style="font-size:13px;color:#8A95A8;line-height:1.6">Marco conceptual para el análisis y la intervención en los tres sistemas de regulación del emprendedor: fisiológico, cognitivo y social.</p>
-            </div>
-            <div style="color:var(--teal);font-size:20px;flex-shrink:0;align-self:center">→</div>
-          </div>
-        </div>
-
-        <!-- Paper 2 -->
-        <div onclick="go('paper-triangulo')" style="background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:28px 32px;cursor:pointer;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(0,221,184,0.3)'" onmouseout="this.style.borderColor='var(--line)'">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap">
-            <div style="flex:1;min-width:200px">
-              <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
-                <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:var(--teal);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:20px">Modelo Conceptual</span>
-                <span style="font-size:11px;color:#8A95A8">v1.0 · 2025</span>
-              </div>
-              <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-size:18px;font-weight:700;color:#F2F4F9;margin-bottom:8px">El Triángulo de Regulación del Emprendedor</h3>
-              <p style="font-size:13px;color:#8A95A8;line-height:1.6">Los tres vértices que determinan la capacidad de un emprendedor para sostener el rendimiento sin colapsar: fisiología, cognición y contexto social.</p>
-            </div>
-            <div style="color:var(--teal);font-size:20px;flex-shrink:0;align-self:center">→</div>
-          </div>
-        </div>
-
-        <!-- Próximamente 1 -->
-        <div style="background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:28px 32px;opacity:0.5">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
-            <span style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#8A95A8;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:20px">Próximamente</span>
-          </div>
-          <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-size:18px;font-weight:700;color:#F2F4F9;margin-bottom:8px">Perfil psicológico del emprendedor de alto rendimiento</h3>
-          <p style="font-size:13px;color:#8A95A8;line-height:1.6">Basado en los datos de la cohorte 2025. Patrones comunes, diferencias individuales y lo que realmente predice el éxito sostenido.</p>
-        </div>
-
-        <!-- Próximamente 2 -->
-        <div style="background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:28px 32px;opacity:0.5">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
-            <span style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#8A95A8;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:20px">Próximamente</span>
-          </div>
-          <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-size:18px;font-weight:700;color:#F2F4F9;margin-bottom:8px">Carga alostática y toma de decisiones en emprendedores</h3>
-          <p style="font-size:13px;color:#8A95A8;line-height:1.6">Cómo el estrés acumulado degrada la calidad de las decisiones estratégicas y qué protocolos de recuperación funcionan realmente.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA PARTICIPAR -->
-  <section class="sec-alt" style="text-align:center">
-    <span class="eyebrow">Investigación activa · Sujetos de estudio</span>
-    <h2 style="font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:16px">¿Quieres participar<br>en la investigación?</h2>
-    <p class="lead" style="max-width:520px;margin:0 auto 28px">Si eres emprendedor y quieres contribuir a construir este conocimiento — y beneficiarte de él — apúntate como sujeto de estudio.</p>
-    <button onclick="go('participa-investigacion')" class="btn-hero">Participar en la investigación →</button>
-  </section>
-
-</div>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-top">
-    <div>
-      <button class="f-logo" onclick="go('home')">F<b>A</b>E</button>
-      <p class="f-tagline">Primer centro de alto emprendimiento. Para que llegues lejos sin romperte.</p>
-    </div>
-    <div>
-      <span class="f-col-title">Audiencias</span>
-      <ul class="f-links">
-        <li><button onclick="go('emprendedores')">Emprendedores</button></li>
-        <li><button onclick="go('corporaciones')">Corporaciones</button></li>
-        <li><button onclick="go('inversores')">Inversores</button></li>
-      </ul>
-    </div>
-    <div>
-      <span class="f-col-title">Fundación</span>
-      <ul class="f-links">
-        <li><button onclick="go('nosotros')">Quiénes somos</button></li>
-        <li><button onclick="go('viaje')">Nuestro viaje</button></li>
-        <li><button onclick="go('nosotros')">Carta fundacional</button></li>
-        <li><button onclick="go('mentores')">Mentores</button></li>
-        <li><button onclick="go('investigacion')">Investigación</button></li>
-        <li><button onclick="go('sustrato')">Sustrato intelectual</button></li>
-        <li><button onclick="go('perlora')">Perlora</button></li>
-        <li><a href="mailto:hola@fundacionaltoemprendimiento.org">Contacto</a></li>
-      </ul>
-    </div>
-    <div>
-      <span class="f-col-title">Síguenos</span>
-      <div class="f-social-row">
-        <a href="https://www.linkedin.com/company/fundacion-alto-emprendimiento" class="f-social-btn" title="LinkedIn" target="_blank" rel="noopener noreferrer">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.5"/></svg>
-        </a>
-        <a href="#" class="f-social-btn" title="Instagram">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
-        </a>
-        <a href="https://twitter.com/fae_emprendimiento" class="f-social-btn" title="X" target="_blank" rel="noopener noreferrer">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span class="f-copy">© 2026 Fundación Alto Emprendimiento</span>
-    <ul class="f-legal">
-      <li><a href="#">Privacidad</a></li>
-      <li><a href="#">Cookies</a></li>
-      <li><a href="#">Aviso Legal</a></li>
-    </ul>
-  </div>
-</footer>
 
 <!-- ═══════════════════════════════════════════════ MENTORES ═══ -->
 <div class="page" id="page-mentores" style="display:none">
@@ -2326,7 +2185,7 @@ function closeMobileMenu() {
 document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeMobileMenu(); });
 
 /* ── ROUTER ── */
-var PAGES = ['home', 'emprendedores', 'corporaciones', 'inversores', 'viaje', 'nosotros', 'investigacion', 'paper-regulacion', 'paper-triangulo', 'aplica-reto-2026', 'participa-investigacion', 'mentores', 'mentores-jesusalonsogallo', 'emprendedor-blanca', 'emprendedor-aitor', 'emprendedor-mario', 'emprendedor-beatriz', 'emprendedor-marcos', 'emprendedor-alvaro', 'perlora', 'sustrato'];
+var PAGES = ['home', 'emprendedores', 'corporaciones', 'inversores', 'viaje', 'nosotros', 'investigacion', 'paper-regulacion', 'paper-triangulo', 'aplica-reto-2026', 'participa-investigacion', 'mentores', 'mentores-jesusalonsogallo', 'emprendedor-blanca', 'emprendedor-aitor', 'emprendedor-mario', 'emprendedor-beatriz', 'emprendedor-marcos', 'emprendedor-alvaro', 'perlora'];
 var PAGE_TITLES = {
   home: 'FAE — Fundación Alto Emprendimiento | Acompañamiento integral para emprendedores',
   emprendedores: 'Para Emprendedores — Reto 2026 | FAE Fundación Alto Emprendimiento',
@@ -2347,8 +2206,7 @@ var PAGE_TITLES = {
   'emprendedor-beatriz': 'Beatriz — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
   'emprendedor-marcos': 'Marcos Ladreda — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
   'emprendedor-alvaro': 'Álvaro Tau — Cohorte 2025 | FAE Fundación Alto Emprendimiento',
-  'perlora': 'Perlora — El espacio físico de FAE | Fundación de Alto Emprendimiento',
-  'sustrato': 'El Sustrato Intelectual — Investigación y marcos conceptuales | FAE'
+  'perlora': 'Perlora — El espacio físico de FAE | Fundación de Alto Emprendimiento'
 };
 
 function go(id) {
