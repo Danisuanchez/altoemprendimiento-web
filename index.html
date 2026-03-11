@@ -416,8 +416,7 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
   <button class="logo" onclick="go('home')">F<b>A</b>E</button>
   <ul class="nav-links">
     <li><button id="nav-emprendedores" onclick="go('emprendedores')">Emprendedores</button></li>
-    <li><button id="nav-mentores" onclick="go('mentores')">Mentores</a></li>
-          <li><a href="#" onclick="go('perks')">Perks</button></li>
+    <li><button id="nav-mentores" onclick="go('mentores')">Mentores</button></li>
     <li><button id="nav-perks" onclick="go('perks')">Perks</button></li>
     <li><button id="nav-retos" onclick="go('retos')">Retos</button></li>
     <li><button id="nav-inversion" onclick="go('inversores')">Inversión</button></li>
@@ -1006,41 +1005,73 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
 
   <!-- Sub-nav tabs -->
   <div style="background:var(--card2);border-bottom:1px solid var(--line);padding:0 52px;display:flex;gap:0;overflow-x:auto;position:sticky;top:64px;z-index:10">
-    <button onclick="document.getElementById('tab-quienes').scrollIntoView({behavior:'smooth'})" style="background:none;border:none;border-bottom:2px solid var(--teal);color:#F2F4F9;font-size:13px;font-weight:600;padding:16px 20px;cursor:pointer;white-space:nowrap;letter-spacing:0.04em">Quiénes somos</button>
-    <button onclick="document.getElementById('tab-viaje').scrollIntoView({behavior:'smooth'})" style="background:none;border:none;border-bottom:2px solid transparent;color:#8A95A8;font-size:13px;font-weight:600;padding:16px 20px;cursor:pointer;white-space:nowrap;letter-spacing:0.04em" onmouseover="this.style.color='#F2F4F9'" onmouseout="this.style.color='#8A95A8'">Nuestro viaje</button>
+    <button onclick="document.getElementById('tab-quienes').scrollIntoView({behavior:'smooth'})" style="background:none;border:none;border-bottom:2px solid var(--teal);color:#F2F4F9;font-size:13px;font-weight:600;padding:16px 20px;cursor:pointer;white-space:nowrap;letter-spacing:0.04em">La Fundación</button>
+    <button onclick="document.getElementById('tab-patronato').scrollIntoView({behavior:'smooth'})" style="background:none;border:none;border-bottom:2px solid transparent;color:#8A95A8;font-size:13px;font-weight:600;padding:16px 20px;cursor:pointer;white-space:nowrap;letter-spacing:0.04em" onmouseover="this.style.color='#F2F4F9'" onmouseout="this.style.color='#8A95A8'">Patronato</button>
     <button onclick="document.getElementById('tab-carta').scrollIntoView({behavior:'smooth'})" style="background:none;border:none;border-bottom:2px solid transparent;color:#8A95A8;font-size:13px;font-weight:600;padding:16px 20px;cursor:pointer;white-space:nowrap;letter-spacing:0.04em" onmouseover="this.style.color='#F2F4F9'" onmouseout="this.style.color='#8A95A8'">Carta fundacional</button>
+    <button onclick="document.getElementById('tab-transparencia').scrollIntoView({behavior:'smooth'})" style="background:none;border:none;border-bottom:2px solid transparent;color:#8A95A8;font-size:13px;font-weight:600;padding:16px 20px;cursor:pointer;white-space:nowrap;letter-spacing:0.04em" onmouseover="this.style.color='#F2F4F9'" onmouseout="this.style.color='#8A95A8'">Transparencia</button>
   </div>
   <div id="tab-quienes"></div>
 
   <div class="page-hero">
     <div class="page-hero-inner">
-      <span class="eyebrow" data-i18n="nos.eyebrow">Quiénes somos</span>
-      <h1 data-i18n="nos.h1">Dos emprendedores<br>y una psicóloga.<br><em>Sin adornos.</em></h1>
-      <p class="lead" data-i18n="nos.lead">Sin figuras decorativas. Sin advisors de perfil de LinkedIn. Las personas que están detrás de FAE son las que hacen el trabajo.</p>
+      <span class="eyebrow">La Fundación</span>
+      <h1>Nace de una historia real.<br>La de alguien que<br><em>se rompió.</em></h1>
+      <p class="lead">Fundación Alto Emprendimiento nació del caso real de su presidente, Daniel Suárez Sánchez. Tras más de 20 años innovando y emprendiendo, sufrió un proceso de burnout y depresión que le hizo ver las inconsistencias de un modelo que trata a las personas como máquinas. De esa experiencia nació FAE.</p>
     </div>
   </div>
 
+  <!-- FUNDACIÓN INTRO SECTION -->
   <section class="sec">
-    <span class="eyebrow" data-i18n="nos.patronato.eyebrow">Patronato</span>
-    <h2 data-i18n="nos.patronato.h2">Las personas<br>que hacen<br><em>el trabajo.</em></h2>
+    <div class="two-grid" style="gap:52px;align-items:start">
+      <div>
+        <span class="eyebrow">Por qué existe FAE</span>
+        <h2>Un modelo de emprendimiento<br>diseñado para<br><em>sistemas vivos.</em></h2>
+        <p class="lead">El modelo de emprendimiento actual está obsoleto. Fue diseñado con variables estadísticas que tratan a las personas como máquinas — no como sistemas vivos con biología, historia y límites reales.</p>
+        <p class="lead">FAE nació para cambiar eso. Para investigar, acompañar a emprendedores y desarrollar metodologías y modelos de management inspirados en sistemas vivos — no en los modelos mecanicistas y estáticos del pasado.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.15);border-radius:12px;padding:24px">
+          <div style="font-size:1.5rem;margin-bottom:10px">🔬</div>
+          <div style="font-weight:700;color:#F2F4F9;margin-bottom:8px">Investigar</div>
+          <div style="font-size:14px;color:#8892A0">Genómica, epigenética, neurociencia, psicología del rendimiento. El sustrato científico que fundamenta todo lo que hacemos.</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:24px">
+          <div style="font-size:1.5rem;margin-bottom:10px">🤝</div>
+          <div style="font-weight:700;color:#F2F4F9;margin-bottom:8px">Acompañar</div>
+          <div style="font-size:14px;color:#8892A0">Acompañamiento integral — cognitivo, emocional y biológico — a emprendedores y directivos para que lleguen lejos sin romperse.</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:24px">
+          <div style="font-size:1.5rem;margin-bottom:10px">🗺️</div>
+          <div style="font-weight:700;color:#F2F4F9;margin-bottom:8px">Desarrollar metodología</div>
+          <div style="font-size:14px;color:#8892A0">Modelos de management y acompañamiento más humanos, más precisos y más sostenibles que los actuales.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="tab-patronato" style="scroll-margin-top:80px"></div>
+  <section class="sec-alt">
+    <span class="eyebrow">Patronato</span>
+    <h2>Las personas<br>que hacen<br><em>el trabajo.</em></h2>
     <div class="person-grid3">
       <div class="person-card">
         <div class="person-avatar">DS</div>
-        <div class="person-name">Daniel Suárez</div>
+        <div class="person-name">Daniel Suárez Sánchez</div>
         <span class="person-role">Presidente · Emprendedor en serie</span>
-        <p class="person-bio">Emprendedor asturiano. Fundador de Freehouse — primera incubadora orgánica de España — donde creó e invirtió en más de 12 empresas. CEO de Zapiens.ai, plataforma de inteligencia colectiva usada en Microsoft, IKEA y Vodafone. Economista e investigador con más de 20 años de experiencia en emprendimiento.</p>
+        <p class="person-bio">Emprendedor en serie y business angel. Fundador de más de 12 empresas, con experiencia trabajando con más de 50 grandes corporaciones. Seleccionado como uno de los 100 mejores emprendedores de España. Tras más de 20 años innovando, sufrió un proceso de burnout y depresión que le hizo ver las inconsistencias de un modelo que trata a las personas como máquinas. De esa experiencia nació FAE.</p>
+        <a href="https://danisanchez.es" target="_blank" rel="noopener" style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;margin-top:8px;display:block;text-decoration:none">danisanchez.es →</a>
       </div>
       <div class="person-card">
         <div class="person-avatar">AF</div>
         <div class="person-name">Aitor Fernández</div>
         <span class="person-role">Patrono · Emprendedor</span>
-        <p class="person-bio" style="color:#5C6880;font-style:italic">[ Bio pendiente — próximamente. ]</p>
+        <p class="person-bio">Emprendedor que se quedó ciego como consecuencia de malas prácticas. Esa experiencia radical le llevó a desarrollar un interés profundo por la gestión de la autonomía, la cognición, la exponencialidad y los modelos de comunicación humana. Patrono de FAE con foco en la parte más humana del emprendimiento.</p>
       </div>
       <div class="person-card">
         <div class="person-avatar">Ana</div>
-        <div class="person-name">Ana Fernández</div>
-        <span class="person-role">Patrona · Psicóloga</span>
-        <p class="person-bio" style="color:#5C6880;font-style:italic">[ Bio pendiente — ex directora de búsquedas, psicóloga especializada en... Pendiente de completar con datos de Ana. ]</p>
+        <div class="person-name">Ana</div>
+        <span class="person-role">Patrona · Psicóloga forense</span>
+        <p class="person-bio">Psicóloga forense con profundo interés en llevar a la práctica modelos de análisis y perfilado aplicados a la gestión integral. Su objetivo en FAE es desarrollar metodologías que mejoren la calidad de vida de los emprendedores desde una perspectiva científica y humana.</p>
       </div>
     </div>
   </section>
@@ -1076,25 +1107,55 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
     </div>
   </section>
 
+  <div id="tab-carta" style="scroll-margin-top:80px"></div>
   <section class="sec-alt" style="text-align:center">
-    <span class="eyebrow" data-i18n="nos.carta.eyebrow">Carta fundacional</span>
-    <h2 data-i18n="nos.carta.h2">Por qué<br><em>existe FAE.</em></h2>
+    <span class="eyebrow">Carta fundacional</span>
+    <h2>Por qué<br><em>existe FAE.</em></h2>
     <div class="carta-box">
       <div class="carta-text">
-        <p data-i18n="nos.carta.p1">Llevamos años viendo lo mismo. Personas extraordinarias que se rompen. No por falta de talento, ni de esfuerzo, ni de ideas. Se rompen porque nadie les enseñó a sostener lo que estaban construyendo.</p>
-        <p data-i18n="nos.carta.p2">Las aceleradoras trabajan el modelo de negocio. Los inversores trabajan las métricas. Los MBA trabajan la estrategia. Pero nadie trabaja al emprendedor. Nadie pregunta cómo funciona su sistema nervioso bajo presión crónica. Nadie analiza si su biología le permite aguantar décadas. Nadie mide cómo decide cuando está agotado.</p>
-        <p data-i18n="nos.carta.p3">FAE nace de esa convicción: que el mayor activo de cualquier proyecto no es el producto, ni el mercado, ni la financiación. Es la persona que lo sostiene todo. Y esa persona necesita preparación científica, integral y honesta.</p>
-        <p data-i18n="nos.carta.p4">No somos una aceleradora. No somos una escuela de negocios. Somos la primera fundación que trata al emprendedor como lo que es: un ser humano completo que opera en condiciones extremas durante años — y que merece el mismo rigor y el mismo cuidado que un atleta de élite.</p>
-        <p data-i18n="nos.carta.p5">Detectamos a los mejores. Los acompañamos de forma integral — cognitiva, emocional y biológicamente. Y trabajamos para que lleguen lejos sin romperse.</p>
-        <p data-i18n="nos.carta.p6">Porque lo que se rompe no es la empresa. Eres tú.</p>
+        <p>Llevo más de 20 años emprendiendo. He fundado más de 12 empresas. He trabajado con más de 50 grandes corporaciones. He visto de cerca lo que el emprendimiento puede construir — y lo que puede destruir.</p>
+        <p>En algún momento del camino, me rompí. No de golpe. Poco a poco. Un proceso de burnout y depresión que tardé tiempo en reconocer, en entender y en superar. Y en ese proceso vi algo que no podía ignorar: el modelo de emprendimiento que todos damos por bueno está diseñado para máquinas, no para personas.</p>
+        <p>Las aceleradoras trabajan el modelo de negocio. Los inversores trabajan las métricas. Los MBA trabajan la estrategia. Pero nadie trabaja al emprendedor. Nadie pregunta cómo funciona su sistema nervioso bajo presión crónica. Nadie analiza si su biología le permite aguantar décadas. Nadie mide cómo decide cuando está agotado.</p>
+        <p>FAE nace de esa convicción: que el mayor activo de cualquier proyecto no es el producto, ni el mercado, ni la financiación. Es la persona que lo sostiene todo. Y esa persona necesita preparación científica, integral y honesta. Porque el modelo actual está obsoleto — fue diseñado con variables estadísticas que tratan a los emprendedores como piezas de un sistema mecanicista y estático. Nosotros entendemos que somos sistemas vivos.</p>
+        <p>No somos una aceleradora. No somos una escuela de negocios. Somos la primera fundación que trata al emprendedor como lo que es: un ser humano completo que opera en condiciones extremas durante años — y que merece el mismo rigor y el mismo cuidado que un atleta de élite.</p>
+        <p>Detectamos a los mejores. Los acompañamos de forma integral — cognitiva, emocional y biológicamente. Y trabajamos para que lleguen lejos sin romperse.</p>
+        <p>Porque lo que se rompe no es la empresa. Eres tú.</p>
       </div>
       <div class="carta-firma">
         <div class="person-avatar" style="width:44px;height:44px;font-size:13px;margin:0;flex-shrink:0">DS</div>
         <div>
-          <div class="carta-firma-name">Daniel Suárez</div>
+          <div class="carta-firma-name">Daniel Suárez Sánchez</div>
           <span class="carta-firma-role">Presidente, Fundación Alto Emprendimiento</span>
         </div>
       </div>
+    </div>
+  </section>
+
+  <div id="tab-transparencia" style="scroll-margin-top:80px"></div>
+  <section class="sec">
+    <span class="eyebrow">Portal de transparencia</span>
+    <h2>Cómo se financia<br><em>la Fundación.</em></h2>
+    <p class="lead" style="max-width:640px">FAE es una fundación sin ánimo de lucro. Todos los recursos se destinan a la investigación, divulgación y acompañamiento de emprendedores. Aquí explicamos de dónde vienen.</p>
+    <div class="card-grid3" style="margin-top:32px">
+      <div class="crd">
+        <span class="crd-ico">🏛️</span>
+        <div class="crd-title">Fondos propios</div>
+        <p class="crd-body">La Fundación se financia inicialmente con la aportación directa de sus patronos. Sin deuda. Sin condicionantes externos.</p>
+      </div>
+      <div class="crd">
+        <span class="crd-ico">🤝</span>
+        <div class="crd-title">Proyectos y corporaciones</div>
+        <p class="crd-body">Proyectos de investigación, retos de innovación con corporaciones y apoyos de empresas que comparten la visión de FAE.</p>
+      </div>
+      <div class="crd">
+        <span class="crd-ico">💼</span>
+        <div class="crd-title">Servicios a fondos e instituciones</div>
+        <p class="crd-body">Oferta de servicios especializados — due diligence humana, evaluación de equipos, acompañamiento — a fondos de inversión y corporaciones.</p>
+      </div>
+    </div>
+    <div style="margin-top:40px;padding:28px;background:var(--card2);border-radius:16px;border:1px solid var(--line)">
+      <div style="font-weight:700;color:#F2F4F9;margin-bottom:8px;font-size:1rem">Destino de los recursos</div>
+      <p style="color:#8892A0;font-size:14px;margin-bottom:0">Como fundación sin ánimo de lucro, el 100% de los recursos generados se destina a la investigación, divulgación y acompañamiento de emprendedores. No hay beneficio privado. No hay reparto de dividendos. Solo misión.</p>
     </div>
   </section>
 
@@ -2298,6 +2359,657 @@ footer { background: var(--bg); border-top: 1px solid var(--line); }
 
 </div>
 
+
+
+<!-- ═════════════════════════════════════════════ EMPRENDEDOR: TASSILO ═══ -->
+<div class="page" id="page-emprendedor-tassilo" style="display:none">
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <button onclick="go('emprendedores')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;display:flex;align-items:center;gap:6px">← Cohorte 2026</button>
+      <span class="eyebrow">Emprendedor · Cohorte 2026</span>
+      <h1 style="font-size:clamp(2.4rem,5vw,4rem);line-height:1.05;margin-bottom:16px">Tassilo<br>de la Torre<br><em>Schönborn-Wiesentheid.</em></h1>
+      <p class="lead" style="max-width:580px">Arquitecto con visión global. Fundador de <a href="https://antiga.es" target="_blank" rel="noopener" style="color:#00DDB8">antiga.es</a> — el primer escaparate digital de antigüedades para interioristas y profesionales del diseño.</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:24px">
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:#00DDB8;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Marketplace</span>
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:#00DDB8;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Diseño de interiores</span>
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:#00DDB8;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Arquitectura</span>
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:#00DDB8;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Antigüedades</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROPUESTA DE VALOR -->
+  <section class="sec">
+    <div style="background:rgba(0,221,184,0.04);border:1px solid rgba(0,221,184,0.15);border-radius:20px;padding:36px 40px;max-width:760px;margin:0 auto">
+      <span style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#00DDB8;display:block;margin-bottom:12px">El proyecto</span>
+      <p style="font-size:18px;color:#F2F4F9;line-height:1.7;font-family:'Bricolage Grotesque',sans-serif;font-weight:500">El mercado de antigüedades es opaco, fragmentado y analógico. Tassilo está construyendo el primer escaparate digital pensado para interioristas y profesionales del diseño — donde la pieza correcta llega al profesional correcto.</p>
+    </div>
+  </section>
+
+  <!-- BIO -->
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <span class="eyebrow">Trayectoria</span>
+    <h2 style="font-size:clamp(1.8rem,3.5vw,2.6rem);margin-bottom:32px">Arquitecto<br><em>con visión global.</em></h2>
+
+    <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:20px">Tassilo de la Torre Schönborn-Wiesentheid es arquitecto con una formación y visión internacional. Su experiencia en el mundo del diseño, la arquitectura y el patrimonio le ha dado una perspectiva única sobre el mercado de antigüedades: un sector con enorme valor cultural y económico que sigue funcionando de forma mayoritariamente analógica y local.</p>
+
+    <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:40px">Con <a href="https://antiga.es" target="_blank" rel="noopener" style="color:#00DDB8;text-decoration:none">antiga.es</a>, Tassilo está construyendo el primer marketplace especializado en antigüedades para interioristas y profesionales del diseño en España. No es un portal de segunda mano — es un escaparate curado, donde cada pieza tiene historia, contexto y el nivel de calidad que exige el mercado profesional del diseño de interiores.</p>
+
+    <!-- ÁREAS -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:48px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:22px">
+        <div style="font-size:22px;margin-bottom:10px">🏛</div>
+        <div style="font-size:13px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px">Marketplace digital</div>
+        <p style="font-size:13px;color:#8A95A8;line-height:1.7;margin:0">Plataforma especializada en antigüedades para interioristas y profesionales del diseño.</p>
+      </div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:22px">
+        <div style="font-size:22px;margin-bottom:10px">🎨</div>
+        <div style="font-size:13px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px">Diseño de interiores</div>
+        <p style="font-size:13px;color:#8A95A8;line-height:1.7;margin:0">Conectar piezas únicas con los profesionales que las necesitan para sus proyectos.</p>
+      </div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:22px">
+        <div style="font-size:22px;margin-bottom:10px">🌍</div>
+        <div style="font-size:13px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px">Visión global</div>
+        <p style="font-size:13px;color:#8A95A8;line-height:1.7;margin:0">Formación y experiencia internacional en arquitectura y patrimonio cultural.</p>
+      </div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:22px">
+        <div style="font-size:22px;margin-bottom:10px">🏺</div>
+        <div style="font-size:13px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px">Patrimonio</div>
+        <p style="font-size:13px;color:#8A95A8;line-height:1.7;margin:0">Digitalizar y democratizar el acceso a piezas de antigüedad con valor histórico y estético.</p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div style="background:var(--card2);border:1px solid var(--line);border-radius:20px;padding:36px;text-align:center">
+      <span class="eyebrow" style="display:block;margin-bottom:16px">Reto 2026 · Máximo 12 emprendedores</span>
+      <h3 style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:12px">Tassilo forma parte<br><em>del Reto 2026.</em></h3>
+      <p style="font-size:15px;color:#8A95A8;margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto">Si quieres aplicar al programa o conocer más sobre antiga.es, escríbenos.</p>
+      <button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button>
+      <p style="font-size:12px;color:#5C6880;margin-top:16px">Proceso confidencial · Sin compromiso</p>
+    </div>
+  </section>
+
+</div>
+
+
+
+<!-- ═════════════════════════════════════════════════════════ PERKS ═══ -->
+<div class="page" id="page-perks" style="display:none">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <span class="eyebrow">Para emprendedores FAE</span>
+      <h1>Perks.<br><em>Lo que necesitas<br>para construir.</em></h1>
+      <p class="lead" style="max-width:600px">Estos son los perks que nos imaginamos — y nos imaginamos muchos más. Si te llega un mail nuestro, es porque lo estamos construyendo en tiempo real y nos gustaría que estuvieras aquí y formaras parte de la estructura para ayudar a que haya más talento emprendedor en España.</p>
+    </div>
+  </div>
+
+  <section class="sec">
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:16px;padding:28px 32px;margin-bottom:48px;display:flex;gap:20px;align-items:flex-start">
+      <div style="font-size:2rem;flex-shrink:0">🚧</div>
+      <div>
+        <div style="font-weight:700;color:#F2F4F9;margin-bottom:8px;font-size:1.05rem">Lo estamos construyendo en tiempo real</div>
+        <p style="color:#8892A0;font-size:14px;margin-bottom:0">Estos perks son los que nos imaginamos para los emprendedores FAE. Algunos ya son reales, otros los estamos negociando ahora mismo. Si eres una empresa y quieres ser partner, escríbenos. Si recibes un mail nuestro, es porque creemos que puedes formar parte de esto.</p>
+      </div>
+    </div>
+    <span class="eyebrow">Para empresas y partners</span>
+    <h2 style="font-size:clamp(1.8rem,3.5vw,2.8rem);margin-bottom:16px">¿Te animas a apoyar<br>a la Fundación?</h2>
+    <p class="lead" style="max-width:640px;margin-bottom:48px">Para que sus emprendedores tengan la mejor banca, los mejores billetes, los mejores servidores. Escríbenos y lo construimos juntos.</p>
+    <div style="text-align:center;margin-bottom:64px">
+      <a href="mailto:hola@fundacionaltoemprendimiento.org" class="btn-hero" style="text-decoration:none">Quiero ser partner →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
+
+      <!-- VIAJES Y TRANSPORTE -->
+      <div style="grid-column:1/-1;margin-bottom:8px">
+        <span class="eyebrow" style="font-size:11px">Viajes y transporte</span>
+      </div>
+
+      <div class="cohort-card" onclick="go('perks-iberia')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">✈️</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Iberia</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">10% de descuento en vuelos para emprendedores FAE. Tarjeta Iberia Plus con beneficios exclusivos.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
+        </div>
+      </div>
+
+      <div class="cohort-card" onclick="go('perks-renfe')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🚄</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Renfe</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">10% de descuento en billetes de tren. Tarjeta Renfe con acceso a tarifas preferenciales.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
+        </div>
+      </div>
+
+      <!-- FINANZAS -->
+      <div style="grid-column:1/-1;margin-top:24px;margin-bottom:8px">
+        <span class="eyebrow" style="font-size:11px">Finanzas</span>
+      </div>
+
+      <div class="cohort-card" onclick="go('perks-santander')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🏦</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Banco Santander</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Financiación básica y prioritaria para emprendedores FAE. Descuento en comisiones y acceso a líneas de crédito preferentes.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
+        </div>
+      </div>
+
+      <!-- LOGÍSTICA -->
+      <div style="grid-column:1/-1;margin-top:24px;margin-bottom:8px">
+        <span class="eyebrow" style="font-size:11px">Logística</span>
+      </div>
+
+      <div class="cohort-card" onclick="go('perks-seur')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">📦</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">SEUR</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Tarifas preferenciales en envíos y logística para startups FAE. Acceso a la red de distribución nacional.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
+        </div>
+      </div>
+
+      <!-- TECNOLOGÍA E IA -->
+      <div style="grid-column:1/-1;margin-top:24px;margin-bottom:8px">
+        <span class="eyebrow" style="font-size:11px">Tecnología e Inteligencia Artificial</span>
+      </div>
+
+      <div class="cohort-card" onclick="go('perks-aws')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">☁️</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Amazon Web Services</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Créditos de cloud para emprendedores FAE. Infraestructura escalable desde el primer día.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
+        </div>
+      </div>
+
+      <div class="cohort-card" onclick="go('perks-google')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🔵</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Google Cloud</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Créditos de Google Cloud para startups FAE. Acceso a herramientas de IA y machine learning de Google.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
+        </div>
+      </div>
+
+      <div class="cohort-card" onclick="go('perks-openai')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🤖</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">OpenAI</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Créditos de API de OpenAI para emprendedores FAE. Acceso a GPT-4, DALL-E y el resto del stack.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
+        </div>
+      </div>
+
+      <div class="cohort-card" onclick="go('perks-claude')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🧠</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Anthropic Claude</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Créditos de Claude para emprendedores FAE. El modelo de IA más avanzado para razonamiento y programación.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
+        </div>
+      </div>
+
+      <div class="cohort-card" onclick="go('perks-manus')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">⚡</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Manus.im</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">2.000 créditos de Manus para emprendedores FAE. El agente de IA más avanzado para automatizar cualquier tarea.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
+        </div>
+      </div>
+
+      <!-- ACELERACIÓN Y ECOSISTEMA -->
+      <div style="grid-column:1/-1;margin-top:24px;margin-bottom:8px">
+        <span class="eyebrow" style="font-size:11px">Aceleración y ecosistema</span>
+      </div>
+      <div class="cohort-card" style="cursor:default">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🚀</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Y Combinator — Deals</div>
+              <div style="font-size:12px;color:#FF8C00;font-weight:600">En construcción</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Acceso a los YC Deals — descuentos y créditos de más de 250 empresas para startups. AWS, Stripe, Notion, Brex y muchos más. El mismo stack que usan las mejores startups del mundo.</p>
+          <span style="font-size:11px;color:#FF8C00;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Próximamente →</span>
+        </div>
+      </div>
+      <div class="cohort-card" style="cursor:default">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🏗️</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Lanzadera — Red de alumni</div>
+              <div style="font-size:12px;color:#FF8C00;font-weight:600">En construcción</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Acceso a la red de más de 800 startups de Lanzadera. Conexiones, sinergias y oportunidades de colaboración con el ecosistema emprendedor más activo de España.</p>
+          <span style="font-size:11px;color:#FF8C00;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Próximamente →</span>
+        </div>
+      </div>
+      <!-- SALUD Y BIENESTAR -->
+      <div style="grid-column:1/-1;margin-top:24px;margin-bottom:8px">
+        <span class="eyebrow" style="font-size:11px">Salud y bienestar</span>
+      </div>
+      <div class="cohort-card" style="cursor:default">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">💊</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Análisis biológico avanzado</div>
+              <div style="font-size:12px;color:#FF8C00;font-weight:600">En construcción</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Análisis genómico, epigenético y bioquímico para emprendedores FAE. Conoce tu base biológica real y cómo responde tu cuerpo bajo presión sostenida.</p>
+          <span style="font-size:11px;color:#FF8C00;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Próximamente →</span>
+        </div>
+      </div>
+      <div class="cohort-card" style="cursor:default">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🧘</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Psicología y coaching ejecutivo</div>
+              <div style="font-size:12px;color:#FF8C00;font-weight:600">En construcción</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Sesiones de psicología y coaching ejecutivo con profesionales especializados en emprendedores y directivos de alto rendimiento.</p>
+          <span style="font-size:11px;color:#FF8C00;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Próximamente →</span>
+        </div>
+      </div>
+      <!-- LEGAL Y FISCAL -->
+      <div style="grid-column:1/-1;margin-top:24px;margin-bottom:8px">
+        <span class="eyebrow" style="font-size:11px">Legal y fiscal</span>
+      </div>
+      <div class="cohort-card" style="cursor:default">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">⚖️</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Asesoría legal para startups</div>
+              <div style="font-size:12px;color:#FF8C00;font-weight:600">En construcción</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Acceso a asesoría legal especializada en startups — constitución, contratos, propiedad intelectual, rondas de inversión.</p>
+          <span style="font-size:11px;color:#FF8C00;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Próximamente →</span>
+        </div>
+      </div>
+      <!-- FORMACIÓN Y CONOCIMIENTO -->
+      <div style="grid-column:1/-1;margin-top:24px;margin-bottom:8px">
+        <span class="eyebrow" style="font-size:11px">Formación y conocimiento</span>
+      </div>
+      <div class="cohort-card" style="cursor:default">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">📚</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Acceso a investigación FAE</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Acceso completo a toda la investigación, metodologías y recursos desarrollados por la Fundación. Conocimiento exclusivo para emprendedores del programa.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Incluido en el programa →</span>
+        </div>
+      </div>
+      <div class="cohort-card" style="cursor:default">
+        <div style="padding:24px">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🎓</div>
+            <div>
+              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Masterclasses con mentores</div>
+              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
+            </div>
+          </div>
+          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Acceso a masterclasses exclusivas con los mentores de FAE. Emprendedores, inversores, científicos y expertos que comparten su experiencia real.</p>
+          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Incluido en el programa →</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-sec">
+    <div class="cta-inner">
+      <span class="eyebrow" style="text-align:center">¿Eres empresa?</span>
+      <h2>Construye<br>la mejor cantera<br><em>con nosotros.</em></h2>
+      <p class="cta-sub">Escríbenos y diseñamos juntos el perk que más impacto tenga en los emprendedores.</p>
+      <div style="text-align:center;margin-top:16px">
+        <a href="mailto:hola@fundacionaltoemprendimiento.org" class="btn-teal-lg">Quiero ser partner →</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════ PERK: IBERIA ═══ -->
+<div class="page" id="page-perks-iberia" style="display:none">
+  <div class="page-hero"><div class="page-hero-inner">
+    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
+    <span class="eyebrow">Perk FAE · Viajes</span>
+    <h1>✈️ Iberia<br><em>10% descuento<br>en vuelos.</em></h1>
+    <p class="lead">Como emprendedor FAE, accedes a tarifas preferenciales en Iberia y beneficios exclusivos de Iberia Plus.</p>
+  </div></div>
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
+      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> 10% de descuento en vuelos nacionales e internacionales</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Tarjeta Iberia Plus con acumulación de puntos desde el primer vuelo</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso prioritario a check-in y embarque</li>
+        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
+      </ul>
+    </div>
+    <p style="font-size:14px;color:#5C6880;text-align:center">Para acceder a este perk, aplica al programa FAE. Los perks se activan una vez seleccionado.</p>
+    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════ PERK: RENFE ═══ -->
+<div class="page" id="page-perks-renfe" style="display:none">
+  <div class="page-hero"><div class="page-hero-inner">
+    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
+    <span class="eyebrow">Perk FAE · Transporte</span>
+    <h1>🚄 Renfe<br><em>10% descuento<br>en trenes.</em></h1>
+    <p class="lead">Movilidad preferencial para emprendedores FAE en toda la red de alta velocidad y media distancia de Renfe.</p>
+  </div></div>
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
+      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> 10% de descuento en billetes AVE, Alvia y Media Distancia</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Tarjeta Renfe con puntos acumulables en cada viaje</li>
+        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
+      </ul>
+    </div>
+    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════ PERK: SANTANDER ═══ -->
+<div class="page" id="page-perks-santander" style="display:none">
+  <div class="page-hero"><div class="page-hero-inner">
+    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
+    <span class="eyebrow">Perk FAE · Finanzas</span>
+    <h1>🏦 Banco Santander<br><em>Financiación<br>prioritaria.</em></h1>
+    <p class="lead">Acceso a financiación básica y prioritaria para emprendedores FAE. Descuento en comisiones y líneas de crédito preferentes.</p>
+  </div></div>
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
+      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Financiación básica y prioritaria para startups FAE</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Descuento en comisiones bancarias</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso a líneas de crédito preferentes para emprendedores</li>
+        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Descuento de facturas y financiación de circulante</li>
+      </ul>
+    </div>
+    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════ PERK: SEUR ═══ -->
+<div class="page" id="page-perks-seur" style="display:none">
+  <div class="page-hero"><div class="page-hero-inner">
+    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
+    <span class="eyebrow">Perk FAE · Logística</span>
+    <h1>📦 SEUR<br><em>Logística<br>preferencial.</em></h1>
+    <p class="lead">Tarifas preferenciales en envíos y logística para startups FAE. Acceso a la red de distribución nacional de SEUR.</p>
+  </div></div>
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
+      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Tarifas preferenciales en envíos nacionales e internacionales</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso a la red de distribución nacional de SEUR</li>
+        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Gestión de logística inversa y devoluciones</li>
+      </ul>
+    </div>
+    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════ PERK: OPENAI ═══ -->
+<div class="page" id="page-perks-openai" style="display:none">
+  <div class="page-hero"><div class="page-hero-inner">
+    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
+    <span class="eyebrow">Perk FAE · Inteligencia Artificial</span>
+    <h1>🤖 OpenAI<br><em>Créditos API<br>para construir.</em></h1>
+    <p class="lead">Créditos de API de OpenAI para emprendedores FAE. Acceso a GPT-4, DALL-E y el stack completo de OpenAI.</p>
+  </div></div>
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
+      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Créditos de API de OpenAI para emprendedores FAE</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso a GPT-4o, DALL-E 3 y Whisper</li>
+        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
+      </ul>
+    </div>
+    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════ PERK: MANUS ═══ -->
+<div class="page" id="page-perks-manus" style="display:none">
+  <div class="page-hero"><div class="page-hero-inner">
+    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
+    <span class="eyebrow">Perk FAE · Agentes IA</span>
+    <h1>⚡ Manus.im<br><em>2.000 créditos<br>de agentes IA.</em></h1>
+    <p class="lead">2.000 créditos de Manus para emprendedores FAE. El agente de IA más avanzado para automatizar cualquier tarea de negocio.</p>
+  </div></div>
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
+      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> 2.000 créditos de Manus.im para emprendedores FAE</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso al agente de IA más avanzado para automatizar tareas complejas</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Programación, investigación, análisis de datos, webs y más</li>
+        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
+      </ul>
+    </div>
+    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════ PERK: CLAUDE ═══ -->
+<div class="page" id="page-perks-claude" style="display:none">
+  <div class="page-hero"><div class="page-hero-inner">
+    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
+    <span class="eyebrow">Perk FAE · Inteligencia Artificial</span>
+    <h1>🧠 Anthropic Claude<br><em>El modelo IA<br>para razonar.</em></h1>
+    <p class="lead">Créditos de Claude para emprendedores FAE. El modelo de IA más avanzado para razonamiento complejo y programación.</p>
+  </div></div>
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
+      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Créditos de Anthropic Claude para emprendedores FAE</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso a Claude Sonnet y Claude Opus para tareas complejas</li>
+        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
+      </ul>
+    </div>
+    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════ PERK: AWS ═══ -->
+<div class="page" id="page-perks-aws" style="display:none">
+  <div class="page-hero"><div class="page-hero-inner">
+    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
+    <span class="eyebrow">Perk FAE · Cloud</span>
+    <h1>☁️ Amazon Web Services<br><em>Créditos cloud<br>para escalar.</em></h1>
+    <p class="lead">Créditos de AWS para emprendedores FAE. Infraestructura escalable desde el primer día sin coste inicial.</p>
+  </div></div>
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
+      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Créditos de Amazon Web Services para startups FAE</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso a EC2, S3, RDS, Lambda y el stack completo de AWS</li>
+        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
+      </ul>
+    </div>
+    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════ PERK: GOOGLE ═══ -->
+<div class="page" id="page-perks-google" style="display:none">
+  <div class="page-hero"><div class="page-hero-inner">
+    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
+    <span class="eyebrow">Perk FAE · Cloud</span>
+    <h1>🔵 Google Cloud<br><em>Créditos cloud<br>y herramientas IA.</em></h1>
+    <p class="lead">Créditos de Google Cloud para startups FAE. Acceso a herramientas de IA y machine learning de Google.</p>
+  </div></div>
+  <section class="sec" style="max-width:760px;margin:0 auto">
+    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
+      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
+      <ul style="list-style:none;padding:0;margin:0">
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Créditos de Google Cloud para startups FAE</li>
+        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso a Vertex AI, BigQuery y herramientas de machine learning</li>
+        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
+      </ul>
+    </div>
+    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════ MENTOR: PEDRO SERRAHIMA ═══════ -->
+<div class="page" id="page-mentores-pedroserrahima" style="display:none">
+  <div class="page-hero">
+    <div class="page-hero-inner" style="max-width:900px">
+      <button onclick="go('mentores')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Red de mentores</button>
+      <span class="eyebrow">Mentor · Experiencia de cliente y coherencia</span>
+      <h1 style="font-size:clamp(2.4rem,5vw,4rem);line-height:1.05;margin-bottom:16px">Pedro<br>Serrahima</h1>
+      <p style="font-size:1.15rem;color:#C8D0DC;max-width:560px;line-height:1.6;margin-bottom:32px">Ingeniero informático. CEO de Pepephone. Director general de Globalia. Director de Experiencia de Cliente y Calidad en Telefónica España durante 9 años. Elegido entre los 50 mejores directivos de España.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px">
+        <span class="tag-pill">Experiencia de cliente</span>
+        <span class="tag-pill">Coherencia organizacional</span>
+        <span class="tag-pill">Transparencia</span>
+        <span class="tag-pill">Gestión honesta</span>
+        <span class="tag-pill">Liderazgo</span>
+        <span class="tag-pill">Telecomunicaciones</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="sec" style="max-width:900px;margin:0 auto">
+    <div class="two-grid" style="align-items:start;gap:60px">
+      <div>
+        <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:28px;margin-bottom:40px">
+          <span class="eyebrow" style="margin-bottom:12px">Propuesta de valor</span>
+          <p style="font-size:1.1rem;color:#F2F4F9;line-height:1.7;margin:0">Pedro no habla de atención al cliente desde la teoría. Lo ha construido desde dentro, en empresas reales, con equipos reales, con resultados medibles. Su obsesión: hacer las cosas bien aunque cueste más.</p>
+        </div>
+
+        <h2 style="font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:20px">Trayectoria</h2>
+        <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:20px">Pedro Serrahima es ingeniero informático por la Universidad Politécnica de Madrid. Inició su carrera en proyectos de investigación sobre Inteligencia Artificial y programación en tiempo real en la Universidad Autónoma de Madrid, desde donde pasó a coordinar el desarrollo técnico de los primeros sitios de comercio electrónico de El Corte Inglés.</p>
+        <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:20px">Ha sido Director General de Globalia, CEO de Pepephone y responsable de los negocios de Telefonía e Internet de ONO. En Pepephone construyó un modelo de empresa radicalmente distinto: sin letra pequeña, sin engaños, con atención al cliente como eje central de la propuesta de valor. Una anomalía en el sector de las telecomunicaciones que se convirtió en referente.</p>
+        <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:20px">En 2017 se incorporó a Telefónica España como Director de Desarrollo de Negocio Multimarca para liderar el lanzamiento de la marca O2. Posteriormente dirigió la experiencia de cliente y publicidad de las diferentes marcas de Telefónica en España, y desde mayo de 2022 fue Director de Experiencia de Cliente y Calidad hasta su salida voluntaria en febrero de 2026 para emprender nuevos proyectos.</p>
+        <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:40px">Fue elegido entre los <strong style="color:#F2F4F9">50 mejores directivos de España en 2013 y 2014</strong> por el diario El Economista. Su trayectoria es un caso de estudio sobre cómo la coherencia y la honestidad pueden ser una ventaja competitiva real.</p>
+
+        <h2 style="font-size:clamp(1.4rem,2.5vw,1.8rem);margin-bottom:20px">Áreas de mentoría</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:40px">
+          <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:20px">
+            <div style="font-size:1.5rem;margin-bottom:8px">🎯</div>
+            <div style="font-weight:700;color:#F2F4F9;margin-bottom:6px">Experiencia de cliente</div>
+            <div style="font-size:13px;color:#8892A0">Construir modelos de negocio donde el cliente es el centro real, no el discurso.</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:20px">
+            <div style="font-size:1.5rem;margin-bottom:8px">🪞</div>
+            <div style="font-weight:700;color:#F2F4F9;margin-bottom:6px">Coherencia organizacional</div>
+            <div style="font-size:13px;color:#8892A0">Alinear lo que dices, lo que haces y lo que cobras. Sin letra pequeña.</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:20px">
+            <div style="font-size:1.5rem;margin-bottom:8px">🏗️</div>
+            <div style="font-weight:700;color:#F2F4F9;margin-bottom:6px">Liderazgo y gestión</div>
+            <div style="font-size:13px;color:#8892A0">Gestionar equipos y organizaciones desde la honestidad y la claridad.</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:20px">
+            <div style="font-size:1.5rem;margin-bottom:8px">📡</div>
+            <div style="font-weight:700;color:#F2F4F9;margin-bottom:6px">Modelos de negocio</div>
+            <div style="font-size:13px;color:#8892A0">Diseñar propuestas de valor que no dependan del engaño ni la complejidad artificial.</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="position:sticky;top:100px">
+        <div style="border-radius:16px;overflow:hidden;margin-bottom:24px;aspect-ratio:3/4;max-width:340px">
+          <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/pedro-serrahima_ccbf3ddc.jpg" alt="Pedro Serrahima" style="width:100%;height:100%;object-fit:cover;object-position:center 15%">
+        </div>
+        <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.15);border-radius:12px;padding:20px">
+          <div style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#00DDB8;margin-bottom:12px">Perfil</div>
+          <div style="font-size:14px;color:#C8D0DC;line-height:1.7">
+            <div style="margin-bottom:8px"><strong style="color:#F2F4F9">Formación:</strong> Ingeniero Informático, UPM</div>
+            <div style="margin-bottom:8px"><strong style="color:#F2F4F9">CEO en:</strong> Pepephone</div>
+            <div style="margin-bottom:8px"><strong style="color:#F2F4F9">DG en:</strong> Globalia</div>
+            <div style="margin-bottom:8px"><strong style="color:#F2F4F9">Director en:</strong> Telefónica España (2017–2026)</div>
+            <div><strong style="color:#F2F4F9">Reconocimiento:</strong> Top 50 directivos de España (El Economista, 2013–2014)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-sec">
+    <div class="cta-inner">
+      <span class="eyebrow" style="text-align:center">Mentoría FAE</span>
+      <h3 style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:12px">¿Quieres trabajar<br><em>con Pedro?</em></h3>
+      <p style="font-size:16px;color:#C8D0DC;max-width:480px;margin:0 auto 28px;line-height:1.6">Accedes a Pedro como mentor a través del programa de la Fundación de Alto Emprendimiento.</p>
+      <button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button>
+      <p style="font-size:12px;color:#5C6880;margin-top:16px">Proceso confidencial · Sin compromiso</p>
+    </div>
+  </section>
+</div>
+
+
 <script>
 /* ── CURSOR ── */
 var C = document.getElementById('_c');
@@ -2327,7 +3039,7 @@ function closeMobileMenu() {
 document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeMobileMenu(); });
 
 /* ── ROUTER ── */
-var PAGES = ['home', 'emprendedores', 'mentores', 'perks', 'retos', 'inversores', 'investigacion', 'nosotros', 'viaje', 'corporaciones', 'paper-regulacion', 'paper-triangulo', 'aplica-reto-2026', 'participa-investigacion', 'perlora', 'centro', 'sustrato', 'emprendedor-blanca', 'emprendedor-aitor', 'emprendedor-mario', 'emprendedor-beatriz', 'emprendedor-marcos', 'emprendedor-alvaro', 'emprendedor-tassilo', 'mentores-jesusalonsogallo', 'mentores-pedroserrahima', 'mentores-alvarohernandez', 'mentores-danielsuarez', 'perks-iberia', 'perks-renfe', 'perks-santander', 'perks-seur', 'perks-openai', 'perks-manus', 'perks-claude', 'perks-aws', 'perks-google'];
+var PAGES = ['home', 'emprendedores', 'mentores', 'perks', 'retos', 'inversores', 'investigacion', 'nosotros', 'viaje', 'paper-regulacion', 'paper-triangulo', 'aplica-reto-2026', 'participa-investigacion', 'perlora', 'emprendedor-blanca', 'emprendedor-aitor', 'emprendedor-mario', 'emprendedor-beatriz', 'emprendedor-marcos', 'emprendedor-alvaro', 'emprendedor-tassilo', 'mentores-jesusalonsogallo', 'mentores-pedroserrahima', 'mentores-alvarohernandez', 'mentores-danielsuarez', 'perks-iberia', 'perks-renfe', 'perks-santander', 'perks-seur', 'perks-openai', 'perks-manus', 'perks-claude', 'perks-aws', 'perks-google'];
 var PAGE_TITLES = {
   home: 'FAE — Fundación Alto Emprendimiento | Acompañamiento integral para emprendedores',
   emprendedores: 'Para Emprendedores — Reto 2026 | FAE Fundación Alto Emprendimiento',
@@ -2951,537 +3663,133 @@ if (mform) {
 }
 </script>
 
-<!-- ═════════════════════════════════════════════ EMPRENDEDOR: TASSILO ═══ -->
-<div class="page" id="page-emprendedor-tassilo" style="display:none">
-
+<!-- ══════════════════════════════════════ MENTOR: ÁLVARO HERNÁNDEZ ══ -->
+<div class="page" id="page-mentores-alvarohernandez" style="display:none">
   <div class="page-hero">
     <div class="page-hero-inner">
-      <button onclick="go('emprendedores')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;display:flex;align-items:center;gap:6px">← Cohorte 2026</button>
-      <span class="eyebrow">Emprendedor · Cohorte 2026</span>
-      <h1 style="font-size:clamp(2.4rem,5vw,4rem);line-height:1.05;margin-bottom:16px">Tassilo<br>de la Torre<br><em>Schönborn-Wiesentheid.</em></h1>
-      <p class="lead" style="max-width:580px">Arquitecto con visión global. Fundador de <a href="https://antiga.es" target="_blank" rel="noopener" style="color:#00DDB8">antiga.es</a> — el primer escaparate digital de antigüedades para interioristas y profesionales del diseño.</p>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:24px">
-        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:#00DDB8;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Marketplace</span>
-        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:#00DDB8;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Diseño de interiores</span>
-        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:#00DDB8;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Arquitectura</span>
-        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.2);color:#00DDB8;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Antigüedades</span>
+      <button onclick="go('mentores')" style="background:none;border:none;color:#00DDB8;font-size:14px;cursor:pointer;margin-bottom:24px;padding:0;letter-spacing:0.05em">← Red de mentores</button>
+      <div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;justify-content:center;margin-bottom:32px">
+        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/alvaro-hernandez-ongres_69cfc8e2.jpg" alt="Álvaro Hernández Tortosa" style="width:120px;height:120px;border-radius:50%;object-fit:cover;object-position:center top;border:3px solid #00DDB8">
+        <div style="text-align:left">
+          <div style="font-size:12px;letter-spacing:0.15em;color:#00DDB8;text-transform:uppercase;margin-bottom:8px">Mentor — Tecnología e Infraestructura</div>
+          <h1 style="font-size:clamp(2rem,4vw,3rem);font-weight:800;margin:0 0 8px">Álvaro Hernández Tortosa</h1>
+          <p style="color:#8892A4;font-size:16px;margin:0">Fundador de OnGres · Creador de StackGres</p>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px">
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.3);color:#00DDB8;padding:6px 14px;border-radius:20px;font-size:13px">Infraestructura tech</span>
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.3);color:#00DDB8;padding:6px 14px;border-radius:20px;font-size:13px">Cloud-native</span>
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.3);color:#00DDB8;padding:6px 14px;border-radius:20px;font-size:13px">Open source</span>
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.3);color:#00DDB8;padding:6px 14px;border-radius:20px;font-size:13px">Deep tech startup</span>
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.3);color:#00DDB8;padding:6px 14px;border-radius:20px;font-size:13px">PostgreSQL &amp; datos</span>
       </div>
     </div>
   </div>
 
-  <!-- PROPUESTA DE VALOR -->
-  <section class="sec">
-    <div style="background:rgba(0,221,184,0.04);border:1px solid rgba(0,221,184,0.15);border-radius:20px;padding:36px 40px;max-width:760px;margin:0 auto">
-      <span style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#00DDB8;display:block;margin-bottom:12px">El proyecto</span>
-      <p style="font-size:18px;color:#F2F4F9;line-height:1.7;font-family:'Bricolage Grotesque',sans-serif;font-weight:500">El mercado de antigüedades es opaco, fragmentado y analógico. Tassilo está construyendo el primer escaparate digital pensado para interioristas y profesionales del diseño — donde la pieza correcta llega al profesional correcto.</p>
+  <section style="max-width:860px;margin:0 auto;padding:60px 24px">
+    <div style="background:rgba(0,221,184,0.08);border-left:3px solid #00DDB8;padding:28px 32px;border-radius:0 12px 12px 0;margin-bottom:48px">
+      <p style="font-size:18px;line-height:1.7;color:#E8EDF5;margin:0;font-style:italic">"La infraestructura no es el problema aburrido que parece. Es la diferencia entre una empresa que escala y una que colapsa en su propio éxito."</p>
     </div>
-  </section>
 
-  <!-- BIO -->
-  <section class="sec" style="max-width:760px;margin:0 auto">
-    <span class="eyebrow">Trayectoria</span>
-    <h2 style="font-size:clamp(1.8rem,3.5vw,2.6rem);margin-bottom:32px">Arquitecto<br><em>con visión global.</em></h2>
+    <h2 style="font-size:24px;font-weight:700;margin-bottom:20px;color:#E8EDF5">Trayectoria</h2>
+    <p style="color:#8892A4;line-height:1.8;margin-bottom:16px">Álvaro Hernández Tortosa es uno de los referentes europeos en infraestructura de datos y tecnología cloud-native. Fundó OnGres, empresa especializada en PostgreSQL y Kubernetes, y creó StackGres, la plataforma open source de PostgreSQL sobre Kubernetes más avanzada del mercado, cofinanciada por la Unión Europea.</p>
+    <p style="color:#8892A4;line-height:1.8;margin-bottom:16px">Es fundador de la Asociación PostgreSQL España y ponente habitual en las conferencias técnicas más importantes del mundo: KubeCon, PGConf, Percona Live. Su trabajo une la profundidad técnica con la visión de negocio necesaria para construir empresas de infraestructura sostenibles.</p>
+    <p style="color:#8892A4;line-height:1.8;margin-bottom:48px">En la Fundación de Alto Emprendimiento actúa como mentor para emprendedores que construyen productos técnicos, ayudándoles a tomar decisiones de arquitectura que no hipotequen el futuro de su empresa.</p>
 
-    <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:20px">Tassilo de la Torre Schönborn-Wiesentheid es arquitecto con una formación y visión internacional. Su experiencia en el mundo del diseño, la arquitectura y el patrimonio le ha dado una perspectiva única sobre el mercado de antigüedades: un sector con enorme valor cultural y económico que sigue funcionando de forma mayoritariamente analógica y local.</p>
-
-    <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:40px">Con <a href="https://antiga.es" target="_blank" rel="noopener" style="color:#00DDB8;text-decoration:none">antiga.es</a>, Tassilo está construyendo el primer marketplace especializado en antigüedades para interioristas y profesionales del diseño en España. No es un portal de segunda mano — es un escaparate curado, donde cada pieza tiene historia, contexto y el nivel de calidad que exige el mercado profesional del diseño de interiores.</p>
-
-    <!-- ÁREAS -->
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:48px">
-      <div style="background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:22px">
-        <div style="font-size:22px;margin-bottom:10px">🏛</div>
-        <div style="font-size:13px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px">Marketplace digital</div>
-        <p style="font-size:13px;color:#8A95A8;line-height:1.7;margin:0">Plataforma especializada en antigüedades para interioristas y profesionales del diseño.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:48px">
+      <div style="background:#111827;border:1px solid #1E2A3A;border-radius:12px;padding:24px">
+        <div style="color:#00DDB8;font-size:20px;margin-bottom:12px">⚙️</div>
+        <h3 style="font-size:16px;font-weight:700;margin-bottom:8px">Infraestructura</h3>
+        <p style="color:#8892A4;font-size:14px;line-height:1.6;margin:0">PostgreSQL, Kubernetes, cloud-native. Arquitecturas que escalan.</p>
       </div>
-      <div style="background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:22px">
-        <div style="font-size:22px;margin-bottom:10px">🎨</div>
-        <div style="font-size:13px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px">Diseño de interiores</div>
-        <p style="font-size:13px;color:#8A95A8;line-height:1.7;margin:0">Conectar piezas únicas con los profesionales que las necesitan para sus proyectos.</p>
+      <div style="background:#111827;border:1px solid #1E2A3A;border-radius:12px;padding:24px">
+        <div style="color:#00DDB8;font-size:20px;margin-bottom:12px">🔓</div>
+        <h3 style="font-size:16px;font-weight:700;margin-bottom:8px">Open source</h3>
+        <p style="color:#8892A4;font-size:14px;line-height:1.6;margin:0">Modelo de negocio sobre open source. Cómo monetizar sin traicionar la comunidad.</p>
       </div>
-      <div style="background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:22px">
-        <div style="font-size:22px;margin-bottom:10px">🌍</div>
-        <div style="font-size:13px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px">Visión global</div>
-        <p style="font-size:13px;color:#8A95A8;line-height:1.7;margin:0">Formación y experiencia internacional en arquitectura y patrimonio cultural.</p>
-      </div>
-      <div style="background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:22px">
-        <div style="font-size:22px;margin-bottom:10px">🏺</div>
-        <div style="font-size:13px;font-weight:700;color:#00DDB8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px">Patrimonio</div>
-        <p style="font-size:13px;color:#8A95A8;line-height:1.7;margin:0">Digitalizar y democratizar el acceso a piezas de antigüedad con valor histórico y estético.</p>
+      <div style="background:#111827;border:1px solid #1E2A3A;border-radius:12px;padding:24px">
+        <div style="color:#00DDB8;font-size:20px;margin-bottom:12px">🚀</div>
+        <h3 style="font-size:16px;font-weight:700;margin-bottom:8px">Deep tech startup</h3>
+        <p style="color:#8892A4;font-size:14px;line-height:1.6;margin:0">Cómo construir una empresa de producto técnico con financiación europea.</p>
       </div>
     </div>
 
-    <!-- CTA -->
-    <div style="background:var(--card2);border:1px solid var(--line);border-radius:20px;padding:36px;text-align:center">
-      <span class="eyebrow" style="display:block;margin-bottom:16px">Reto 2026 · Máximo 12 emprendedores</span>
-      <h3 style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:12px">Tassilo forma parte<br><em>del Reto 2026.</em></h3>
-      <p style="font-size:15px;color:#8A95A8;margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto">Si quieres aplicar al programa o conocer más sobre antiga.es, escríbenos.</p>
-      <button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button>
-      <p style="font-size:12px;color:#5C6880;margin-top:16px">Proceso confidencial · Sin compromiso</p>
-    </div>
-  </section>
-
-</div>
-
-
-
-<!-- ═════════════════════════════════════════════════════════ PERKS ═══ -->
-<div class="page" id="page-perks" style="display:none">
-  <div class="page-hero">
-    <div class="page-hero-inner">
-      <span class="eyebrow">Para emprendedores FAE</span>
-      <h1>Perks.<br><em>Lo que necesitas<br>para construir.</em></h1>
-      <p class="lead" style="max-width:600px">Si eres una empresa que quiere ayudar y facilitar el éxito de los emprendedores, contamos contigo para crear la mejor cantera de emprendedores de España. ¿Qué necesita un emprendedor? De todo.</p>
-    </div>
-  </div>
-
-  <section class="sec">
-    <span class="eyebrow">Para empresas y partners</span>
-    <h2 style="font-size:clamp(1.8rem,3.5vw,2.8rem);margin-bottom:16px">¿Te animas a apoyar<br>a la Fundación?</h2>
-    <p class="lead" style="max-width:640px;margin-bottom:48px">Para que sus emprendedores tengan la mejor banca, los mejores billetes, los mejores servidores. Escríbenos y lo construimos juntos.</p>
-    <div style="text-align:center;margin-bottom:64px">
-      <a href="mailto:dani@danisuanchez.es" class="btn-hero" style="text-decoration:none">Quiero ser partner →</a>
-    </div>
-
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
-
-      <!-- VIAJES Y TRANSPORTE -->
-      <div style="grid-column:1/-1;margin-bottom:8px">
-        <span class="eyebrow" style="font-size:11px">Viajes y transporte</span>
-      </div>
-
-      <div class="cohort-card" onclick="go('perks-iberia')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
-        <div style="padding:24px">
-          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
-            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">✈️</div>
-            <div>
-              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Iberia</div>
-              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
-            </div>
-          </div>
-          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">10% de descuento en vuelos para emprendedores FAE. Tarjeta Iberia Plus con beneficios exclusivos.</p>
-          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
-        </div>
-      </div>
-
-      <div class="cohort-card" onclick="go('perks-renfe')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
-        <div style="padding:24px">
-          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
-            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🚄</div>
-            <div>
-              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Renfe</div>
-              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
-            </div>
-          </div>
-          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">10% de descuento en billetes de tren. Tarjeta Renfe con acceso a tarifas preferenciales.</p>
-          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
-        </div>
-      </div>
-
-      <!-- FINANZAS -->
-      <div style="grid-column:1/-1;margin-top:24px;margin-bottom:8px">
-        <span class="eyebrow" style="font-size:11px">Finanzas</span>
-      </div>
-
-      <div class="cohort-card" onclick="go('perks-santander')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
-        <div style="padding:24px">
-          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
-            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🏦</div>
-            <div>
-              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Banco Santander</div>
-              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
-            </div>
-          </div>
-          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Financiación básica y prioritaria para emprendedores FAE. Descuento en comisiones y acceso a líneas de crédito preferentes.</p>
-          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
-        </div>
-      </div>
-
-      <!-- LOGÍSTICA -->
-      <div style="grid-column:1/-1;margin-top:24px;margin-bottom:8px">
-        <span class="eyebrow" style="font-size:11px">Logística</span>
-      </div>
-
-      <div class="cohort-card" onclick="go('perks-seur')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
-        <div style="padding:24px">
-          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
-            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">📦</div>
-            <div>
-              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">SEUR</div>
-              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
-            </div>
-          </div>
-          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Tarifas preferenciales en envíos y logística para startups FAE. Acceso a la red de distribución nacional.</p>
-          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
-        </div>
-      </div>
-
-      <!-- TECNOLOGÍA E IA -->
-      <div style="grid-column:1/-1;margin-top:24px;margin-bottom:8px">
-        <span class="eyebrow" style="font-size:11px">Tecnología e Inteligencia Artificial</span>
-      </div>
-
-      <div class="cohort-card" onclick="go('perks-aws')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
-        <div style="padding:24px">
-          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
-            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">☁️</div>
-            <div>
-              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Amazon Web Services</div>
-              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
-            </div>
-          </div>
-          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Créditos de cloud para emprendedores FAE. Infraestructura escalable desde el primer día.</p>
-          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
-        </div>
-      </div>
-
-      <div class="cohort-card" onclick="go('perks-google')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
-        <div style="padding:24px">
-          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
-            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🔵</div>
-            <div>
-              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Google Cloud</div>
-              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
-            </div>
-          </div>
-          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Créditos de Google Cloud para startups FAE. Acceso a herramientas de IA y machine learning de Google.</p>
-          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
-        </div>
-      </div>
-
-      <div class="cohort-card" onclick="go('perks-openai')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
-        <div style="padding:24px">
-          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
-            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🤖</div>
-            <div>
-              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">OpenAI</div>
-              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
-            </div>
-          </div>
-          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Créditos de API de OpenAI para emprendedores FAE. Acceso a GPT-4, DALL-E y el resto del stack.</p>
-          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
-        </div>
-      </div>
-
-      <div class="cohort-card" onclick="go('perks-claude')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
-        <div style="padding:24px">
-          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
-            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🧠</div>
-            <div>
-              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Anthropic Claude</div>
-              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
-            </div>
-          </div>
-          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">Créditos de Claude para emprendedores FAE. El modelo de IA más avanzado para razonamiento y programación.</p>
-          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
-        </div>
-      </div>
-
-      <div class="cohort-card" onclick="go('perks-manus')" style="cursor:pointer" onmouseover="this.style.borderColor='rgba(0,221,184,0.35)'" onmouseout="this.style.borderColor=''">
-        <div style="padding:24px">
-          <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
-            <div style="width:48px;height:48px;background:rgba(0,221,184,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem">⚡</div>
-            <div>
-              <div style="font-weight:700;color:#F2F4F9;font-size:1.1rem">Manus.im</div>
-              <div style="font-size:12px;color:#00DDB8;font-weight:600">Perk activo</div>
-            </div>
-          </div>
-          <p style="font-size:14px;color:#8892A0;margin-bottom:12px">2.000 créditos de Manus para emprendedores FAE. El agente de IA más avanzado para automatizar cualquier tarea.</p>
-          <span style="font-size:11px;color:#00DDB8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Ver perk →</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="cta-sec">
-    <div class="cta-inner">
-      <span class="eyebrow" style="text-align:center">¿Eres empresa?</span>
-      <h2>Construye<br>la mejor cantera<br><em>con nosotros.</em></h2>
-      <p class="cta-sub">Escríbenos y diseñamos juntos el perk que más impacto tenga en los emprendedores.</p>
-      <div style="text-align:center;margin-top:16px">
-        <a href="mailto:dani@danisuanchez.es" class="btn-teal-lg">Quiero ser partner →</a>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ═══════════════════════════════════════════════ PERK: IBERIA ═══ -->
-<div class="page" id="page-perks-iberia" style="display:none">
-  <div class="page-hero"><div class="page-hero-inner">
-    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
-    <span class="eyebrow">Perk FAE · Viajes</span>
-    <h1>✈️ Iberia<br><em>10% descuento<br>en vuelos.</em></h1>
-    <p class="lead">Como emprendedor FAE, accedes a tarifas preferenciales en Iberia y beneficios exclusivos de Iberia Plus.</p>
-  </div></div>
-  <section class="sec" style="max-width:760px;margin:0 auto">
-    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
-      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
-      <ul style="list-style:none;padding:0;margin:0">
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> 10% de descuento en vuelos nacionales e internacionales</li>
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Tarjeta Iberia Plus con acumulación de puntos desde el primer vuelo</li>
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso prioritario a check-in y embarque</li>
-        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
-      </ul>
-    </div>
-    <p style="font-size:14px;color:#5C6880;text-align:center">Para acceder a este perk, aplica al programa FAE. Los perks se activan una vez seleccionado.</p>
-    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
-  </section>
-</div>
-
-<!-- ═══════════════════════════════════════════════ PERK: RENFE ═══ -->
-<div class="page" id="page-perks-renfe" style="display:none">
-  <div class="page-hero"><div class="page-hero-inner">
-    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
-    <span class="eyebrow">Perk FAE · Transporte</span>
-    <h1>🚄 Renfe<br><em>10% descuento<br>en trenes.</em></h1>
-    <p class="lead">Movilidad preferencial para emprendedores FAE en toda la red de alta velocidad y media distancia de Renfe.</p>
-  </div></div>
-  <section class="sec" style="max-width:760px;margin:0 auto">
-    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
-      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
-      <ul style="list-style:none;padding:0;margin:0">
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> 10% de descuento en billetes AVE, Alvia y Media Distancia</li>
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Tarjeta Renfe con puntos acumulables en cada viaje</li>
-        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
-      </ul>
-    </div>
-    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
-  </section>
-</div>
-
-<!-- ═══════════════════════════════════════════════ PERK: SANTANDER ═══ -->
-<div class="page" id="page-perks-santander" style="display:none">
-  <div class="page-hero"><div class="page-hero-inner">
-    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
-    <span class="eyebrow">Perk FAE · Finanzas</span>
-    <h1>🏦 Banco Santander<br><em>Financiación<br>prioritaria.</em></h1>
-    <p class="lead">Acceso a financiación básica y prioritaria para emprendedores FAE. Descuento en comisiones y líneas de crédito preferentes.</p>
-  </div></div>
-  <section class="sec" style="max-width:760px;margin:0 auto">
-    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
-      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
-      <ul style="list-style:none;padding:0;margin:0">
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Financiación básica y prioritaria para startups FAE</li>
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Descuento en comisiones bancarias</li>
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso a líneas de crédito preferentes para emprendedores</li>
-        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Descuento de facturas y financiación de circulante</li>
-      </ul>
-    </div>
-    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
-  </section>
-</div>
-
-<!-- ═══════════════════════════════════════════════ PERK: SEUR ═══ -->
-<div class="page" id="page-perks-seur" style="display:none">
-  <div class="page-hero"><div class="page-hero-inner">
-    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
-    <span class="eyebrow">Perk FAE · Logística</span>
-    <h1>📦 SEUR<br><em>Logística<br>preferencial.</em></h1>
-    <p class="lead">Tarifas preferenciales en envíos y logística para startups FAE. Acceso a la red de distribución nacional de SEUR.</p>
-  </div></div>
-  <section class="sec" style="max-width:760px;margin:0 auto">
-    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
-      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
-      <ul style="list-style:none;padding:0;margin:0">
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Tarifas preferenciales en envíos nacionales e internacionales</li>
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso a la red de distribución nacional de SEUR</li>
-        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Gestión de logística inversa y devoluciones</li>
-      </ul>
-    </div>
-    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
-  </section>
-</div>
-
-<!-- ═══════════════════════════════════════════════ PERK: OPENAI ═══ -->
-<div class="page" id="page-perks-openai" style="display:none">
-  <div class="page-hero"><div class="page-hero-inner">
-    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
-    <span class="eyebrow">Perk FAE · Inteligencia Artificial</span>
-    <h1>🤖 OpenAI<br><em>Créditos API<br>para construir.</em></h1>
-    <p class="lead">Créditos de API de OpenAI para emprendedores FAE. Acceso a GPT-4, DALL-E y el stack completo de OpenAI.</p>
-  </div></div>
-  <section class="sec" style="max-width:760px;margin:0 auto">
-    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
-      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
-      <ul style="list-style:none;padding:0;margin:0">
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Créditos de API de OpenAI para emprendedores FAE</li>
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso a GPT-4o, DALL-E 3 y Whisper</li>
-        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
-      </ul>
-    </div>
-    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
-  </section>
-</div>
-
-<!-- ═══════════════════════════════════════════════ PERK: MANUS ═══ -->
-<div class="page" id="page-perks-manus" style="display:none">
-  <div class="page-hero"><div class="page-hero-inner">
-    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
-    <span class="eyebrow">Perk FAE · Agentes IA</span>
-    <h1>⚡ Manus.im<br><em>2.000 créditos<br>de agentes IA.</em></h1>
-    <p class="lead">2.000 créditos de Manus para emprendedores FAE. El agente de IA más avanzado para automatizar cualquier tarea de negocio.</p>
-  </div></div>
-  <section class="sec" style="max-width:760px;margin:0 auto">
-    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
-      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
-      <ul style="list-style:none;padding:0;margin:0">
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> 2.000 créditos de Manus.im para emprendedores FAE</li>
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso al agente de IA más avanzado para automatizar tareas complejas</li>
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Programación, investigación, análisis de datos, webs y más</li>
-        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
-      </ul>
-    </div>
-    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
-  </section>
-</div>
-
-<!-- ═══════════════════════════════════════════════ PERK: CLAUDE ═══ -->
-<div class="page" id="page-perks-claude" style="display:none">
-  <div class="page-hero"><div class="page-hero-inner">
-    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
-    <span class="eyebrow">Perk FAE · Inteligencia Artificial</span>
-    <h1>🧠 Anthropic Claude<br><em>El modelo IA<br>para razonar.</em></h1>
-    <p class="lead">Créditos de Claude para emprendedores FAE. El modelo de IA más avanzado para razonamiento complejo y programación.</p>
-  </div></div>
-  <section class="sec" style="max-width:760px;margin:0 auto">
-    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
-      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
-      <ul style="list-style:none;padding:0;margin:0">
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Créditos de Anthropic Claude para emprendedores FAE</li>
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso a Claude Sonnet y Claude Opus para tareas complejas</li>
-        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
-      </ul>
-    </div>
-    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
-  </section>
-</div>
-
-<!-- ═══════════════════════════════════════════════ PERK: AWS ═══ -->
-<div class="page" id="page-perks-aws" style="display:none">
-  <div class="page-hero"><div class="page-hero-inner">
-    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
-    <span class="eyebrow">Perk FAE · Cloud</span>
-    <h1>☁️ Amazon Web Services<br><em>Créditos cloud<br>para escalar.</em></h1>
-    <p class="lead">Créditos de AWS para emprendedores FAE. Infraestructura escalable desde el primer día sin coste inicial.</p>
-  </div></div>
-  <section class="sec" style="max-width:760px;margin:0 auto">
-    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
-      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
-      <ul style="list-style:none;padding:0;margin:0">
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Créditos de Amazon Web Services para startups FAE</li>
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso a EC2, S3, RDS, Lambda y el stack completo de AWS</li>
-        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
-      </ul>
-    </div>
-    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
-  </section>
-</div>
-
-<!-- ═══════════════════════════════════════════════ PERK: GOOGLE ═══ -->
-<div class="page" id="page-perks-google" style="display:none">
-  <div class="page-hero"><div class="page-hero-inner">
-    <button onclick="go('perks')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Todos los perks</button>
-    <span class="eyebrow">Perk FAE · Cloud</span>
-    <h1>🔵 Google Cloud<br><em>Créditos cloud<br>y herramientas IA.</em></h1>
-    <p class="lead">Créditos de Google Cloud para startups FAE. Acceso a herramientas de IA y machine learning de Google.</p>
-  </div></div>
-  <section class="sec" style="max-width:760px;margin:0 auto">
-    <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:32px;margin-bottom:40px">
-      <h2 style="font-size:1.6rem;margin-bottom:20px">¿Qué incluye este perk?</h2>
-      <ul style="list-style:none;padding:0;margin:0">
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Créditos de Google Cloud para startups FAE</li>
-        <li style="padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acceso a Vertex AI, BigQuery y herramientas de machine learning</li>
-        <li style="padding:12px 0;color:#C8D0DC;display:flex;gap:12px"><span style="color:#00DDB8;font-weight:700">→</span> Acuerdo en negociación — disponible para emprendedores FAE seleccionados</li>
-      </ul>
-    </div>
-    <div style="text-align:center;margin-top:32px"><button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button></div>
-  </section>
-</div>
-
-<!-- ═══════════════════════════════════════ MENTOR: PEDRO SERRAHIMA ═══════ -->
-<div class="page" id="page-mentores-pedroserrahima" style="display:none">
-  <div class="page-hero">
-    <div class="page-hero-inner" style="max-width:900px">
-      <button onclick="go('mentores')" style="background:none;border:none;color:#00DDB8;font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:24px;letter-spacing:0.06em;text-transform:uppercase">← Red de mentores</button>
-      <span class="eyebrow">Mentor · Experiencia de cliente y coherencia</span>
-      <h1 style="font-size:clamp(2.4rem,5vw,4rem);line-height:1.05;margin-bottom:16px">Pedro<br>Serrahima</h1>
-      <p style="font-size:1.15rem;color:#C8D0DC;max-width:560px;line-height:1.6;margin-bottom:32px">Ingeniero informático. CEO de Pepephone. Director general de Globalia. Director de Experiencia de Cliente y Calidad en Telefónica España durante 9 años. Elegido entre los 50 mejores directivos de España.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px">
-        <span class="tag-pill">Experiencia de cliente</span>
-        <span class="tag-pill">Coherencia organizacional</span>
-        <span class="tag-pill">Transparencia</span>
-        <span class="tag-pill">Gestión honesta</span>
-        <span class="tag-pill">Liderazgo</span>
-        <span class="tag-pill">Telecomunicaciones</span>
-      </div>
-    </div>
-  </div>
-
-  <section class="sec" style="max-width:900px;margin:0 auto">
-    <div class="two-grid" style="align-items:start;gap:60px">
-      <div>
-        <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.2);border-radius:12px;padding:28px;margin-bottom:40px">
-          <span class="eyebrow" style="margin-bottom:12px">Propuesta de valor</span>
-          <p style="font-size:1.1rem;color:#F2F4F9;line-height:1.7;margin:0">Pedro no habla de atención al cliente desde la teoría. Lo ha construido desde dentro, en empresas reales, con equipos reales, con resultados medibles. Su obsesión: hacer las cosas bien aunque cueste más.</p>
-        </div>
-
-        <h2 style="font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:20px">Trayectoria</h2>
-        <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:20px">Pedro Serrahima es ingeniero informático por la Universidad Politécnica de Madrid. Inició su carrera en proyectos de investigación sobre Inteligencia Artificial y programación en tiempo real en la Universidad Autónoma de Madrid, desde donde pasó a coordinar el desarrollo técnico de los primeros sitios de comercio electrónico de El Corte Inglés.</p>
-        <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:20px">Ha sido Director General de Globalia, CEO de Pepephone y responsable de los negocios de Telefonía e Internet de ONO. En Pepephone construyó un modelo de empresa radicalmente distinto: sin letra pequeña, sin engaños, con atención al cliente como eje central de la propuesta de valor. Una anomalía en el sector de las telecomunicaciones que se convirtió en referente.</p>
-        <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:20px">En 2017 se incorporó a Telefónica España como Director de Desarrollo de Negocio Multimarca para liderar el lanzamiento de la marca O2. Posteriormente dirigió la experiencia de cliente y publicidad de las diferentes marcas de Telefónica en España, y desde mayo de 2022 fue Director de Experiencia de Cliente y Calidad hasta su salida voluntaria en febrero de 2026 para emprender nuevos proyectos.</p>
-        <p style="font-size:16px;color:#C8D0DC;line-height:1.8;margin-bottom:40px">Fue elegido entre los <strong style="color:#F2F4F9">50 mejores directivos de España en 2013 y 2014</strong> por el diario El Economista. Su trayectoria es un caso de estudio sobre cómo la coherencia y la honestidad pueden ser una ventaja competitiva real.</p>
-
-        <h2 style="font-size:clamp(1.4rem,2.5vw,1.8rem);margin-bottom:20px">Áreas de mentoría</h2>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:40px">
-          <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:20px">
-            <div style="font-size:1.5rem;margin-bottom:8px">🎯</div>
-            <div style="font-weight:700;color:#F2F4F9;margin-bottom:6px">Experiencia de cliente</div>
-            <div style="font-size:13px;color:#8892A0">Construir modelos de negocio donde el cliente es el centro real, no el discurso.</div>
-          </div>
-          <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:20px">
-            <div style="font-size:1.5rem;margin-bottom:8px">🪞</div>
-            <div style="font-weight:700;color:#F2F4F9;margin-bottom:6px">Coherencia organizacional</div>
-            <div style="font-size:13px;color:#8892A0">Alinear lo que dices, lo que haces y lo que cobras. Sin letra pequeña.</div>
-          </div>
-          <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:20px">
-            <div style="font-size:1.5rem;margin-bottom:8px">🏗️</div>
-            <div style="font-weight:700;color:#F2F4F9;margin-bottom:6px">Liderazgo y gestión</div>
-            <div style="font-size:13px;color:#8892A0">Gestionar equipos y organizaciones desde la honestidad y la claridad.</div>
-          </div>
-          <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:20px">
-            <div style="font-size:1.5rem;margin-bottom:8px">📡</div>
-            <div style="font-weight:700;color:#F2F4F9;margin-bottom:6px">Modelos de negocio</div>
-            <div style="font-size:13px;color:#8892A0">Diseñar propuestas de valor que no dependan del engaño ni la complejidad artificial.</div>
-          </div>
-        </div>
-      </div>
-
-      <div style="position:sticky;top:100px">
-        <div style="border-radius:16px;overflow:hidden;margin-bottom:24px;aspect-ratio:3/4;max-width:340px">
-          <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/pedro-serrahima_ccbf3ddc.jpg" alt="Pedro Serrahima" style="width:100%;height:100%;object-fit:cover;object-position:center 15%">
-        </div>
-        <div style="background:rgba(0,221,184,0.06);border:1px solid rgba(0,221,184,0.15);border-radius:12px;padding:20px">
-          <div style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#00DDB8;margin-bottom:12px">Perfil</div>
-          <div style="font-size:14px;color:#C8D0DC;line-height:1.7">
-            <div style="margin-bottom:8px"><strong style="color:#F2F4F9">Formación:</strong> Ingeniero Informático, UPM</div>
-            <div style="margin-bottom:8px"><strong style="color:#F2F4F9">CEO en:</strong> Pepephone</div>
-            <div style="margin-bottom:8px"><strong style="color:#F2F4F9">DG en:</strong> Globalia</div>
-            <div style="margin-bottom:8px"><strong style="color:#F2F4F9">Director en:</strong> Telefónica España (2017–2026)</div>
-            <div><strong style="color:#F2F4F9">Reconocimiento:</strong> Top 50 directivos de España (El Economista, 2013–2014)</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-sec">
-    <div class="cta-inner">
-      <span class="eyebrow" style="text-align:center">Mentoría FAE</span>
-      <h3 style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:12px">¿Quieres trabajar<br><em>con Pedro?</em></h3>
-      <p style="font-size:16px;color:#C8D0DC;max-width:480px;margin:0 auto 28px;line-height:1.6">Accedes a Pedro como mentor a través del programa de la Fundación de Alto Emprendimiento.</p>
+    <div style="text-align:center;padding:48px 0;border-top:1px solid #1E2A3A">
+      <h3 style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:12px">¿Quieres trabajar<br><em>con Álvaro?</em></h3>
+      <p style="font-size:16px;color:#C8D0DC;max-width:480px;margin:0 auto 28px;line-height:1.6">Accedes a Álvaro como mentor a través del programa de la Fundación de Alto Emprendimiento.</p>
       <button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button>
       <p style="font-size:12px;color:#5C6880;margin-top:16px">Proceso confidencial · Sin compromiso</p>
     </div>
   </section>
 </div>
 
+
+<!-- ══════════════════════════════════════ MENTOR: DANIEL SUÁREZ ══ -->
+<div class="page" id="page-mentores-danielsuarez" style="display:none">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <button onclick="go('mentores')" style="background:none;border:none;color:#00DDB8;font-size:14px;cursor:pointer;margin-bottom:24px;padding:0;letter-spacing:0.05em">← Red de mentores</button>
+      <div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;justify-content:center;margin-bottom:32px">
+        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663337997694/Dc5z8cJUx3f7jW84Kewkca/daniel-suarez-sanchez_396b6ffd.png" alt="Daniel Suárez Sánchez" style="width:120px;height:120px;border-radius:50%;object-fit:cover;object-position:center top;border:3px solid #00DDB8">
+        <div style="text-align:left">
+          <div style="font-size:12px;letter-spacing:0.15em;color:#00DDB8;text-transform:uppercase;margin-bottom:8px">Mentor — Visión, Econología e Inversión</div>
+          <h1 style="font-size:clamp(2rem,4vw,3rem);font-weight:800;margin:0 0 8px">Daniel Suárez Sánchez</h1>
+          <p style="color:#8892A4;font-size:16px;margin:0">Emprendedor en serie · Business angel · Autor del modelo econológico</p>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px">
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.3);color:#00DDB8;padding:6px 14px;border-radius:20px;font-size:13px">Visión</span>
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.3);color:#00DDB8;padding:6px 14px;border-radius:20px;font-size:13px">Modelo de negocio</span>
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.3);color:#00DDB8;padding:6px 14px;border-radius:20px;font-size:13px">Inversión</span>
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.3);color:#00DDB8;padding:6px 14px;border-radius:20px;font-size:13px">Filosofía</span>
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.3);color:#00DDB8;padding:6px 14px;border-radius:20px;font-size:13px">Econología</span>
+        <span style="background:rgba(0,221,184,0.1);border:1px solid rgba(0,221,184,0.3);color:#00DDB8;padding:6px 14px;border-radius:20px;font-size:13px">Vida</span>
+      </div>
+    </div>
+  </div>
+
+  <section style="max-width:860px;margin:0 auto;padding:60px 24px">
+    <div style="background:rgba(0,221,184,0.08);border-left:3px solid #00DDB8;padding:28px 32px;border-radius:0 12px 12px 0;margin-bottom:48px">
+      <p style="font-size:18px;line-height:1.7;color:#E8EDF5;margin:0;font-style:italic">"La métrica más importante, si tuviera que medir una sola cosa en la empresa, son las ventas."</p>
+    </div>
+
+    <h2 style="font-size:24px;font-weight:700;margin-bottom:20px;color:#E8EDF5">Trayectoria</h2>
+    <p style="color:#8892A4;line-height:1.8;margin-bottom:16px">Daniel Suárez Sánchez es emprendedor en serie con más de 12 empresas fundadas a lo largo de su carrera. Ha sido seleccionado entre los <strong style="color:#E8EDF5">100 mejores emprendedores de España</strong> y ha trabajado con más de 50 grandes corporaciones, aportando visión estratégica y modelo de negocio.</p>
+    <p style="color:#8892A4;line-height:1.8;margin-bottom:16px">Es autor del <strong style="color:#E8EDF5">modelo de gestión econológico</strong>, un marco propio que integra economía, ecología y bienestar como ejes del negocio sostenible. Su enfoque combina la visión de largo plazo con la ejecución práctica, siempre desde la honestidad y la experiencia directa.</p>
+    <p style="color:#8892A4;line-height:1.8;margin-bottom:16px">Como business angel, ha invertido en proyectos de diversas industrias, aportando no solo capital sino criterio, red y acompañamiento real.</p>
+    <p style="color:#8892A4;line-height:1.8;margin-bottom:8px">Más en <a href="https://danisuanchez.es" target="_blank" style="color:#00DDB8;text-decoration:none">danisuanchez.es</a></p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin:40px 0 48px">
+      <div style="background:#111827;border:1px solid #1E2A3A;border-radius:12px;padding:24px">
+        <div style="color:#00DDB8;font-size:20px;margin-bottom:12px">🔭</div>
+        <h3 style="font-size:16px;font-weight:700;margin-bottom:8px">Visión y modelo</h3>
+        <p style="color:#8892A4;font-size:14px;line-height:1.6;margin:0">Cómo construir un negocio con sentido, desde la idea hasta el modelo que funciona.</p>
+      </div>
+      <div style="background:#111827;border:1px solid #1E2A3A;border-radius:12px;padding:24px">
+        <div style="color:#00DDB8;font-size:20px;margin-bottom:12px">🌱</div>
+        <h3 style="font-size:16px;font-weight:700;margin-bottom:8px">Econología</h3>
+        <p style="color:#8892A4;font-size:14px;line-height:1.6;margin:0">El modelo propio que integra economía, ecología y bienestar como motor de negocio.</p>
+      </div>
+      <div style="background:#111827;border:1px solid #1E2A3A;border-radius:12px;padding:24px">
+        <div style="color:#00DDB8;font-size:20px;margin-bottom:12px">💰</div>
+        <h3 style="font-size:16px;font-weight:700;margin-bottom:8px">Inversión</h3>
+        <p style="color:#8892A4;font-size:14px;line-height:1.6;margin:0">Perspectiva de business angel: qué busca un inversor y cómo prepararse.</p>
+      </div>
+      <div style="background:#111827;border:1px solid #1E2A3A;border-radius:12px;padding:24px">
+        <div style="color:#00DDB8;font-size:20px;margin-bottom:12px">🧘</div>
+        <h3 style="font-size:16px;font-weight:700;margin-bottom:8px">Filosofía y vida</h3>
+        <p style="color:#8892A4;font-size:14px;line-height:1.6;margin:0">Emprender como forma de vida. La coherencia entre lo que haces y lo que eres.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center;padding:48px 0;border-top:1px solid #1E2A3A">
+      <h3 style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:12px">¿Quieres trabajar<br><em>con Daniel?</em></h3>
+      <p style="font-size:16px;color:#C8D0DC;max-width:480px;margin:0 auto 28px;line-height:1.6">Accedes a Daniel como mentor a través del programa de la Fundación de Alto Emprendimiento.</p>
+      <button onclick="go('aplica-reto-2026')" class="btn-hero">Aplica al Reto 2026 →</button>
+      <p style="font-size:12px;color:#5C6880;margin-top:16px">Proceso confidencial · Sin compromiso</p>
+    </div>
+  </section>
+</div>
+
+</body>
+</html>
